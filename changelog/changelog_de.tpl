@@ -1,6 +1,14 @@
 {*
   License: see https://github.com/OpencachingDeutschland/oc-server3/blob/development/LICENSE.md
 *}
+<style>
+{literal}
+div.changelog-header { width:100%; background:#eee; padding-left:0.5em }
+div.changelog-header p { padding-bottom:0.3em }
+div.changelog .version { color:grey; }
+{/literal}
+</style>
+
 <div class="content2-pagetitle">
     Versionsgeschichte
 </div>
@@ -10,9 +18,12 @@
 
     <p>Im Folgenden sind alle Veränderungen ab OC Version&nbsp;3.0 aufgelistet. Manche Kleinigkeiten wurden zur besseren Übersicht weggelassen; sie sind im <a href="http://redmine.opencaching.de/projects/oc-dev/roadmap">Issue-Tracker</a>, in der <a href="https://github.com/OpencachingDeutschland/oc-server3/commits/stable">Codehistorie</a> und im <a href="http://forum.opencaching.de/index.php?board=43.0">Entwicklerforum</a> nachlesbar. Neue Funktionen werden manchmal schon vorab freigegeben.</p>
 
-    <p>Eine redaktionell aufbereitete Erläuterung neuer OC-Versionen gibt es auch im Opencaching- und im <em>Altmetall</em>-Blog:</p>
+    <p>Eine redaktionell aufbereitete Erläuterung neuer OC-Versionen gibt es auch im Opencaching- bzw. im <em>Altmetall</em>-Blog:</p>
     <ul>
-        <li><a href="https://blog.dafb-o.de/oc-3-0v18-marker-bei-koordinatensuche-fotos-sortieren-koordinatenumrechnung/">Version 18</a>: Marker bei Koordinatensuche, Fotos sortieren, Koordinatenumrechnung</li>
+        <li><a href="https://blog.opencaching.de/2017/09/oc-version-3-1-3-neues-attribut-und-neue-bildgroessen/">Version 23</a> <span class="version">(3.1.3)</span>: Projekt für sehbehinderte Cacher, Limits für Bilduploads angehoben</li>
+        <li><a href="https://blog.opencaching.de/2017/02/version-3-1-2-mit-kleinen-schritten-geht-es-voran/">Version 22</a> <span class="version">(3.1.2)</span>: Suche nach Benutzern</li>
+        <li><a href="https://blog.opencaching.de/2016/10/oc-version-3-1-x-die-neue-generation/">Version 20/21</a> <span class="version">(3.1.x)</span>: Field Notes, Suchformular-Verbesserung, Übersetzung per Crowdin</li>
+        <li><a href="https://blog.opencaching.de/2016/07/oc-3-0v19/">Version 19</a>: Umkreissuche, [Hints], Refactoring</li>
         <li><a href="http://blog.opencaching.de/2016/03/oc-3-0v17-wartungszustand-loggen-koordinatenhistorien/">Version 17</a>: Wartungszustand loggen, Koordinatenhistorien</li>
         <li><a href="http://blog.opencaching.de/2016/02/oc-30v16/">Version 16</a>: Sortierbare Suche, Unicode-Zeichen uvm.</li>
         <li><a href="http://blog.opencaching.de/2015/09/oc-30v14/">Version 15</a>: Weitergabe privater Cachelisten, Lesezeichen für Cachelisten, Anzeige der Empfehlungen</li>
@@ -31,88 +42,193 @@
 
     <div class="changelog-changes">
 
-        <p id="current"><strong>Laufende Änderungen</strong></p>
-        <ul>
-            <li>Einführung Symfony inkl. Doctrine</li>
-        </ul>
-        <br />
+        <div class="changelog-header">
+            <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; in Arbeit</p>
+        </div>
 
-        <p id="v3.1.2"><strong>OC 3.1 Version 2</strong> &ndash; 06. Februar 2017</p>
-        <p>neu:</p>
+        <p>Neu:</p>
         <ul>
-            <li>Benutzer Suche <a href="http://redmine.opencaching.de/issues/1015" target="_blank">#1015</a></li>
+            <li>OKAPI: Ändern des Logpassworts von Caches</li>
         </ul>
-        <p>Geändert / verbessert:</p>
-        <ul>
-            <li>Login Probleme zwischen lib und lib2 Code behoben</li>
-            <li>Scrutinizer Patches eingespielt</li>
-            <li>Empfehlungsstern verschwindet <a href="http://redmine.opencaching.de/issues/1013" target="_blank">#1013</a></li>
-            <li>Versteckte Caches nach Cachetype im Profil... <a href="http://redmine.opencaching.de/issues/1001" target="_blank">#1001</a></li>
-            <li>Sprach Links <a href="http://redmine.opencaching.de/issues/1022" target="_blank">#1022</a></li>
-            <li>Sprach Umschaltung <a href="http://redmine.opencaching.de/issues/995" target="_blank">#995</a></li>
-        </ul>
-        <br />
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>nicht benötigte sql debug Funktionen</li>
-            <li>htdocs/lib/logic.inc.php</li>
-            <li>htdocs/lib/eventhandler.inc.php</li>
-            <li>htdocs/lib/tinymce</li>
-            <li>nicht mehr unterstütztes garmin Modul</li>
+            <li>Anzeige der Regionalzuordnung von Caches in Großbritannien, Norwegen und Schweden</li>
+            <li>Einige Seiten wurden im Browser als "nicht sicher" angezeigt (http-Bildeinbettung in https-Seiten).</li>
+            <li>Cachekartenanzeige für manche Webbrowser repariert</li>
+            <li>Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
+            <li>Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
         </ul>
         <br />
 
-        <p id="v3.1.1"><strong>OC 3.1 Version 1</strong> &ndash; 24. Oktober 2016</p>
-        <p>neu:</p>
+        <div class="changelog-header">
+            <p id="v3.1.4"><strong>OC3 Version 24</strong> <span class="version">(3.1.4)</span> &ndash; 7. September 2017</p>
+        </div>
+
+        <p>Neu:</p>
         <ul>
-            <li>Field Notes (<a href="https://github.com/mirsch" target="_blank">mirsch</a>)</li>
-            <li>Einführung von Crowdin für die Übersetzung</li>
-            <li>Einführung von Travis</li>
-            <li>Bereitstellung eines Minimaldumps</li>
+            <li><a href="https://www.opencaching.de/myhome.php?allpics=owncaches">Logbildgalerie</a> für eigene Caches</li>
+            <li>wählbare Einfügeposition beim Hochladen von Bildern in Cachebeschreibungen</li>
+            <li>Log-Angaben „Cache benötigt Wartung“ und „Listing veraltet“ können nachträglich gesetzt bzw. korrigiert werden. </li>
+            <li>Geplantes Veröffentlichungsdatum von Caches wird eingeblendet; Veröffentlichung mit zwei Klicks.</li>
+            <li>Anzeige anderssprachiger Hints, wenn keiner in der gewählten Sprache vorhanden ist.</li>
+            <li>Benachrichtigungsmails für Fundlogs informieren auch über Empfehlungen.</li>
+            <li>OKAPI: Sortieren von Caches nach Veröffentlichungs- oder Versteckdatum, bzw. von Events nach Veranstaltungsdatum</li>
         </ul>
+
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>SessionCookie Daten werden nur noch über HTTPS übermittelt (<a href="https://github.com/rotzbua" target="_blank">rotzbua</a>)</li>
-            <li>Warnung wenn kein Cachetype/Cachegröße bei der Suche aktiviert ist</li>
-            <li>Übersichtlichere Nachbearbeitung der Suchoptionen</li>
-            <li>Implementierung erster HTML5 Features</li>
-            <li>Aktualisierung der Spendenseite</li>
-            <li>Anpassung Gekrety Verlinkungen (HTTPS)</li>
-            <li>Update der What3Words API (<a href="https://github.com/mbirth" target="_blank">mbirth</a>)</li>
-            <li>Automatisches aktualisieren der crowdin Übersetzungen</li>
+            <li>Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Beschreibungstext findet nun auch passende Kurzbeschreibungen.</li>
+            <li>Eingabe eines Versteckdatum nach oder eines Eventdatums vor Veröffentlichungsdatum wird verhindert.</li>
+            <li>Bei Events erscheint auf der Karte das Veranstaltungsdatum statt des Veröffentlichungsdatums.</li>
+            <li>Rückfrage beim Löschen von Bildern aus der Cachebeschreibung</li>
+            <li>Regionalzuordnung auch bei Caches in Bulgarien, Kroatien, Rumänien und der Türkei</li>
+            <li>Länderwahl beim Anlegen von Caches, im Benutzerprofil und oben rechts im Seitenkopf aktualisiert</li>
+            <li>größerer Zeilen- und Abschnittsabstand in Cachebeschreibungen und Logs</li>
+            <li>Das OC-Supportteam kann veränderte Cachelistings mit Einverständnis des Owners in den Originalzustand zurückversetzen.</li>
+            <li>OC-Supportmitarbeiter können versehentlich als „erledigt“ geschlossene Cachemeldungen wieder öffnen.</li>
+            <li>OC-Support- und Datenpflegeteam haben einen besseren Überblick über offene Cachemeldungen.</li>
+            <li><a href="http://www.opencaching.de/">http://www.opencaching.de</a> leitet seit dem 28. August vollständig nach <a href="https://www.opencaching.de/">https://www.opencaching.de</a> weiter. Die Website läuft damit nur noch im sicheren HTTPS-Betrieb. Gleiches gilt für <a href="https://www.opencaching.it">www.opencaching.it</a>, <a href="https://www.opencachingspain.es">www.opencachingspeain.es</a> und <a href="https://www.opencaching.fe">www.opencaching.fr</a>.</li>
         </ul>
-        <br />
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Cachetypenanzeige bei Suche über die Nutzerstatistiken fehlerhaft</li>
-            <li>Aufräumarbeiten</li>
-            <li>Karten Bugfixes.</li>
+            <li>Beim Bearbeiten von zusätzlichen Wegpunkten mit westlicher Länge bleibt das W erhalten.</li>
+            <li>Fehler im „Text“-Editormodus behoben: Manchmal wurde &lt;br /&gt; eingefügt; aufeinanderfolgende Leerzeichen gingen verloren; Smileyumwandlung beim Umschalten auf „Editor“ oder „html“ war unvollständig.</li>
+            <li>Ungültige Bilddateien werden beim Upload immer erkannt und abgewiesen. [Bug von Version 11]</li>
+            <li>Logbildgalerien werden vollständig chronologisch geordnet, auch bei mehreren Bildern im selben Log. [Bug von Version 5]</li>
+            <li>Beim nachträglichen Ändern des Logtyps in „kann gesucht werden“ werden die Markierungen „Cache benötigt Wartung“ und „Beschreibung ist veraltet“ entfernt. [Bug von Version 17]</li>
+            <li>OConly-Markierung bei unveröffentlichten Caches in der <a href="myhome.php#mycaches">Liste der eigenen Caches</a> korrigiert. [Bug von Version 9]</li>
+            <li>Anordnung von Bildern mit verschiedenem Seitenverhältnis in der Listing-Bildgalerie korrigiert.</li>
+            <li>Beim Umschalten zwischen verschiedenen Editor-Modi bleibt der gewählte Logtyp erhalten.</li>
             <li>diverse kleine Fehlerkorrekturen</li>
         </ul>
+
+        <p>Entfernt:</p>
+        <ul>
+            <li>Die OpenCycleMap-Kartenansicht entfällt, weil sie für Opencaching nicht mehr kostenfrei verfügbar ist.</li>
+            <li>Die Koordinatenhistorie von Rätsel- und Safaricaches entfällt, da ohne Bedeutung.</li>
+        </ul>
         <br />
 
-        <p id="v3.0.19"><strong>OC 3.0 Version 19</strong> &ndash; 28. Juni 2016</p>
+        <div class="changelog-header">
+            <p id="v3.1.3"><strong>OC3 Version 23</strong> <span class="version"">(3.1.3)</span> &ndash; 17. Mai 2017</p>
+        </div>
+
+        <p>Neu:</p>
+        <ul>
+            <li>Cacheattribut &bdquo;Handicap: Blind&ldquo; hinzugefügt. Das Attribut sollte noch nicht verwendet werden, weil die Richtlinien dafür noch in Arbeit sind. (&rarr; <a href="https://forum.opencaching.de/index.php?topic=4760.0">Diskussion</a>)</li>
+            <li>Cookie-Hinweis per EU-Richtline</li>
+            <li>Analyse der Nutzeraktivität mit Google Analytics; siehe Erläuterung im <a href="https://blog.opencaching.de/2017/09/oc-version-3-1-3-neues-attribut-und-neue-bildgroessen/">OC-Blog</a></li>
+            <li>Während Arbeiten an der OC-Website erscheint ein Hinweis, dass sie gerade gewartet wird.</li>
+        </ul>
+
         <p>Geändert / verbessert:</p>
         <ul>
+            <li>Die Vorgabe für neu angelegte Listings ist nun „noch nicht veröffentlichen“ statt „sofort veröffentlichen“.</li>
+            <li>Leerzeichen am Beginn und Ende von Cachenamen, GC-Wegpunkten, Logpwasswörtern usw. werden bei der Eingabe entfernt.</li>
+            <li>Das Passwortfeld beim Loggen wird nur noch für Fundlogs eingeblendet.</li>
+            <li>Größenlimit für hochgeladene Bilder von 6 auf 15 MB erhöht</li>
+            <li>Aufräumarbeiten im Programmcode</li>
+        </ul>
+
+        <p>Korrigiert (Bugfixes):</p>
+        <ul>
+            <li>Eingelesene Field Notes können Zeilenumbrüche enthalten. [Bug von Version 21]</li>
+            <li>Smilies in älteren Logs und Cachebeschreibungen sind wieder sichtbar. [Bug von Version 22]</li>
+            <li>Email-Zustellprobleme werden wieder erkannt (war im Herbst 2016 ausgefallen).</li>
+        </ul>
+        <br />
+
+        <div class="changelog-header">
+            <p id="v3.1.2"><strong>OC3 Version 22</strong> <span class="version">(3.1.2)</span> &ndash; 6. Februar 2017</p>
+        </div>
+
+        <p>Geändert / verbessert:</p>
+        <ul>
+            <li>Suche nach Benutzern: Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Caches oder Logs eines Benutzers findet auch Benutzer ohne Caches oder Logs.</li>
+            <li>Die Liste der Cache eines Benutzers wird nach Versteckdatum sortiert.</li>
+        </ul>
+
+        <p>Korrigiert (Bugfixes):</p>
+        <ul>
+            <li>Verlust ungespeicherter Änderungen an Cachelistings beim Bearbeiten von Beschreibungen, Bildern und Wegpunkten wird vermieden.</li>
+            <li>Empfehlung bleibt erhalten, wenn man beim Schreiben des Logs den Editormodus wechselt</li>
+            <li>Die Sprachumschaltung beim Bearbeiten von Caches und Cachebeschreibungen funktioniert wieder. [Bug von Version 20]</li>
+            <li>Die Länderauswahl in der Liste der neuen Caches und neuen Logs funktioniert wieder. [Bug von Version 20]</li>
+        </ul>
+
+        <p>Entfernt:</p>
+        <ul>
+            <li>Der Knopf „An GPS-Gerät senden“ entfällt, er wegen einer neuen Sicherheitseinstellung des Opencaching-Webservers nicht mehr funktioniert.</li>
+            <li>Koordinatenänderungen von Rätsel- und Safaricaches werden nicht mehr angezeigt, da ohne Bedeutung.</li>
+            <li>Aufräumarbeiten im Programmcode &ndash; nicht mehr benötigte Dateien entfernt</li>
+        </ul>
+        <br />
+
+        <div class="changelog-header">
+            <p id="v3.1.1"><strong>OC3 Version 21</strong> <span class="version">(3.1.1)</span> &ndash; 24. Oktober 2016</p>
+        </div>
+
+        <p>Geändert / verbessert:</p>
+        <ul>
+            <li>Link auf Geokrety-Seite von http in https geändert</li>
+        </ul>
+        <br />
+
+        <div class="changelog-header">
+            <p id="v3.1.0"><strong>OC3 Version 20</strong> <span class="version">(3.1.0)</span> &ndash; 10. Oktober 2016</p>
+        </div>
+
+        <p>Neu:</p>
+        <ul>
+            <li>Hochladen und Verwalten von <a href="https://www.opencaching.de/field-notes/">Field Notes</a></li>
+            <li>OC-Softwareentwicklung: Einführung von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a> für Übersetzungen, Travis für die Prüfung von Codebeiträgen, Symfony als Codeframework</li> 
+        </ul>
+
+        <p>Geändert / verbessert:</p>
+        <ul>
+            <li>übersichtlichere Nachbearbeitung der Suchoptionen</li>
+            <li>Warnung, wenn bei der Suche kein Cachetyp oder keine Cachegröße gewählt wurde</li>
+            <li>Prüfung eingegebener Emailadressen verbessert</li>
+            <li>Verbesserung der Datensicherheit: Sitzungsdaten werden nur noch per HTTPS übertragen</li>
+            <li>Aktualisierung der Spendenseite</li>
+            <li>interne Umstellung auf neue What3Words-Schnittstelle</li>
+        </ul>
+
+        <p>Korrigiert (Bugfixes):</p>
+        <ul>
+            <li>Abruf von Listen der gefundenen Caches über die Statistik im Benutzerprofil funktioniert wieder.</li>
+        </ul>
+
+        <p>Entfernt:</p>
+        <ul>
+            <li>Die MapQuest-Kartenansicht entfällt, weil sie für Opencaching nicht mehr kostenfrei verfügbar ist.</li>
+        </ul>
+        <br />
+
+        <div class="changelog-header">
+            <p id="v3.0.19"><strong>OC3 Version 19</strong> <span class="version">(3.0.19)</span> &ndash; 28. Juni 2016</p>
+        </div>
+
+        <p>Geändert / verbessert:</p>
+        <p>Neu:</p>
+        <ul>
             <li>Entschlüsselte Hinweise können wieder verschlüsselt weden.</li>
-            <li>Hinweisteile in [ ] werden beim Entschlüsseln ignoriert.</li>
             <li>wählbarer Radius für die Suche nach Caches im Umkreis von Orten oder von Caches</li>
+        </ul>
+
+        <p>Geändert / verbessert:</p>
+        <ul>
+            <li>Hinweisteile in [ ] werden beim Entschlüsseln ignoriert.</li>
             <li>Man kann zwischen den angehängten Bildern einer Cachebeschreibung blättern.</li>
             <li>Vergrößerte Bilder werden mit einem Rechtsklick nicht mehr geschlossen.</li>
             <li>Safari-Caches werden bei der regionalen Fundstatistik im Benutzerprofil nicht mehr mitgezählt.</li>
-            <li>Cachelisten können nicht mehr versehentlich mit dem Name &bdquo;Neue Cacheliste&ldquo;
-                erstellt werden.</li>
-            <li>Zeilenabstände bei großer Schrift in Cachebeschreibungen und Druckansicht verbessert
-                und vereinheitlicht.</li>
-            <li>Der Opencaching-Chat entfällt.</li>
-            <li>Die Karteneinstellung für die Einblendung der kleinen Übersichtskarte entfällt
-                (Übersichtskarte ist nicht mehr verfügbar).</li>
+            <li>Cachelisten können nicht mehr versehentlich mit dem Name &bdquo;Neue Cacheliste&ldquo; erstellt werden.</li>
+            <li>Zeilenabstände bei großer Schrift in Cachebeschreibungen und Druckansicht verbessert und vereinheitlicht.</li>
             <li>vollständige formale Überarbeitung des Programmcodes (PSR-2, Composer u.a.)</li>
             <li>Vorbereitungen für eine Neuorganisation des Programmcodes (PSR-4, Symfony, Frontend-Tests)</li>
         </ul>
-        <br />
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
@@ -122,16 +238,25 @@
             <li>Druckansicht und TXT-Download mehrsprachiger Cachebeschreibungen korrigiert
                 [Bug von Version 14/15]</li>
             <li>Keine OConly-Benachrichtigungen für ignorierte Caches. [Bug von Version 9]</li>
-            <li>Anpassung der Cachemap an Google Richtlinien</li>
+            <li>Anpassung der Cachekarte an Google-Richtlinien</li>
             <li>diverse kleine Fehlerkorrekturen</li>
+        </ul>
+
+        <p>Entfernt:</p>
+        <ul>
+            <li>Die Karteneinstellung für die Einblendung der kleinen Übersichtskarte entfällt (Übersichtskarte ist nicht mehr verfügbar).</li>
+            <li>Der Opencaching-Chat entfällt.</li>
         </ul>
         <br />
 
-        <p id="v3.0.18"><strong>OC 3.0 Version 18</strong> &ndash; 31. März 2016</p>
+        <div class="changelog-header">
+            <p id="v3.0.18"><strong>OC3 Version 18</strong> <span class="version">(3.0.18)</span> &ndash; 31. März 2016</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Anzeige von Markern bei der Koordinatensuche auf der Karte</li>
-            <li>Die Reihenfolge von Bildern in Cachbeschreibungen und Logs ist nachträglich änderbar.</li>
+            <li>Die Reihenfolge von Bildern in Cachebeschreibungen und Logs ist nachträglich änderbar.</li>
             <li>Koordinatenumrechnung für zusätzliche Wegpunkte</li>
             <li>OKAPI: Logbilder hochladen</li>
             <li>OKAPI: &bdquo;Cache benötigt Wartung&ldquo; ist abfragbar und logbar</li>
@@ -154,7 +279,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.17"><strong>OC 3.0 Version 17</strong> &ndash; 7. März 2016</p>
+        <div class="changelog-header">
+            <p id="v3.0.17"><strong>OC3 Version 17</strong> <span class="version">(3.0.17)</span> &ndash;  7. März 2016</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li><a href="http://wiki.opencaching.de/index.php/Das_Onlinelog#Der_Wartungszustand" target="_blank">Wartungszustände loggen</a></li>
@@ -173,7 +301,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.16"><strong>OC 3.0 Version 16</strong> &ndash; 1. Februar 2016</p>
+        <div class="changelog-header">
+            <p id="v3.0.16"><strong>OC3 Version 16</strong> <span class="version">(3.0.16)</span> &ndash; 1. Februar 2016</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Die Ergebnisse der <a href="search.php">Cachesuche</a> sind per Klick auf die Spaltenüberschriften sortierbar.</li>
@@ -196,7 +327,6 @@
             <li>OKAPI: Umkreissuche bei kleinem Radius (&lt;&lt; 100 km) stark beschleunigt</li>
             <li>Portierung von MySQL 5.1 auf MariaDB 5.5</li>
         </ul>
-        <br />
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
@@ -211,7 +341,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.15"><strong>OC 3.0 Version 15</strong> &ndash; 19. September 2015</p>
+        <div class="changelog-header">
+            <p id="v3.0.15"><strong>OC3 Version 15</strong> <span class="version">(3.0.15)</span> &ndash; 19. September 2015</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>französische Übersetzung fertiggstellt; Relaunch von <a href="http://www.opencaching.fr">Opencaching.fr</a></li>
@@ -234,7 +367,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.14"><strong>OC 3.0 Version 14</strong> &ndash; 5. September 2015</p>
+        <div class="changelog-header">
+            <p id="v3.0.14"><strong>OC3 Version 14</strong> <span class="version">(3.0.14)</span> &ndash; 5. September 2015</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Weitergabe privater Cachelisten mit Kennwort</li>
@@ -295,7 +431,7 @@
             <li>HTML-Filterfunktionen für Logs und Cachebeschreibungen verbessert
                 (<a href="http://redmine.opencaching.de/issues/79">#79</a>),
                 eine Liste der jetzt verwendbaren HTML-Elemente ist
-                <a href="http://www.opencaching.de/articles.php?page=htmltags">hier</a>
+                <a href="https://www.opencaching.de/articles.php?page=htmltags">hier</a>
                 zu finden.
             </li>
             <li>
@@ -325,7 +461,7 @@
                 (<a href="http://redmine.opencaching.de/issues/31">#31</a>)
             </li>
             <li>
-                Benachtichtiungsfunktion für neu gesetzte OConly-Attribute korrigiert
+                Benachrichtiungsfunktion für neu gesetzte OConly-Attribute korrigiert
                 (<a href="http://redmine.opencaching.de/issues/810">#810</a>) [Bug von Version 9]
             </li>
             <li>Außerdem wurde viele weitere, kleinere Fehler behoben - vollständige Liste
@@ -333,7 +469,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.13"><strong>OC 3.0 Version 13</strong> &ndash; 4. Juli 2015</p>
+        <div class="changelog-header">
+            <p id="v3.0.13"><strong>OC3 Version 13</strong> <span class="version">(3.0.13)</span> &ndash; 4. Juli 2015</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li><a href="cachelists.php">Cachelisten</a></li>
@@ -361,7 +500,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.12"><strong>OC 3.0 Version 12</strong> &ndash; 31. Mai 2015</p>
+        <div class="changelog-header">
+            <p id="v3.0.12"><strong>OC3 Version 12</strong> <span class="version">(3.0.12)</span> &ndash; 31. Mai 2015</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Link „mehr...“ in der Eventliste auf der Startseite, falls mehr als zehn Events oder Events in anderen Ländern vorhanden sind</li>
@@ -391,7 +533,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.11"><strong>OC 3.0 Version 11</strong> &ndash; 21. Juni 2014</p>
+        <div class="changelog-header">
+            <p id="v3.0.11"><strong>OC3 Version 11</strong> <span class="version">(3.0.11)</span> &ndash; 21. Juni 2014</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>direkter Link auf ein bestimmtes Log per Rechtsklick auf das zugeh&ouml;rige Symbol und „Link kopieren“</li>
@@ -415,7 +560,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.10"><strong>OC 3.0 Version 10</strong> &ndash; 24. August 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.10"><strong>OC3 Version 10</strong> <span class="version">(3.0.10)</span> &ndash; 24. August 2013</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Wenn mehr als 5 Logeinträge vorhanden sind und man zum Ende des Listings blättert, werden die übrigen Logs automatisch nachgeladen.</li>
@@ -449,7 +597,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.9"><strong>OC 3.0 Version 9</strong> &ndash; 25. Juli 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.9"><strong>OC3 Version 9</strong> <span class="version">(3.0.9)</span> &ndash; 25. Juli 2013</p>
+        </div>
+
         <p><a href="search.php">Suchfunktion</a> überarbeitet:</p>
         <ul>
             <li>neues, übersichtlicheres Design</li>
@@ -512,7 +663,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.8"><strong>OC 3.0 Version 8</strong> &ndash; 1. Juni 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.8"><strong>OC3 Version 8</strong> <span class="version">(3.0.8)</span>&ndash; 1. Juni 2013</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Der Cachestatus kann (nur noch) per Log geändert werden. Dazu gibt es die neuen Logtypen <em>momentan nicht verfügbar</em>, <em>archiviert</em>, <em>gesperrt</em> und <em>kann gesucht werden</em>. Der gleiche Status kann auch mehrmals geloggt werden, z.B. um zu signalieren dass mit dem Cache alles ok ist. Der Typ alter Logs kann nachträglich geändert werden.</li>
@@ -575,7 +729,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.7"><strong>OC 3.0 Version 7</strong> &ndash; 19. April 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.7"><strong>OC3 Version 7</strong> <span class="version">(3.0.7)</span> &ndash; 19. April 2013</p>
+        </div>
+
         <ul>
             <li>Neu: <a href="okapi">OKAPI</a></li>
             <li>&bdquo;Apple-Touch-Icons&ldquo; für Smartphones</li>
@@ -583,7 +740,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.6"><strong>OC 3.0 Version 6</strong> &ndash; 12. April 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.6"><strong>OC3 Version 6</strong> <span class="version">(3.0.6)</span> &ndash; 12. April 2013</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Loggen mit Uhrzeit</li>
@@ -624,7 +784,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.5"><strong>OC 3.0 Version 5</strong> &ndash; 16. März 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.5"><strong>OC3 Version 5</strong> <span class="version">(3.0.5)</span> &ndash; 16. März 2013</p>
+        </div>
+
         <p>Karte komplett überarbeitet:</p>
         <ul>
             <li>Markierung von eigenen, gefundenen, nicht gefundenen und <a href="http://wiki.opencaching.de/index.php/OConly" target="_blank">OConly</a>-Caches</li>
@@ -674,7 +837,10 @@
             <li>dänische Flagge bei dänischen Cachebeschreibungen</li>
         </ul>
 
-        <p id="v3.0.4"><strong>OC 3.0 Version 4</strong> &ndash; 17. Februar 2013</p>
+        <div class="changelog-header">
+            <p id="v3.0.4"><strong>OC3 Version 4</strong> <span class="version">(3.0.4)</span> &ndash; 17. Februar 2013</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>neue Cachegröße &bdquo;nano&ldquo;</li>
@@ -688,7 +854,7 @@
         <ul>
             <li>neues Design des Seitenkopfes mit neuem Logo</a></li>
             <li>Die <a href="map2.php">Karte</a> zeigt jetzt bis zu 600 statt 180 Cachesymbole an (MS Internet Explorer: bis zu 200).</a></li>
-            <li>auch Hamburg ist jetzt im Menü der <a href="map2.php">Kartenseite</a> direkt anwählbar</a></li>
+            <li>Auch Hamburg ist jetzt im Menü der <a href="map2.php">Kartenseite</a> direkt anwählbar</a>.</li>
             <li>einheitliche Darstellung in der <a href="newlogs.php">Liste neuer Logs</a></li>
             <li>verbesserte Benutzerführung beim Ändern von Profildetails, Emailadresse oder Passwort</li>
             <li>verbesserte Verwaltung von Cachemeldungen (intern)</a></li>
@@ -705,7 +871,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.3"><strong>OC 3.0 Version 3</strong> &ndash; 18. November 2012</p>
+        <div class="changelog-header">
+            <p id="v3.0.3"><strong>OC3 Version 3</strong> <span class="version">(3.0.3)</span> &ndash; 18. November 2012</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li>Attribut &bdquo;nur zu bestimmten Jahreszeiten&ldquo;</li>
@@ -730,7 +899,10 @@
         </ul>
         <br />
 
-        <p id="v3.0.2"><strong>OC 3.0 Version 2</strong> &ndash; 26. August 2012</p>
+        <div class="changelog-header">
+            <p id="v3.0.2"><strong>OC3 Version 2</strong> <span class="version">(3.0.2)</span> &ndash; 26. August 2012</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
             <li><a href="./articles.php?page=cacheinfo#difficulty">Schwierigkeitsgrade</a> erklärt, inklusive Tooltip und Link in den Cachelistings</li>
@@ -772,10 +944,13 @@
         </ul>
         <br />
 
-        <p id="v3.0.1"><strong>OC 3.0 Version 1</strong> &ndash; 8. August 2012</p>
+        <div class="changelog-header">
+            <p id="v3.0.1"><strong>OC3 Version 1</strong> <span class="version">(3.0.1)</span> &ndash; 8. August 2012</p>
+        </div>
+
         <p>Neu:</p>
         <ul>
-            <li>Kurzadressen für Direktzugriff auf Cachelistings, z.B. <a href="http://www.opencaching.de/OCD93B">http://opencaching.de/OCD93B</a></li>
+            <li>Kurzadressen für Direktzugriff auf Cachelistings, z.B. <a href="https://www.opencaching.de/OCD93B">http://opencaching.de/OCD93B</a></li>
             <li>Anzeige &bdquo;Du hast dieses Event besucht&ldquo; in Karten-Popup-Fenstern
             <li>englische Übersetzung der Seiten <a href="./articles.php?page=geocaching">Über Geocaching</a>, <a href="./articles.php?page=cacheinfo">Cachebeschreibung</a>, <a href="./articles.php?page=impressum">Impressum &amp; Nutzungsbedingungen</a>, <a href="./articles.php?page=dsb">Datenschutzbelehrung</a>, <a href="./articles.php?page=donations">Spenden</a>, <a href="./articles.php?page=contact">Kontakt</a> und <a href="./articles.php?page=team">Teamliste</a> (umschalten auf englischsprachige Seite oben mit <img src="images/flag/EN.png" />)
             <li>Versionsgeschichte</li>
