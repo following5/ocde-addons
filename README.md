@@ -1,4 +1,4 @@
-This repository contains some useful scripts and information, which have
+This repository contains some useful scripts and information for developers, which have
 been dismissed from the [Opencaching.de repo](https://github.com/OpencachingDeutschland/oc-server3)
 or never made it there.
 
