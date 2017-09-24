@@ -129,14 +129,14 @@ div.changelog .version { color:grey; }
 
     <p>Changed / improved:</p>
     <ul>
-        <li>better presentation of <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> and <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a> (<a href="http://redmine.opencaching.de/issues/816">#816</a>, <a href="http://redmine.opencaching.de/issues/818">#818</a>)</li>
+        <li>better presentation of <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> and <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a></li>
         <li>improved translation system</li>
     </ul>
 
     <p>Fixed:</p>
     <ul>
-        <li>reasonable text conversions when switching between text and HTML editor (<a href="http://redmine.opencaching.de/issues/236">#236</a>)</li>
-        <li>GPX and TXT download will return cache descriptions preferably in the selected language (<a href="http://redmine.opencaching.de/issues/852">#852</a>)</li>
+        <li>reasonable text conversions when switching between text and HTML editor</li>
+        <li>GPX and TXT download will return cache descriptions preferably in the selected language</li>
         <li>removed HTML code from log notifications</li>
         <li>Fixed &bdquo;Send to GPS devices&ldquo; at www.opencaching.it, www.opencachingspain.es and www.opencaching.fr.</li>
     </ul>
@@ -152,38 +152,38 @@ div.changelog .version { color:grey; }
         <li>Bookmarks for public and private cachelists</li>
         <li>Show the number of recommendations in the list of own caches, changed display of recommendations in several list views</li>
         <li>Prepared French translation</li>
-        <li>Automatically rotate uploaded pictures (<a href="http://redmine.opencaching.de/issues/732">#732</a>)</li>
-        <li>Selection criterea for cache search now allow searching for listings in a specified language. <a href="http://redmine.opencaching.de/issues/48">#48</a>)</li>
-        <li>Display the newest logs for the selected country (<a href="http://redmine.opencaching.de/issues/183">#183</a>)</li>
+        <li>Automatically rotate uploaded pictures</li>
+        <li>Selection criterea for cache search now allow searching for listings in a specified language.</li>
+        <li>Display the newest logs for the selected country</li>
         <li>History of coordinate changes in the admin view (internal)</li>
     </ul>
 
     <p>Changed / improved:</p>
     <ul>
         <li>Links to Wiki and Geokrety.org now call the localized target</li>
-        <li>Notification emails in the language of the user (<a href="http://redmine.opencaching.de/issues/813">#813</a>)</li>
-        <li>Automatically load log entries for logged-off users (<a href="http://redmine.opencaching.de/issues/785">#785</a>)</li>
+        <li>Notification emails in the language of the user</li>
+        <li>Automatically load log entries for logged-off users</li>
         <li>Avoid creation of Danish cache descriptions by mistake</li>
         <li>Add smileys in the HTML editor mode</li>
-        <li>Allow more European special characters in the user name (<a href="http://redmine.opencaching.de/issues/212">#212</a>)</li>
-        <li>Improved the English translation (<a href="http://redmine.opencaching.de/issues/163">#163</a>, <a href="http://redmine.opencaching.de/issues/184">#184</a>, <a href="http://redmine.opencaching.de/issues/817">#817</a>)</li>
+        <li>Allow more European special characters in the user name</li>
+        <li>Improved the English translation</li>
     </ul>
 
     <p>Fixed:</p>
     <ul>
-        <li>Corrected typos in several city names (<a href="http://redmine.opencaching.de/issues/175">#175</a>)</li>
+        <li>Corrected typos in several city names</li>
         <li>Language names instead of flags in the cache listing</li>
-        <li>Corrected the (in rare cases) wrong date for recommendations (<a href="http://redmine.opencaching.de/issues/713">#713</a>) [bug of release 9]</li>
-        <li>JavaScript improvement: Icons in popups on the map are now displayed in broken browsers. (<a href="http://redmine.opencaching.de/issues/11">#11</a>)</li>
-        <li>Improved HTML filters for logs and cache descriptions (<a href="http://redmine.opencaching.de/issues/79">#79</a>), a list of allowed HTML elements can be found <a href="http://www.opencaching.de/articles.php?page=htmltags&locale=EN">here</a>.</li>
-        <li>Popups of the HTML-editor are not cropped any more when using large fonts. (<a href="http://redmine.opencaching.de/issues/300">#300</a>)</li>
-        <li>After removing an entry of the list of ignored caches, the correct page is displayed now (<a href="http://forum.opencaching.de/index.php?topic=4214">see forum</a>).</li>
-        <li>Corrected error when adding hints in english or spanish language (<a href="http://redmine.opencaching.de/issues/746">#746</a>, Ticket)</li>
-        <li>OKAPI now updates the login date (<a href="http://forum.opencaching.de/index.php?topic=4260.0">see forum</a>)</li>
-        <li>OKAPI now handles pipe ('|') in user names correctly (<a href="https://github.com/opencaching/okapi/issues/339">see github-issue</a>)</li>
-        <li>Dispaying the search result in Google Maps has been removed (<a href="http://redmine.opencaching.de/issues/31">#31</a>)</li>
-        <li>Corrected notifications for newly set OConly attributes (<a href="http://redmine.opencaching.de/issues/810">#810</a>) [bug of release 9]</li>
-        <li>Furthermore, many smaller bugs were fixed, see <a href="http://redmine.opencaching.de/versions/10">here</a> for a complete list.</li>
+        <li>Corrected the (in rare cases) wrong date for recommendations [bug of release 9]</li>
+        <li>JavaScript improvement: Icons in popups on the map are now displayed in broken browsers.</li>
+        <li>Improved HTML filters for logs and cache descriptions, a list of allowed HTML elements can be found <a href="http://www.opencaching.de/articles.php?page=htmltags&locale=EN">here</a>.</li>
+        <li>Popups of the HTML-editor are not cropped any more when using large fonts.</li>
+        <li>After removing an entry of the list of ignored caches, the correct page is displayed now.</li>
+        <li>Corrected error when adding hints in english or spanish language</li>
+        <li>OKAPI now updates the login date</li>
+        <li>OKAPI now handles pipe ('|') in user names correctly</li>
+        <li>Dispaying the search result in Google Maps has been removed</li>
+        <li>Corrected notifications for newly set OConly attributes [bug of release 9]</li>
+        <li>Furthermore, many smaller bugs were fixed.</li>
     </ul>
     <br />
 
