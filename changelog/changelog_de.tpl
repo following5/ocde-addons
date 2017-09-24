@@ -1,6 +1,6 @@
-{*
+<!--
   License: see https://github.com/OpencachingDeutschland/oc-server3/blob/development/LICENSE.md
-*}
+-->
 <style>
 {literal}
 div.changelog-header { width:100%; background: #e8eff2; padding-left:0.5em }
@@ -48,17 +48,17 @@ div.changelog .version { color:grey; }
 
         <p>Neu:</p>
         <ul>
-            <li><a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a></li>
-            <li>OKAPI: Ändern des Logpassworts von Caches</li>
-            <li>OKAPI: <a href="https://github.com/opencaching/okapi/pull/509">Caches melden</a></li>
+            <li oc="-fw"><a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a></li>
+            <li oc="k5905f61 -f">OKAPI: Ändern des Logpassworts von Caches</li>
+            <li oc="-f">OKAPI: <a href="https://github.com/opencaching/okapi/pull/509">Caches melden</a></li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li><a href="https://www.opencaching.de/search.php">Textsuche</a> in Logs funktioniert erstmals, Textsuche in Beschreibungen und Bildtiteln funktioniert erstmals zuverlässig.</li>
-            <li>automatischer Import der Übersetzungen von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a></li>
-            <li>What3words-Suche auf der Karte funktioniert wieder</li>
-            <li>Namen von rund 100 Natur- und Landschaftsschutzgebieten korrigiert</li>
+            <li oc="#1043 0f4c547 -f"><a href="https://www.opencaching.de/search.php">Textsuche</a> in Logs funktioniert erstmals, Textsuche in Beschreibungen und Bildtiteln funktioniert erstmals zuverlässig.</li>
+            <li oc="-t">automatischer Import der Übersetzungen von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a></li>
+            <li oc="#1130 -t">What3words-Suche auf der Karte funktioniert wieder</li>
+            <li oc="#1133 79a2de2 -tf">Namen von 75 Natur- und Landschaftsschutzgebieten korrigiert</li>
             <li>keine Leerzeile unter dem Cachetitel anzeigen, falls die Kurzbeschreibung nur aus Leerzeichen besteht</li>
         </ul>
         <br />
@@ -69,11 +69,11 @@ div.changelog .version { color:grey; }
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Anzeige der Regionalzuordnung von Caches in Großbritannien, Norwegen und Schweden</li>
-            <li>Einige Seiten wurden im Browser als "nicht sicher" angezeigt (http-Bildeinbettung in https-Seiten).</li>
-            <li>Cachekartenanzeige für manche Webbrowser repariert</li>
-            <li>Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
-            <li>Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
+            <li oc="#1125 059446d -f">Anzeige der Regionalzuordnung von Caches in Großbritannien, Norwegen und Schweden</li>
+            <li oc="fc85220 -f">OSM-Karte wurde im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten).</li>
+            <li oc="#1122 e22baf1 -t">Cachekartenanzeige für manche Webbrowser repariert</li>
+            <li oc="#1127 01e0005 -f">Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
+            <li oc="#1129 b9426f2 -f">Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
         </ul>
         <br />
 
@@ -83,76 +83,83 @@ div.changelog .version { color:grey; }
 
         <p>Neu:</p>
         <ul>
-            <li><a href="https://www.opencaching.de/myhome.php?allpics=owncaches">Logbildgalerie</a> für eigene Caches</li>
-            <li>wählbare Einfügeposition beim Hochladen von Bildern in Cachebeschreibungen</li>
-            <li>Log-Angaben „Cache benötigt Wartung“ (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-needs-maintenance.png" />) und „Listing veraltet“ (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-listing-outdated.png" />) können nachträglich gesetzt bzw. korrigiert werden. </li>
-            <li>Geplantes Veröffentlichungsdatum von Caches wird eingeblendet; Veröffentlichung mit zwei Klicks.</li>
-            <li>Anzeige anderssprachiger Hints, wenn keiner in der gewählten Sprache vorhanden ist.</li>
-            <li>Benachrichtigungsmails für Fundlogs informieren auch über Empfehlungen.</li>
-            <li>OKAPI: Sortieren von Caches nach Veröffentlichungs- oder Versteckdatum, bzw. von Events nach Veranstaltungsdatum</li>
+            <li oc="#39 33637ef -f"><a href="https://www.opencaching.de/myhome.php?allpics=owncaches">Logbildgalerie</a> für eigene Caches</li>
+            <li oc="#987 0a85567 -f">wählbare Einfügeposition beim Hochladen von Bildern in Cachebeschreibungen</li>
+            <li oc="#932 #1050 #1059 7751e9b -f">Log-Angaben „Cache benötigt Wartung“ (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-needs-maintenance.png" />) und „Listing veraltet“ (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-listing-outdated.png" />) können nachträglich gesetzt bzw. korrigiert werden. </li>
+            <li oc="#1063 acabd45 49a9043 -f">Geplantes Veröffentlichungsdatum von Caches wird eingeblendet; Veröffentlichung mit zwei Klicks.</li>
+            <li oc="#1071 1625ae9 -f">Anzeige anderssprachiger Hints, wenn keiner in der gewählten Sprache vorhanden ist.</li>
+            <li oc="#1090 d113c5f -f">Benachrichtigungsmails für Fundlogs informieren auch über Empfehlungen.</li>
+            <li oc="k35ac1c2 -f">OKAPI: Sortieren von Caches nach Veröffentlichungs- oder Versteckdatum, bzw. von Events nach Veranstaltungsdatum</li>
         </ul>
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Beschreibungstext findet nun auch passende Kurzbeschreibungen.</li>
-            <li>Eingabe eines Versteckdatum nach oder eines Eventdatums vor Veröffentlichungsdatum wird verhindert.</li>
-            <li>Bei Events erscheint auf der Karte das Veranstaltungsdatum statt des Veröffentlichungsdatums.</li>
-            <li>Rückfrage beim Löschen von Bildern aus der Cachebeschreibung</li>
-            <li>Regionalzuordnung auch bei Caches in Bulgarien, Kroatien, Rumänien und der Türkei</li>
-            <li>Länderwahl beim Anlegen von Caches, im Benutzerprofil und oben rechts im Seitenkopf aktualisiert</li>
-            <li>größerer Zeilen- und Abschnittsabstand in Cachebeschreibungen und Logs</li>
-            <li>Das OC-Supportteam kann veränderte Cachelistings mit Einverständnis des Owners in den Originalzustand zurückversetzen.</li>
-            <li>OC-Supportmitarbeiter können versehentlich als „erledigt“ geschlossene Cachemeldungen wieder öffnen.</li>
-            <li>OC-Support- und Datenpflegeteam haben einen besseren Überblick über offene Cachemeldungen.</li>
-            <li><a href="https://www.opencaching.de/">http://www.opencaching.de</a> leitet seit dem 28. August vollständig nach <a href="https://www.opencaching.de/">https://www.opencaching.de</a> weiter. Die Website läuft damit nur noch im sicheren HTTPS-Betrieb. Gleiches gilt für <a href="https://www.opencaching.it">www.opencaching.it</a>, <a href="https://www.opencachingspain.es">www.opencachingspeain.es</a> und <a href="https://www.opencaching.fe">www.opencaching.fr</a>.</li>
+            <li oc="#986 9492b7e -f">Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Beschreibungstext findet nun auch passende Kurzbeschreibungen.</li>
+            <li oc="#898 7238afe -f">Eingabe eines Versteckdatum nach oder eines Eventdatums vor Veröffentlichungsdatum wird verhindert.</li>
+            <li oc="#944 eae60c7 ff90092 -f">Bei Events erscheint auf der Karte das Veranstaltungsdatum statt des Veröffentlichungsdatums.</li>
+            <li oc="#1028 b069df0 -f">Rückfrage beim Löschen von Bildern aus der Cachebeschreibung</li>
+            <li oc="#1108 03cdf53 -f">Regionalzuordnung auch bei Caches in Bulgarien, Kroatien, Rumänien und der Türkei</li>
+            <li oc="#1058 d096be5 -f">Länderwahl beim Anlegen von Caches, im Benutzerprofil und oben rechts im Seitenkopf aktualisiert</li>
+            <li oc="11f2739 -a">Niederländische Übersetzung freigeschaltet (ca. 40% der OC-Website sind übersetzt)</li>
+            <li oc="#1091 1b10900 -f">größerer Zeilen- und Abschnittsabstand in Cachebeschreibungen und Logs</li>
+            <li oc="ba7e660 -f">Das OC-Supportteam kann veränderte Cachelistings mit Einverständnis des Owners in den Originalzustand zurückversetzen.</li>
+            <li oc="#1003 76e62f6 -f">OC-Supportmitarbeiter können versehentlich als „erledigt“ geschlossene Cachemeldungen wieder öffnen.</li>
+            <li oc="#1097 a56f871 -tf">OC-Support- und Datenpflegeteam haben einen besseren Überblick über offene Cachemeldungen.</li>
+            <li oc="#1104 -t"><a href="https://www.opencaching.de/">http://www.opencaching.de</a> leitet seit dem 28. August vollständig nach <a href="https://www.opencaching.de/">https://www.opencaching.de</a> weiter. Die Website läuft damit nur noch im sicheren HTTPS-Betrieb. Gleiches gilt für <a href="https://www.opencaching.it">www.opencaching.it</a>, <a href="https://www.opencachingspain.es">www.opencachingspeain.es</a> und <a href="https://www.opencaching.fe">www.opencaching.fr</a>.</li>
+            <li oc="a780681 4ab06fe a03a33f -t"><a href="https://www.opencaching.de/articles.php?page=team">Teamliste</a> aktualisiert</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Beim Bearbeiten von zusätzlichen Wegpunkten mit westlicher Länge bleibt das W erhalten.</li>
-            <li>Fehler im „Text“-Editormodus behoben: Manchmal wurde &lt;br /&gt; eingefügt; aufeinanderfolgende Leerzeichen gingen verloren; Smileyumwandlung beim Umschalten auf „Editor“ oder „html“ war unvollständig.</li>
-            <li>Ungültige Bilddateien werden beim Upload immer erkannt und abgewiesen. [Bug von Version 11]</li>
-            <li>Logbildgalerien werden vollständig chronologisch geordnet, auch bei mehreren Bildern im selben Log. [Bug von Version 5]</li>
-            <li>Beim nachträglichen Ändern des Logtyps in „kann gesucht werden“ werden die Markierungen „Cache benötigt Wartung“ und „Beschreibung ist veraltet“ entfernt. [Bug von Version 17]</li>
-            <li>OConly-Markierung bei unveröffentlichten Caches in der <a href="https://www.opencaching.de/myhome.php#mycaches">Liste der eigenen Caches</a> korrigiert. [Bug von Version 9]</li>
-            <li>Anordnung von Bildern mit verschiedenem Seitenverhältnis in der Listing-Bildgalerie korrigiert.</li>
-            <li>Beim Umschalten zwischen verschiedenen Editor-Modi bleibt der gewählte Logtyp erhalten.</li>
-            <li>diverse kleine Fehlerkorrekturen</li>
+            <li oc="#1078 dc7ed47 -f">Beim Bearbeiten von zusätzlichen Wegpunkten mit westlicher Länge bleibt das W erhalten.</li>
+            <li oc="#998 #1020 #1103 3b42d41 22a35fa -f">Fehler im „Text“-Editormodus behoben: Manchmal wurde &lt;br /&gt; eingefügt; aufeinanderfolgende Leerzeichen gingen verloren; Smileyumwandlung beim Umschalten auf „Editor“ oder „html“ war unvollständig.</li>
+            <li oc="#1034 776e57f -f">Logbildgalerien werden vollständig chronologisch geordnet, auch bei mehreren Bildern im selben Log. [Bug von Version 5]</li>
+            <li oc="#1009 721dbd7 -f">Ungültige Bilddateien werden beim Upload immer erkannt und abgewiesen. [Bug von Version 11]</li>
+            <li oc="#1073 3d36448 -f">Beim nachträglichen Ändern des Logtyps in „kann gesucht werden“ werden die Markierungen „Cache benötigt Wartung“ und „Beschreibung ist veraltet“ entfernt. [Bug von Version 17]</li>
+            <li oc="#1081 5042fcc -f">OConly-Markierung bei unveröffentlichten Caches in der <a href="https://www.opencaching.de/myhome.php#mycaches">Liste der eigenen Caches</a> korrigiert. [Bug von Version 9]</li>
+            <li oc="#1092 63539d0 -f">Anordnung von Bildern mit verschiedenem Seitenverhältnis in der Listing-Bildgalerie korrigiert.</li>
+            <li oc="#1099 ab79655 -f">Beim Umschalten zwischen verschiedenen Editor-Modi bleibt der gewählte Logtyp erhalten.</li>
+            <li oc="#1086 ed4f18b -t">Missbrauch der Login-Seitenweiterleitung wird verhindert</li>
+            <li oc="#1107 65038b0 8fea6cb -f">Einige Seiten wurdem im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten)</li>
+            <li oc="-tf">diverse kleine Fehlerkorrekturen</li>
         </ul>
 
         <p>Entfernt:</p>
         <ul>
-            <li>Die OpenCycleMap-Kartenansicht entfällt, weil sie für Opencaching nicht mehr kostenfrei verfügbar ist.</li>
-            <li>Die Koordinatenhistorie von Rätsel- und Safaricaches entfällt, da ohne Bedeutung.</li>
+            <li oc="#1068 d665b5a -t">Die OpenCycleMap-Kartenansicht entfällt, weil sie für Opencaching nicht mehr kostenfrei verfügbar ist.</li>
+            <li oc="#958 1add3fd -f">Die Koordinatenhistorie von Rätsel- und Safaricaches entfällt, da ohne Bedeutung.</li>
         </ul>
         <br />
 
         <div class="changelog-header">
-            <p id="v3.1.3"><strong>OC3 Version 23</strong> <span class="version"">(3.1.3)</span> &ndash; 17. Mai 2017</p>
+            <p id="v3.1.3"><strong>OC3 Version 23</strong> <span class="version">(3.1.3)</span> &ndash; 17. Mai 2017</p>
         </div>
 
         <p>Neu:</p>
         <ul>
-            <li>Cacheattribut &bdquo;Handicap: Blind&ldquo; hinzugefügt. Das Attribut sollte noch nicht verwendet werden, weil die Richtlinien dafür noch in Arbeit sind. (&rarr; <a href="https://forum.opencaching.de/index.php?topic=4760.0">Diskussion</a>)</li>
-            <li>Cookie-Hinweis per EU-Richtline</li>
-            <li>Analyse der Nutzeraktivität mit Google Analytics; siehe Erläuterung im <a href="https://blog.opencaching.de/2017/09/oc-version-3-1-3-neues-attribut-und-neue-bildgroessen/">OC-Blog</a></li>
-            <li>Während Arbeiten an der OC-Website erscheint ein Hinweis, dass sie gerade gewartet wird.</li>
+            <li oc="#1031 0b7f641 -t">Cacheattribut &bdquo;Handicap: Blind&ldquo; hinzugefügt. Das Attribut sollte noch nicht verwendet werden, weil die Richtlinien dafür noch in Arbeit sind. (&rarr; <a href="https://forum.opencaching.de/index.php?topic=4760.0">Diskussion</a>)</li>
+            <li oc="#768 2a2f9af -n">Cookie-Hinweis per EU-Richtline</li>
+            <li oc="#1038 306c76f -t">Analyse der Nutzeraktivität mit Google Analytics; siehe Erläuterung im <a href="https://blog.opencaching.de/2017/09/oc-version-3-1-3-neues-attribut-und-neue-bildgroessen/">OC-Blog</a></li>
+            <li oc="#841 3964376 dfed2c1 -t">Während Arbeiten an der OC-Website erscheint ein Hinweis, dass sie gerade gewartet wird.</li>
         </ul>
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>Die Vorgabe für neu angelegte Listings ist nun „noch nicht veröffentlichen“ statt „sofort veröffentlichen“.</li>
-            <li>Leerzeichen am Beginn und Ende von Cachenamen, GC-Wegpunkten, Logpwasswörtern usw. werden bei der Eingabe entfernt.</li>
-            <li>Das Passwortfeld beim Loggen wird nur noch für Fundlogs eingeblendet.</li>
-            <li>Größenlimit für hochgeladene Bilder von 6 auf 15 MB erhöht</li>
-            <li>Aufräumarbeiten im Programmcode</li>
+            <li oc="#1040 -t">Die Vorgabe für neu angelegte Listings ist nun „noch nicht veröffentlichen“ statt „sofort veröffentlichen“.</li>
+            <li oc="#221 9c1c25a -n">Leerzeichen am Beginn und Ende von Cachenamen, GC-Wegpunkten, Logpwasswörtern usw. werden bei der Eingabe entfernt.</li>
+            <li oc="#1027 bebc784 -t">Zeitraum für die Markierung „neuer Cache“ von 14 auf 31 Tage erhöht</li> 
+            <li oc="41a118d -t">Größenlimit für hochgeladene Bilder von 6 auf 15 MB erhöht</li>
+            <li oc="#1021 3f6a457 -t">Das Passwortfeld beim Loggen wird nur noch für Fundlogs eingeblendet.</li>
+            <li oc="a854304 -a">Korrekturen und Verbesserungen bei der Suchmaschinenoptimierung</li>
+            <li oc="-t">Aufräumarbeiten im Programmcode</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Eingelesene Field Notes können Zeilenumbrüche enthalten. [Bug von Version 21]</li>
-            <li>Smilies in älteren Logs und Cachebeschreibungen sind wieder sichtbar. [Bug von Version 22]</li>
-            <li>Email-Zustellprobleme werden wieder erkannt (war im Herbst 2016 ausgefallen).</li>
+            <li oc="#1042 ab16685 1de801f -t">Eingelesene Field Notes können Zeilenumbrüche enthalten. [Bug von Version 21]</li>
+            <li oc="#1033 -t">Smilies in älteren Logs und Cachebeschreibungen sind wieder sichtbar. [Bug von Version 22]</li>
+            <li oc="#1049 5a2ee02 -t">Sortierung der Liste der Caches eines Owners beim Aufruf durch nicht eingeloggte Benutzer korrigiert</li>
+            <li oc="#1069 144123b 6fe44ca -bt">Email-Zustellprobleme werden wieder erkannt (war im Herbst 2016 ausgefallen).</li>
         </ul>
         <br />
 
@@ -162,23 +169,22 @@ div.changelog .version { color:grey; }
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>Suche nach Benutzern: Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Caches oder Logs eines Benutzers findet auch Benutzer ohne Caches oder Logs.</li>
-            <li>Die Liste der Cache eines Benutzers wird nach Versteckdatum sortiert.</li>
+            <li oc="#1015 955ffac -s">Suche nach Benutzern: Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Caches oder Logs eines Benutzers findet auch Benutzer ohne Caches oder Logs.</li>
+            <li oc="#1001 f0084b4 -s">Die Liste der Cache eines Benutzers wird nach Versteckdatum sortiert.</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Verlust ungespeicherter Änderungen an Cachelistings beim Bearbeiten von Beschreibungen, Bildern und Wegpunkten wird vermieden.</li>
-            <li>Empfehlung bleibt erhalten, wenn man beim Schreiben des Logs den Editormodus wechselt</li>
-            <li>Die Sprachumschaltung beim Bearbeiten von Caches und Cachebeschreibungen funktioniert wieder. [Bug von Version 20]</li>
-            <li>Die Länderauswahl in der Liste der neuen Caches und neuen Logs funktioniert wieder. [Bug von Version 20]</li>
+            <li oc="#36 eabc2ab -f">Verlust ungespeicherter Änderungen an Cachelistings beim Bearbeiten von Beschreibungen, Bildern und Wegpunkten wird vermieden.</li>
+            <li oc="#1013 f0084b4 -s">Empfehlung bleibt erhalten, wenn man beim Schreiben des Logs den Editormodus wechselt</li>
+            <li oc="#995 d2c4e6b -t">Die Sprachumschaltung beim Bearbeiten von Caches und Cachebeschreibungen funktioniert wieder. [Bug von Version 20]</li>
+            <li oc="#1022 4ece297 -t">Die Länderauswahl in der Liste der neuen Caches und neuen Logs funktioniert wieder. [Bug von Version 20]</li>
         </ul>
 
         <p>Entfernt:</p>
         <ul>
-            <li>Der Knopf „An GPS-Gerät senden“ entfällt, er wegen einer neuen Sicherheitseinstellung des Opencaching-Webservers nicht mehr funktioniert.</li>
-            <li>Koordinatenänderungen von Rätsel- und Safaricaches werden nicht mehr angezeigt, da ohne Bedeutung.</li>
-            <li>Aufräumarbeiten im Programmcode &ndash; nicht mehr benötigte Dateien entfernt</li>
+            <li oc="2308dba -t">Der Knopf „An GPS-Gerät senden“ entfällt, er wegen einer neuen Sicherheitseinstellung des Opencaching-Webservers nicht mehr funktioniert.</li>
+            <li oc="-t">Aufräumarbeiten im Programmcode</li>
         </ul>
         <br />
 
@@ -188,7 +194,7 @@ div.changelog .version { color:grey; }
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>Link auf Geokrety-Seite von http in https geändert</li>
+            <li oc="#1016 62bbc3e -st">Link auf Geokrety-Seite von http in https geändert</li>
         </ul>
         <br />
 
@@ -198,28 +204,23 @@ div.changelog .version { color:grey; }
 
         <p>Neu:</p>
         <ul>
-            <li>Hochladen und Verwalten von <a href="https://www.opencaching.de/field-notes/">Field Notes</a></li>
-            <li>OC-Softwareentwicklung: Einführung von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a> für Übersetzungen, Travis für die Prüfung von Codebeiträgen, Symfony als Codeframework</li> 
+            <li oc="#143 50a776f 9c25806 852f696 e97e00f 1dd8b99 -m">Hochladen und Verwalten von <a href="https://www.opencaching.de/field-notes/">Field Notes</a></li>
+            <li oc="-t">OC-Softwareentwicklung: Einführung von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a> für Übersetzungen, Travis für die Prüfung von Codebeiträgen, Symfony als Codeframework</li> 
         </ul>
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>übersichtlichere Nachbearbeitung der Suchoptionen</li>
-            <li>Warnung, wenn bei der Suche kein Cachetyp oder keine Cachegröße gewählt wurde</li>
-            <li>Prüfung eingegebener Emailadressen verbessert</li>
-            <li>Verbesserung der Datensicherheit: Sitzungsdaten werden nur noch per HTTPS übertragen</li>
-            <li>Aktualisierung der Spendenseite</li>
-            <li>interne Umstellung auf neue What3Words-Schnittstelle</li>
-        </ul>
-
-        <p>Korrigiert (Bugfixes):</p>
-        <ul>
-            <li>Abruf von Listen der gefundenen Caches über die Statistik im Benutzerprofil funktioniert wieder.</li>
+            <li oc="#977 248668a -s">übersichtlichere Nachbearbeitung der Suchoptionen</li>
+            <li oc="#1000 -s">Warnung, wenn bei der Suche kein Cachetyp oder keine Cachegröße gewählt wurde</li>
+            <li oc="-t">Prüfung eingegebener Emailadressen verbessert</li>
+            <li oc="#1004 0de9460 -r">Verbesserung der Datensicherheit: Sitzungsdaten werden nur noch per HTTPS übertragen</li>
+            <li oc="220a941 -t">Aktualisierung der Spendenseite</li>
+            <li oc="c67b844 -i">interne Umstellung auf neue What3Words-Schnittstelle</li>
         </ul>
 
         <p>Entfernt:</p>
         <ul>
-            <li>Die MapQuest-Kartenansicht entfällt, weil sie für Opencaching nicht mehr kostenfrei verfügbar ist.</li>
+            <li oc="03157df -m">Die MapQuest-Kartenansicht entfällt, weil sie für Opencaching nicht mehr kostenfrei verfügbar ist.</li>
         </ul>
         <br />
 
@@ -248,11 +249,9 @@ div.changelog .version { color:grey; }
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Zusätzliche Wegpunkte in GPX-Dateien werden wieder korrekt gekennzeichnet
-                (erscheinen z.B. in GSAK nicht mehr als separate Caches). [Bug von Version 9]</li>
+            <li>Zusätzliche Wegpunkte in GPX-Dateien werden wieder korrekt gekennzeichnet (erscheinen z.B. in GSAK nicht mehr als separate Caches). [Bug von Version 9]</li>
             <li>Druckansicht von Cachebeschreibungen erscheint in gewählter Sprache.</li>
-            <li>Druckansicht und TXT-Download mehrsprachiger Cachebeschreibungen korrigiert
-                [Bug von Version 14/15]</li>
+            <li>Druckansicht und TXT-Download mehrsprachiger Cachebeschreibungen korrigiert [Bug von Version 14/15]</li>
             <li>Keine OConly-Benachrichtigungen für ignorierte Caches. [Bug von Version 9]</li>
             <li>Anpassung der Cachekarte an Google-Richtlinien</li>
             <li>diverse kleine Fehlerkorrekturen</li>
@@ -370,14 +369,14 @@ div.changelog .version { color:grey; }
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>bessere Präsentation der Seiten <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> und <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a> (<a href="http://redmine.opencaching.de/issues/816">#816</a>, <a href="http://redmine.opencaching.de/issues/818">#818</a>)</li>
+            <li oc="#818">bessere Präsentation der Seiten <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> und <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a></li>
             <li>Verbesserungen im Übersetzungssystem</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>sinnvolle Textkonvertierung beim Umschalten zwischen Text- und HTML-Editor (<a href="http://redmine.opencaching.de/issues/236">#236</a>)</li>
-            <li>GPX- und TXT-Download liefert Cachebeschreibungen möglichst in der gewählten Sprache (<a href="http://redmine.opencaching.de/issues/852">#852</a>)</li>
+            <li oc="#236">sinnvolle Textkonvertierung beim Umschalten zwischen Text- und HTML-Editor</li>
+            <li oc="#852">GPX- und TXT-Download liefert Cachebeschreibungen möglichst in der gewählten Sprache</li>
             <li>HTML-Code in Logbenachrichtigungen beseitigt</li>
             <li>&bdquo;An GPS-Gerät senden&ldquo; auf www.opencaching.it, www.opencachingspain.es und www.opencaching.fr repariert.</li>
         </ul>
@@ -391,97 +390,44 @@ div.changelog .version { color:grey; }
         <ul>
             <li>Weitergabe privater Cachelisten mit Kennwort</li>
             <li>Lesezeichen- und Favoritenfunktion für Cachelisten</li>
-            <li>Anzahl der Empfehlungen in der Übersicht der eigenen Caches hinzugefügt,
-                Anzeige der Empfehlungen in verschiedenen Listenanzeigen angepasst</li>
+            <li>Anzahl der Empfehlungen in der Übersicht der eigenen Caches hinzugefügt, Anzeige der Empfehlungen in verschiedenen Listenanzeigen angepasst</li>
             <li>Französische Übersetzung vorbereitet</li>
-            <li>Automatisches Drehen von Hochkant-Bilder beim Hochladen
-                (<a href="http://redmine.opencaching.de/issues/732">#732</a>)
-            </li>
-            <li>
-                Suchselektion nach Sprache in der Cachebeschreibung ermöglicht gezielte Suche
-                nach Listings in einer bestimmten Sprache
-                (<a href="http://redmine.opencaching.de/issues/48">#48</a>)
-            </li>
-            <li>
-                Anzeige der neuen Logs für das gewählte Land
-                (<a href="http://redmine.opencaching.de/issues/183">#183</a>)
-            </li>
+            <li oc="#732">Automatisches Drehen von Hochkant-Bilder beim Hochladen</li>
+            <li oc="#48">Suchselektion nach Sprache in der Cachebeschreibung ermöglicht gezielte Suche nach Listings in einer bestimmten Sprache</li>
+            <li>Anzeige der neuen Logs für das gewählte Land (<a href="http://redmine.opencaching.de/issues/183">#183</a>)</li>
             <li>Koordinatenänderungen in der Admin-Cache-Historie (intern)</li>
         </ul>
 
         <p>Geändert / verbessert:</p>
         <ul>
             <li>Links auf Wiki und Geokrety.org rufen jetzt lokalisiertes Ziel auf</li>
-            <li>Versand von Benachrichtigungs-Emails in der Sprache des Benutzers
-                (<a href="http://redmine.opencaching.de/issues/813">#813</a>)
-            </li>
-            <li>Automatisches Nachladen von Logeinträgen für nicht eingeloggte Benutzer
-                (<a href="http://redmine.opencaching.de/issues/785">#785</a>)
-            </li>
+            <li oc="#813">Versand von Benachrichtigungs-Emails in der Sprache des Benutzers</li>
+            <li oc="#785">Automatisches Nachladen von Logeinträgen für nicht eingeloggte Benutzer</li>
             <li>Smilies im HTML-Editormodus einfügen</li>
             <li>Irrtümliches Anlegen dänischer Cachebeschreibungen vermeiden</li>
-            <li>Neben deutschen Umlauten sind nun weitere europäische Buchstaben
-                in Benutzernamen erlaubt.
-                (<a href="http://redmine.opencaching.de/issues/212">#212</a>)
-            </li>
-            <li>JavaScript-Verbesserung: Icons in der Karten-Popups erscheinen jetzt auch
-                in defekten Browsern. (<a href="http://redmine.opencaching.de/issues/11">#11</a>)
-            </li>
-            <li>
-                Englische Übersetzung vervollständigt (
-                <a href="http://redmine.opencaching.de/issues/163">#163</a>,
-                <a href="http://redmine.opencaching.de/issues/184">#184</a>,
-                <a href="http://redmine.opencaching.de/issues/817">#817</a>)
-            </li>
+            <li oc="#212">Neben deutschen Umlauten sind nun weitere europäische Buchstaben in Benutzernamen erlaubt.</li>
+            <li oc="#11">JavaScript-Verbesserung: Icons in der Karten-Popups erscheinen jetzt auch in defekten Browsern.</li>
+            <li oc="#163 #184 #817">Englische Übersetzung vervollständigt</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Falschschreibung von Ortsnamen korrigiert
-                (<a href="http://redmine.opencaching.de/issues/175">#175</a>)</li>
-            <li>Flaggen in den Cachebeschreibungen durch Bezeichnungen der Sprache
-                ersetzt</li>
-            <li>Korrektur des in seltenen Fällen falsch angezeigten Datums einer
-                Empfehlung
-                (<a href="http://redmine.opencaching.de/issues/713">#713</a>) [Bug von Version 9]</li>
-            <li>HTML-Filterfunktionen für Logs und Cachebeschreibungen verbessert
-                (<a href="http://redmine.opencaching.de/issues/79">#79</a>),
-                eine Liste der jetzt verwendbaren HTML-Elemente ist
-                <a href="https://www.opencaching.de/articles.php?page=htmltags">hier</a>
-                zu finden.
-            </li>
-            <li>
-                Popup-Fenster des HTML-Editors werden bei großer Browser-Schrift nicht
-                mehr abgeschnitten.
-                (<a href="http://redmine.opencaching.de/issues/300">#300</a>)
-            </li>
-            <li>
-                Nach dem Entfernen eines Eintrags aus der Liste ignorierter Caches landet man wieder
-                auf der richtigen Seite
-                (<a href="http://forum.opencaching.de/index.php?topic=4214">siehe Forum</a>).
-            </li>
-            <li>
-                Fehler bei Hint-Eingabe in englischer und spanischer Sprache behoben
-                (<a href="http://redmine.opencaching.de/issues/746">#746</a>, Ticket)
-            </li>
-            <li>
-                OKAPI aktualisiert jetzt Login-Datum
-                (<a href="http://forum.opencaching.de/index.php?topic=4260.0">siehe Forum</a>)
-            </li>
-            <li>
-                OKAPI-Absturz bei '|' im Benutzernamen behoben
-                (<a href="https://github.com/opencaching/okapi/issues/339">siehe github-Issue</a>)
-            </li>
-            <li>
-                Direktanzeige von Suchergebnissen in Google Maps entfällt
-                (<a href="http://redmine.opencaching.de/issues/31">#31</a>)
-            </li>
-            <li>
-                Benachrichtiungsfunktion für neu gesetzte OConly-Attribute korrigiert
-                (<a href="http://redmine.opencaching.de/issues/810">#810</a>) [Bug von Version 9]
-            </li>
-            <li>Außerdem wurde viele weitere, kleinere Fehler behoben - vollständige Liste
-                <a href="http://redmine.opencaching.de/versions/10">hier</a>.</li>
+            <li oc="#175">Falschschreibung von Ortsnamen korrigiert</li>
+            <li>Flaggen in den Cachebeschreibungen durch Bezeichnungen der Sprache ersetzt</li>
+            <li oc="#713">Korrektur des in seltenen Fällen falsch angezeigten Datums einer Empfehlung[Bug von Version 9]</li>
+            <li oc="#79">HTML-Filterfunktionen für Logs und Cachebeschreibungen verbessert, eine Liste der jetzt verwendbaren HTML-Elemente ist <a href="https://www.opencaching.de/articles.php?page=htmltags">hier</a> zu finden.</li>
+            <li oc="#300">Popup-Fenster des HTML-Editors werden bei großer Browser-Schrift nicht mehr abgeschnitten.</li>
+            <li>Nach dem Entfernen eines Eintrags aus der Liste ignorierter Caches landet man wieder auf der richtigen Seite (<a href="http://forum.opencaching.de/index.php?topic=4214">siehe Forum</a>).</li>
+            <li oc="#746">Fehler bei Hint-Eingabe in englischer und spanischer Sprache behoben</li>
+            <li>OKAPI aktualisiert jetzt Login-Datum (<a href="http://forum.opencaching.de/index.php?topic=4260.0">siehe Forum</a>)</li>
+            <li oc="#339">OKAPI-Absturz bei '|' im Benutzernamen behoben</li>
+            <li oc="#810">Benachrichtiungsfunktion für neu gesetzte OConly-Attribute korrigiert [Bug von Version 9]</li>
+            <li>Außerdem wurde viele weitere, kleinere Fehler behoben - vollständige Liste <a href="http://redmine.opencaching.de/versions/10">hier</a>.</li>
+        </ul>
+
+        <p>Entfernt:</p>
+        <ul>
+            <li oc="#31">Direktanzeige von Suchergebnissen in Google Maps entfällt</li>
         </ul>
         <br />
 

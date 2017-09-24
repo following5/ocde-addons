@@ -1,0 +1,2 @@
+This file is used for locally viewing the changelog. It prevents loading
+from Github and overwriting the local file.
