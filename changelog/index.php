@@ -31,7 +31,7 @@ if ($lang != 'de' && $lang != 'en')
 <div style="text-align:right; width:780px; padding:0.6em 1.5em 0 0; background-color:#f7f7f7" class="clshadow">
   <p style="padding-bottom:0.5em;">
     <big>Opencaching.de Changelog</big><br />
-    <a href="index.php?lang=<?= $lang=='en' ? 'de">deutsch' : 'en">english' ?></a> &bull;
+    <a href="?lang=<?= $lang=='en' ? 'de">deutsch' : 'en">english' ?></a> &bull;
     <a href="https://github.com/OpencachingDeutschland/oc-server3/blob/development/LICENSE.md" target="_blank">license</a> &bull;
     <a href="https://github.com/following5/ocde-addons/tree/master/changelog" target="_blank">contribute</a>
   </p>

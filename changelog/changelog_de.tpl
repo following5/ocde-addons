@@ -43,13 +43,29 @@ div.changelog .version { color:grey; }
     <div class="changelog-changes">
 
         <div class="changelog-header">
-            <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; in Arbeit</p>
+            <p id="development"><strong>In Arbeit</strong> &ndash; noch nicht auf www.opencaching.de freigegeben</p>
         </div>
 
         <p>Neu:</p>
         <ul>
+            <li><a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a></li>
             <li>OKAPI: Ändern des Logpassworts von Caches</li>
+            <li>OKAPI: <a href="https://github.com/opencaching/okapi/pull/509">Caches melden</a></li>
         </ul>
+
+        <p>Korrigiert (Bugfixes):</p>
+        <ul>
+            <li><a href="https://www.opencaching.de/search.php">Textsuche</a> in Logs funktioniert erstmals, Textsuche in Beschreibungen und Bildtiteln funktioniert erstmals zuverlässig.</li>
+            <li>automatischer Import der Übersetzungen von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a></li>
+            <li>What3words-Suche auf der Karte funktioniert wieder</li>
+            <li>Namen von rund 100 Natur- und Landschaftsschutzgebieten korrigiert</li>
+            <li>keine Leerzeile unter dem Cachetitel anzeigen, falls die Kurzbeschreibung nur aus Leerzeichen besteht</li>
+        </ul>
+        <br />
+
+        <div class="changelog-header">
+            <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
+        </div>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
