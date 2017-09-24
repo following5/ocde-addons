@@ -3,7 +3,7 @@
 *}
 <style>
 {literal}
-div.changelog-header { width:100%; background:#eee; padding-left:0.5em }
+div.changelog-header { width:100%; background: #e8eff2; padding-left:0.5em }
 div.changelog-header p { padding-bottom:0.3em }
 div.changelog .version { color:grey; }
 {/literal}

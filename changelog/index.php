@@ -14,7 +14,7 @@ if ($lang != 'de' && $lang != 'en')
   <link rel="stylesheet" type="text/css" href="https://www.opencaching.de/resource2/ocstyle/css/style_screen.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" /> 
 </head>
-<body style="font-family:'Roboto',sans-serif; color:#333">
+<body style="font-family:'Roboto',sans-serif; color:#222">
 
 <style>
   .content2-pagetitle { font-size:18px; }
