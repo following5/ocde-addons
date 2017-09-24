@@ -14,7 +14,7 @@ div.changelog .version { color:grey; }
 </div>
 <div class="content-txtbox-noshade changelog" style="padding-right: 25px;">
 
-    <p>Opencaching Version 1.0 ging im August 2005 online. In den nachfolgenden Jahren wurde die Website stetig verbessert und zur Version 2 weiterentwickelt. Anfang 2011 wurde die Entwicklung vorübergehend eingestellt, bis der neue Verein Opencaching Deutschland sie Mitte 2012 unter der Versionsnummer&nbsp;3.0 wieder aufnahm.</p>
+    <p><a href="https://www.opencaching.de/">Opencaching.de</a> Version 1.0 ging im August 2005 online. In den nachfolgenden Jahren wurde die Website stetig verbessert und zur Version 2 weiterentwickelt. Anfang 2011 wurde die Entwicklung vorübergehend eingestellt, bis der neue Verein Opencaching Deutschland sie Mitte 2012 unter der Versionsnummer&nbsp;3.0 wieder aufnahm.</p>
 
     <p>Im Folgenden sind alle Veränderungen ab OC Version&nbsp;3.0 aufgelistet. Manche Kleinigkeiten wurden zur besseren Übersicht weggelassen; sie sind im <a href="http://redmine.opencaching.de/projects/oc-dev/roadmap">Issue-Tracker</a> und in der <a href="https://github.com/OpencachingDeutschland/oc-server3/commits/stable">Codehistorie</a> nachlesbar. Neue Funktionen werden manchmal schon vorab freigegeben.</p>
 
