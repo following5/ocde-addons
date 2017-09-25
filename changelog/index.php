@@ -35,7 +35,8 @@ if ($lang != 'de' && $lang != 'en')
 </style>
 
 <script type="text/javascript">
-function changelog_enable(name)
+
+function toggleclb(name)
 {
   var rm = document.getElementById(name+'_button');
   var display;
@@ -49,6 +50,29 @@ function changelog_enable(name)
   var items = document.getElementsByClassName(name);
   for (var i=0; i<items.length; ++i)
     items[i].style.display = display;
+  document.cookie = 'changelog_switches=' + getclb('redmine') + getclb('github') + getclb('devel');
+}
+
+function getclb(name)
+{
+  if (document.getElementById(name+'_button').src.indexOf('-on') > 0)
+    return '1';
+  else
+    return '0';
+}
+
+function setclb(name, onoff)
+{
+  document.getElementById(name+'_button').src = 'res/'+name+ (onoff=='1' ? '-on.png' : '-off.png');
+}
+
+function initclb()
+{
+  var rex = /changelog_switches=([01]{3,})/;
+  var matches = rex.exec(document.cookie);
+  setclb('redmine', matches[1].substr(0,1));
+  setclb('github', matches[1].substr(1,1));
+  setclb('devel', matches[1].substr(2,1));
 }
 </script>
 
@@ -71,15 +95,18 @@ function changelog_enable(name)
 <?php if ($lang == 'de') { ?>
 <div style="position:fixed; top:1.5em">
   <div style="position: relative; left:-64px">
-    <a href="javascript:changelog_enable('redmine')" class="clbutton" title='Show Redmine issues'><img id='redmine_button' src="res/redmine-off.png"/></a>
+    <a href="javascript:toggleclb('redmine')" class="clbutton" title='Show Redmine issues'><img id='redmine_button' src="res/redmine-off.png"/></a>
   </div>
   <div style="position: relative; left:-64px; margin-top:8px">
-    <a href="javascript:changelog_enable('github')" class="clbutton" title='Show Github issues'><img id='github_button' src="res/github-off.png"/></a>
+    <a href="javascript:toggleclb('github')" class="clbutton" title='Show Github commits'><img id='github_button' src="res/github-off.png"/></a>
   </div>
   <div style="position: relative; left:-64px; margin-top:14px">
-    <a href="javascript:changelog_enable('devel')" class="clbutton" title='Show developers'><img id='devel_button' src="res/devel-off.png"/></a>
+    <a href="javascript:toggleclb('devel')" class="clbutton" title='Show developers'><img id='devel_button' src="res/devel-off.png"/></a>
   </div>
 </div>
+<script type="text/javascript">
+  initclb();
+</script>
 <?php } ?>
 <br />
 
@@ -108,16 +135,17 @@ if (!$changelog)
 # add links from OC tags
 
 $developers = [
-  'a' => ['ClanFamiliy', 'MacGyver-NRW', 244244, '#fad8a2'],
-  'b' => ['bohrsty', 'bohrsty', 137473, '#e7e7e7'],
-  'f' => ['following', 'following5', 150360 ,'#f6eeba'],
-  'i' => ['mbirth', 'mbirth', 228246, '#f6caf6'],
-  'm' => ['mirsch', 'mirsch', 194653, '#ccf0cd'],
-  'n' => ['nlubisch', 'nlubish', 339864, '#f6d7d6'],
-  'r' => ['Rotzbua', 'Rotzbua', 0, '#ea9298', true],
-  's' => ['Slini11', 'Slini11', 159941, '#62c561', true],
-  't' => ['teiling88', 'teiling88', 325701, '#d5e7f9'],
-  'w' => ['wrygiel', 'wrygiel', 256465, '#c09576', true],
+#  ID      display name   Github name    OCuser   bgcolor   white fg
+  'a' => ['ClanFamiliy', 'MacGyver-NRW', 244244, '#fad8a2',      ],
+  'b' => ['bohrsty',     'bohrsty',      137473, '#e7e7e7',      ],
+  'f' => ['following',   'following5',   150360 ,'#f6eeba',      ],
+  'i' => ['mbirth',      'mbirth',       228246, '#f6caf6',      ],
+  'm' => ['mirsch',      'mirsch',       194653, '#ccf0cd',      ],
+  'n' => ['nlubisch',    'nlubish',      339864, '#f6d7d6',      ],
+  'r' => ['Rotzbua',     'Rotzbua',           0, '#ea9298', true ],
+  's' => ['Slini11',     'Slini11',      159941, '#62c561', true ],
+  't' => ['teiling88',   'teiling88',    325701, '#d5e7f9',      ],
+  'w' => ['wrygiel',     'wrygiel',      256465, '#c09576', true ],
 ];
 
 $changelog = explode("\n", $changelog);
@@ -125,17 +153,21 @@ foreach ($changelog as &$line)
   if (preg_match('/(\s+<li) +oc="(.+?)" *(>.+?)(<\/li>)/', $line, $matches)) {
     $line = $matches[1] . $matches[3];
     foreach (explode(' ', $matches[2]) as $token) {
+
       # Redmine issue
       if (preg_match('/^#([0-9]+)$/', $token, $matches))
         $line .= ' <a class="redmine" href="https://redmine.opencaching.de/issues/'.$matches[1].'" style="display:none">'.$token.'</a>';
+
       # OC.de Github commit
       elseif (preg_match('/^[0-9a-f]{6,8}$/', $token)) {
         if ($local && strlen($token) != 7) $line .= " <span style='background-color:red; color:white'>bad commit iD</span>";
         $line .= ' <a class="github" href="https://github.com/OpencachingDeutschland/oc-server3/commit/'.$token.'" style="display:none">'.$token.'</a>';
       }
+
       # Okapi Github commit
       elseif (preg_match('/^k([0-9a-f]{7})$/', $token, $matches))
         $line .= ' <a class="github okapi" href="https://github.com/opencaching/okapi/commit/'.$matches[1].'" style="display:none">'.$matches[1].'</a>';
+
       # Developers
       elseif (preg_match('/^-([a-z]+)$/', $token, $matches))
         foreach (str_split($matches[1]) as $dev) {
@@ -157,4 +189,5 @@ echo $changelog;
 </div>
 </div>
 </div>
+
 </body>

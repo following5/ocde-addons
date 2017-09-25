@@ -70,8 +70,8 @@ div.changelog .version { color:grey; }
         <p>Korrigiert (Bugfixes):</p>
         <ul>
             <li oc="#1125 059446d -f">Anzeige der Regionalzuordnung von Caches in Großbritannien, Norwegen und Schweden</li>
-            <li oc="fc85220 -f">OSM-Karte wurde im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten).</li>
             <li oc="#1122 e22baf1 -t">Cachekartenanzeige für manche Webbrowser repariert</li>
+            <li oc="fc85220 -f">OSM-Karte wurde im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten).</li>
             <li oc="#1127 01e0005 -f">Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
             <li oc="#1129 b9426f2 -f">Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
         </ul>
@@ -99,7 +99,7 @@ div.changelog .version { color:grey; }
             <li oc="#944 eae60c7 ff90092 -f">Bei Events erscheint auf der Karte das Veranstaltungsdatum statt des Veröffentlichungsdatums.</li>
             <li oc="#1028 b069df0 -f">Rückfrage beim Löschen von Bildern aus der Cachebeschreibung</li>
             <li oc="#1108 03cdf53 -f">Regionalzuordnung auch bei Caches in Bulgarien, Kroatien, Rumänien und der Türkei</li>
-            <li oc="#1058 d096be5 -f">Länderwahl beim Anlegen von Caches, im Benutzerprofil und oben rechts im Seitenkopf aktualisiert</li>
+            <li oc="#1058 d096be5 -f">Länderauswahl beim Anlegen von Caches, im Benutzerprofil und oben rechts im Seitenkopf aktualisiert</li>
             <li oc="11f2739 -a">Niederländische Übersetzung freigeschaltet (ca. 40% der OC-Website sind übersetzt)</li>
             <li oc="#1091 1b10900 -f">größerer Zeilen- und Abschnittsabstand in Cachebeschreibungen und Logs</li>
             <li oc="ba7e660 -f">Das OC-Supportteam kann veränderte Cachelistings mit Einverständnis des Owners in den Originalzustand zurückversetzen.</li>
@@ -112,7 +112,7 @@ div.changelog .version { color:grey; }
         <p>Korrigiert (Bugfixes):</p>
         <ul>
             <li oc="#1078 dc7ed47 -f">Beim Bearbeiten von zusätzlichen Wegpunkten mit westlicher Länge bleibt das W erhalten.</li>
-            <li oc="#998 #1020 #1103 3b42d41 22a35fa -f">Fehler im „Text“-Editormodus behoben: Manchmal wurde &lt;br /&gt; eingefügt; aufeinanderfolgende Leerzeichen gingen verloren; Smileyumwandlung beim Umschalten auf „Editor“ oder „html“ war unvollständig.</li>
+            <li oc="#998 #1020 #1103 9621fb7 3b42d41 22a35fa -f">Fehler im „Text“-Editormodus behoben: Manchmal wurde &lt;br /&gt; eingefügt; aufeinanderfolgende Leerzeichen gingen verloren; Smileyumwandlung beim Umschalten auf „Editor“ oder „html“ war unvollständig.</li>
             <li oc="#1034 776e57f -f">Logbildgalerien werden vollständig chronologisch geordnet, auch bei mehreren Bildern im selben Log. [Bug von Version 5]</li>
             <li oc="#1009 721dbd7 -f">Ungültige Bilddateien werden beim Upload immer erkannt und abgewiesen. [Bug von Version 11]</li>
             <li oc="#1073 3d36448 -f">Beim nachträglichen Ändern des Logtyps in „kann gesucht werden“ werden die Markierungen „Cache benötigt Wartung“ und „Beschreibung ist veraltet“ entfernt. [Bug von Version 17]</li>
@@ -150,6 +150,7 @@ div.changelog .version { color:grey; }
             <li oc="#1027 bebc784 -t">Zeitraum für die Markierung „neuer Cache“ von 14 auf 31 Tage erhöht</li> 
             <li oc="41a118d -t">Größenlimit für hochgeladene Bilder von 6 auf 15 MB erhöht</li>
             <li oc="#1021 3f6a457 -t">Das Passwortfeld beim Loggen wird nur noch für Fundlogs eingeblendet.</li>
+            <li oc="0bdeab6 -t">Prüfung eingegebener Emailadressen verbessert</li>
             <li oc="a854304 -a">Korrekturen und Verbesserungen bei der Suchmaschinenoptimierung</li>
             <li oc="-t">Aufräumarbeiten im Programmcode</li>
         </ul>
@@ -211,8 +212,8 @@ div.changelog .version { color:grey; }
         <p>Geändert / verbessert:</p>
         <ul>
             <li oc="#977 248668a -s">übersichtlichere Nachbearbeitung der Suchoptionen</li>
-            <li oc="#1000 -s">Warnung, wenn bei der Suche kein Cachetyp oder keine Cachegröße gewählt wurde</li>
-            <li oc="-t">Prüfung eingegebener Emailadressen verbessert</li>
+            <li oc="#1000 248668a -s">Warnung, wenn bei der Suche kein Cachetyp oder keine Cachegröße gewählt wurde</li>
+            <li oc="09ea90e -t">Prüfung eingegebener Emailadressen verbessert</li>
             <li oc="#1004 0de9460 -r">Verbesserung der Datensicherheit: Sitzungsdaten werden nur noch per HTTPS übertragen</li>
             <li oc="220a941 -t">Aktualisierung der Spendenseite</li>
             <li oc="c67b844 -i">interne Umstellung auf neue What3Words-Schnittstelle</li>
