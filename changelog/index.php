@@ -147,6 +147,7 @@ $developers = [
   's' => ['Slini11',     'Slini11',      159941, '#62c561', true ],
   't' => ['teiling88',   'teiling88',    325701, '#d5e7f9',      ],
   'w' => ['wrygiel',     'wrygiel',      256465, '#c09576', true ],
+  '1' => ['Team Brummi', '',             203222, '#e7e7e7'       ],
 ];
 
 $changelog = explode("\n", $changelog);
@@ -170,10 +171,11 @@ foreach ($changelog as &$line)
         $line .= ' <a class="github okapi" href="https://github.com/opencaching/okapi/commit/'.$matches[1].'" style="display:none">'.$matches[1].'</a>';
 
       # Developers
-      elseif (preg_match('/^-([a-z]+)$/', $token, $matches))
+      elseif (preg_match('/^-([a-z1-9]+)$/', $token, $matches))
         foreach (str_split($matches[1]) as $dev) {
           $da = $developers[$dev];
-          $line .= ' <a class="devel" href="https://github.com/OpencachingDeutschland/oc-server3/commits?author='.$da[1].'" style="display:none"><span style="background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white' : '') . '">&nbsp;'.$da[0].'&nbsp;</span></a>';
+          $devlink = ($da[1] ? 'https://github.com/OpencachingDeutschland/oc-server3/commits?author=' : 'https://www.opencaching.de/viewprofile.php?userid=') . $da[2];
+          $line .= ' <a class="devel" href="'.$devlink.'" style="display:none"><span style="background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white' : '') . '">&nbsp;'.$da[0].'&nbsp;</span></a>';
         }
     }
     $line .= '</li>';

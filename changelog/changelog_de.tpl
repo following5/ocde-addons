@@ -377,23 +377,24 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> französische Übersetzung fertiggstellt; Relaunch von <a href="http://www.opencaching.fr">Opencaching.fr</a></li>
-  <li> volle Unterstützung von HTTPS (auf Opencaching.de noch nicht aktiv)</li>
-  <li> erlaubte CSS-Stile <a href="https://www.opencaching.de/articles.php?page=htmltags#cssstyles">dokumentiert</a></li>
+  <li oc="#846 cd0995a 026d07a -1f"> französische Übersetzung fertiggstellt; Relaunch von <a href="http://www.opencaching.fr">Opencaching.fr</a></li>
+  <li oc="#798 f995f49 -bf"> volle Unterstützung von HTTPS (auf Opencaching.de noch nicht aktiv)</li>
+  <li oc="#850 73d0e93 -f"> erlaubte CSS-Stile <a href="https://www.opencaching.de/articles.php?page=htmltags#cssstyles">dokumentiert</a></li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li oc="#818"> bessere Präsentation der Seiten <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> und <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a></li>
-  <li> Verbesserungen im Übersetzungssystem</li>
+  <li oc="#816 #818 7bf99c1 f995f49 6fea17b -f"> bessere Präsentation der Seiten <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> und <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a></li>
+  <li oc="#809 #839 #842 #852 9ddde26 1ab03ba cfb6cb6 f3ce378 745bd53 86bf88f 8e11347 -f"> Verbesserungen im Übersetzungssystem</li>
+  <li oc="#202 db30747 -f">Umschalten zwischen Editormodi springt nicht mehr zum Seitenanfang</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li oc="#236"> sinnvolle Textkonvertierung beim Umschalten zwischen Text- und HTML-Editor</li>
-  <li oc="#852"> GPX- und TXT-Download liefert Cachebeschreibungen möglichst in der gewählten Sprache</li>
-  <li> HTML-Code in Logbenachrichtigungen beseitigt</li>
-  <li> &bdquo;An GPS-Gerät senden&ldquo; auf www.opencaching.it, www.opencachingspain.es und www.opencaching.fr repariert.</li>
+  <li oc="#236 ff969f6 04ae12a 51f0c1b -f"> sinnvolle Textkonvertierung beim Umschalten zwischen Text- und HTML-Editor</li>
+  <li oc="#852 fab2d7f -f"> GPX- und TXT-Download liefert Cachebeschreibungen möglichst in der gewählten Sprache</li>
+  <li oc="#837 98871c7 -f"> HTML-Code in Logbenachrichtigungen beseitigt</li>
+  <li oc="#844 a04d9f1 -f"> &bdquo;An GPS-Gerät senden&ldquo; auf www.opencaching.it, www.opencachingspain.es und www.opencaching.fr repariert.</li>
 </ul>
 <br />
 
