@@ -137,7 +137,7 @@ if (!$changelog)
 $developers = [
 #  ID      display name   Github name    OCuser   bgcolor   white fg
   'a' => ['ClanFamiliy', 'MacGyver-NRW', 244244, '#fad8a2',      ],
-  'b' => ['bohrsty',     'bohrsty',      137473, '#e7e7e7',      ],
+  'b' => ['bohrsty',     'bohrsty',      137473, '#6d96d5', true ],
   'f' => ['following',   'following5',   150360 ,'#f6eeba',      ],
   'i' => ['mbirth',      'mbirth',       228246, '#f6caf6',      ],
   'k' => ['kirstenko',   'kirstenko',    208441, '#e7e7e7',      ],
@@ -151,9 +151,9 @@ $developers = [
 
 $changelog = explode("\n", $changelog);
 foreach ($changelog as &$line)
-  if (preg_match('/(\s+<li) +oc="(.+?)" *(>.+?)(<\/li>)/', $line, $matches)) {
-    $line = $matches[1] . $matches[3];
-    foreach (explode(' ', $matches[2]) as $token) {
+  if (preg_match('/\s+<li +oc="(.+?)" *> *(.+?)<\/li>/', $line, $matches)) {
+    $line = '<li>' . $matches[2];
+    foreach (explode(' ', $matches[1]) as $token) {
 
       # Redmine issue
       if (preg_match('/^#([0-9]+)$/', $token, $matches))
@@ -176,7 +176,7 @@ foreach ($changelog as &$line)
           $line .= ' <a class="devel" href="https://github.com/OpencachingDeutschland/oc-server3/commits?author='.$da[1].'" style="display:none"><span style="background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white' : '') . '">&nbsp;'.$da[0].'&nbsp;</span></a>';
         }
     }
-    $line .= $matches[4];
+    $line .= '</li>';
   }
 $changelog = implode("\n", $changelog);
 
