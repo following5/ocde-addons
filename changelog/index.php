@@ -63,7 +63,9 @@ function getclb(name)
 
 function setclb(name, onoff)
 {
-  document.getElementById(name+'_button').src = 'res/'+name+ (onoff=='1' ? '-on.png' : '-off.png');
+  // Buttons are off by default.
+  if (onoff == '1')
+    toggleclb(name);
 }
 
 function initclb()
@@ -104,9 +106,6 @@ function initclb()
     <a href="javascript:toggleclb('devel')" class="clbutton" title='Show developers'><img id='devel_button' src="res/devel-off.png"/></a>
   </div>
 </div>
-<script type="text/javascript">
-  initclb();
-</script>
 <?php } ?>
 <br />
 
@@ -189,5 +188,9 @@ echo $changelog;
 </div>
 </div>
 </div>
+
+<script type="text/javascript">
+  initclb();
+</script>
 
 </body>
