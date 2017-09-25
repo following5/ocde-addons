@@ -50,7 +50,8 @@ function toggleclb(name)
   var items = document.getElementsByClassName(name);
   for (var i=0; i<items.length; ++i)
     items[i].style.display = display;
-  document.cookie = 'changelog_switches=' + getclb('redmine') + getclb('github') + getclb('devel');
+  document.cookie = 'changelog_switches=' + getclb('redmine') + getclb('github') + getclb('devel')
+                    + '; expires=31 Dec 2037';
 }
 
 function getclb(name)
@@ -139,6 +140,7 @@ $developers = [
   'b' => ['bohrsty',     'bohrsty',      137473, '#e7e7e7',      ],
   'f' => ['following',   'following5',   150360 ,'#f6eeba',      ],
   'i' => ['mbirth',      'mbirth',       228246, '#f6caf6',      ],
+  'k' => ['kirstenko',   'kirstenko',    208441, '#e7e7e7',      ],
   'm' => ['mirsch',      'mirsch',       194653, '#ccf0cd',      ],
   'n' => ['nlubisch',    'nlubish',      339864, '#f6d7d6',      ],
   'r' => ['Rotzbua',     'Rotzbua',           0, '#ea9298', true ],
@@ -159,7 +161,7 @@ foreach ($changelog as &$line)
 
       # OC.de Github commit
       elseif (preg_match('/^[0-9a-f]{6,8}$/', $token)) {
-        if ($local && strlen($token) != 7) $line .= " <span style='background-color:red; color:white'>bad commit iD</span>";
+        if ($local && strlen($token) != 7) $line .= " <span style='background-color:red; color:white'>bad commit iD:</span>";
         $line .= ' <a class="github" href="https://github.com/OpencachingDeutschland/oc-server3/commit/'.$token.'" style="display:none">'.$token.'</a>';
       }
 

@@ -3,9 +3,9 @@
 -->
 <style>
 {literal}
-div.changelog-header { width:100%; background: #e8eff2; padding-left:0.5em }
-div.changelog-header p { padding-bottom:0.3em }
-div.changelog .version { color:grey; }
+div.changelog-header    { width:100%; background: #e8eff2; padding-left:0.5em }
+div.changelog-header p  { padding-bottom:0.3em }
+div.changelog .version  { color:grey; }
 {/literal}
 </style>
 
@@ -43,6 +43,9 @@ div.changelog .version { color:grey; }
     <div class="changelog-changes">
 
         <div class="changelog-header">
+            <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
+                24. September 2017
+            &nbsp;&nbsp;</em></p></div>
             <p id="development"><strong>In Arbeit</strong> &ndash; noch nicht auf www.opencaching.de freigegeben</p>
         </div>
 
@@ -64,6 +67,9 @@ div.changelog .version { color:grey; }
         <br />
 
         <div class="changelog-header">
+            <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
+                24. September 2017
+            &nbsp;&nbsp;</em></p></div>
             <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
         </div>
 
@@ -116,7 +122,7 @@ div.changelog .version { color:grey; }
             <li oc="#1034 776e57f -f">Logbildgalerien werden vollständig chronologisch geordnet, auch bei mehreren Bildern im selben Log. [Bug von Version 5]</li>
             <li oc="#1009 721dbd7 -f">Ungültige Bilddateien werden beim Upload immer erkannt und abgewiesen. [Bug von Version 11]</li>
             <li oc="#1073 3d36448 -f">Beim nachträglichen Ändern des Logtyps in „kann gesucht werden“ werden die Markierungen „Cache benötigt Wartung“ und „Beschreibung ist veraltet“ entfernt. [Bug von Version 17]</li>
-            <li oc="#1081 5042fcc -f">OConly-Markierung bei unveröffentlichten Caches in der <a href="https://www.opencaching.de/myhome.php#mycaches">Liste der eigenen Caches</a> korrigiert. [Bug von Version 9]</li>
+            <li oc="#1081 5042fcc -f">OConly-Markierung (<img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png">) bei unveröffentlichten Caches in der <a href="https://www.opencaching.de/myhome.php#mycaches">Liste der eigenen Caches</a> korrigiert. [Bug von Version 9]</li>
             <li oc="#1092 63539d0 -f">Anordnung von Bildern mit verschiedenem Seitenverhältnis in der Listing-Bildgalerie korrigiert.</li>
             <li oc="#1099 ab79655 -f">Beim Umschalten zwischen verschiedenen Editor-Modi bleibt der gewählte Logtyp erhalten.</li>
             <li oc="#1086 ed4f18b -t">Missbrauch der Login-Seitenweiterleitung wird verhindert</li>
@@ -272,27 +278,28 @@ div.changelog .version { color:grey; }
 
         <p>Neu:</p>
         <ul>
-            <li>Anzeige von Markern bei der Koordinatensuche auf der Karte</li>
-            <li>Die Reihenfolge von Bildern in Cachebeschreibungen und Logs ist nachträglich änderbar.</li>
-            <li>Koordinatenumrechnung für zusätzliche Wegpunkte</li>
-            <li>OKAPI: Logbilder hochladen</li>
-            <li>OKAPI: &bdquo;Cache benötigt Wartung&ldquo; ist abfragbar und logbar</li>
-            <li>OKAPI: Consumer Keys können gesperrt werden (Admin-Funktion)</li>
+            <li oc="391328f -f">Anzeige von Markern bei der Koordinatensuche auf der Karte</li>
+            <li oc="#940 f169175 d60f16a kda2272f -f">Die Reihenfolge von Bildern in Cachebeschreibungen und Logs ist nachträglich änderbar.</li>
+            <li oc="#941 ea8cc5d -f">Koordinatenumrechnung für zusätzliche Wegpunkte</li>
+            <li oc="#930 a304b25 -f">Unter <a href="https://www.opencaching.de/ocmap.php">diesem Link</a> erscheint direkt die Karte der nicht auf GC gelisteten Caches.</li>
+            <li oc="#926 k93cfc2d -f">OKAPI: Logbilder hochladen</li>
+            <li oc="k28f4cef -f">OKAPI: &bdquo;Cache benötigt Wartung&ldquo; ist abfragbar und logbar</li>
+            <li oc="kcf97cb2 -f">OKAPI: Consumer Keys können gesperrt werden (Admin-Funktion)</li>
         </ul>
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>Logs mit und ohne Uhrzeit am gleichen Tag werden sinnvoller geordnet.</li>
-            <li>Beim Ändern des Typs des neuesten Logs durch den Owner wird ggf. auch der Status des Caches mit angepasst. Der Typ älterer Statuslogs ist nicht mehr änderbar.</li>
-            <li>Smiley-Icons auch in Benachrichtigungsmails (Ausgabe als Text-Smileys)</li>
-            <li>Komfortablere Abarbeitung von Cachemeldungen (Admin-Funktion)</li>
-            <li>Detailverbesserungen und -Nachbesserungen bei den Wartungsstatus-Logs</li>
+            <li oc="#931 fb18fe0 kd2978a9 -f">Logs mit und ohne Uhrzeit am gleichen Tag werden sinnvoller geordnet.</li>
+            <li oc="#336 12c8a0c -f">Beim Ändern des Typs des neuesten Logs durch den Owner wird ggf. auch der Status des Caches mit angepasst. Der Typ älterer Statuslogs ist nicht mehr änderbar.</li>
+            <li oc="#935 f45a6a2 -f">Smiley-Icons auch in Benachrichtigungsmails (Ausgabe als Text-Smileys)</li>
+            <li oc="#110 a481dd5 f4d8226 7ba3fec -f">Komfortablere Abarbeitung von Cachemeldungen (Admin-Funktion)</li>
+            <li oc="ef69741 e54f13e 1f37893 c3ce610 0b04889 ca9b844 ab93e08 -f">Detailverbesserungen und -Nachbesserungen bei den Wartungsstatus-Logs</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Koordinatensuche auf der Karte funktioniert wieder zuverlässig</li>
-            <li>Korrekturen in der <a href="https://www.opencaching.de/doc/xml">XML-Schnittstelle</a>. Wer die Replikationsfunktion ab Version 1.4 nutzt, sollte ein Komplettupdate einschieben.</li>
+            <li oc="#927 391328f -f">Koordinatensuche auf der Karte funktioniert wieder zuverlässig</li>
+            <li oc="6ac0fd6 ef6ed8f -f">Korrekturen in der <a href="https://www.opencaching.de/doc/xml">XML-Schnittstelle</a>. Wer die Replikationsfunktion ab Version 1.4 nutzt, sollte ein Komplettupdate einschieben.</li>
         </ul>
         <br />
 
@@ -302,19 +309,19 @@ div.changelog .version { color:grey; }
 
         <p>Neu:</p>
         <ul>
-            <li><a href="http://wiki.opencaching.de/index.php/Das_Onlinelog#Der_Wartungszustand" target="_blank">Wartungszustände loggen</a></li>
-            <li>Koordinatenänderungen werden zwischen den Logs angezeigt. Der Cachebesitzer kann Altkoordinaten über eine Einstellung im Cachelisting schützen; die letzten drei Stellen erscheinen dann als ***.</li>
-            <li>Wenn man Logs am nächsten Tag oder später ändert, erscheint unten im Log das letzte Änderungsdatum. Dies gilt nur für Änderungen ab Version 17.</li>
-            <li>In Logbenachrichtigungen sind ggf. auch die Namen von Cachelisten enthalten, über die man den Cache beobachtet.</li>
-            <li>Beim Melden von Caches wird der Status des Meldesystems angezeigt.</li>
-            <li>OKAPI: Die eigenen Heimkoordinaten aus dem Benutzerprofil können abgefragt werden.</li>
+            <li oc="#723 7ce0358 d852edd 072d178 d812218 8b74108 -f"><a href="http://wiki.opencaching.de/index.php/Das_Onlinelog#Der_Wartungszustand" target="_blank">Wartungszustände loggen</a></li>
+            <li oc="#922 d11f1e4 -f">Koordinatenänderungen werden zwischen den Logs angezeigt. Der Cachebesitzer kann Altkoordinaten über eine Einstellung im Cachelisting schützen; die letzten drei Stellen erscheinen dann als ***.</li>
+            <li oc="#921 5b545fd -f">Wenn man Logs am nächsten Tag oder später ändert, erscheint unten im Log das letzte Änderungsdatum. Dies gilt nur für Änderungen ab Version 17.</li>
+            <li oc="#895 d855bd2 -f">In Logbenachrichtigungen sind ggf. auch die Namen von Cachelisten enthalten, über die man den Cache beobachtet.</li>
+            <li oc="#903 2de42e7 a918ad4 -f">Beim Melden von Caches wird der Status des Meldesystems angezeigt.</li>
+            <li oc="ka9a2a04 -f">OKAPI: Die eigenen Heimkoordinaten aus dem Benutzerprofil können abgefragt werden.</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Teile von Cachelistenbeschreibungen können nicht mehr über den Rahmen hinauslaufen. [Bug von Version 13]</li>
-            <li>kleine Korrekturen bei der Suchsortierung [Bugs von Version 16]</li>
-            <li>Darstellungsfehler auf diversen Seiten behoben</li>
+            <li oc="#924 c515c71 -f">Teile von Cachelistenbeschreibungen können nicht mehr über den Rahmen hinauslaufen. [Bug von Version 13]</li>
+            <li oc="bff83c1 fd8f214 ce51761 -f">kleine Korrekturen bei der Suchsortierung [Bugs von Version 16]</li>
+            <li oc="#919 cb41553 -f">Darstellungsfehler auf diversen Seiten behoben</li>
         </ul>
         <br />
 
@@ -324,37 +331,43 @@ div.changelog .version { color:grey; }
 
         <p>Neu:</p>
         <ul>
-            <li>Die Ergebnisse der <a href="https://www.opencaching.de/search.php">Cachesuche</a> sind per Klick auf die Spaltenüberschriften sortierbar.</li>
-            <li>Bei der Suchsortierung nach Versteckdatum wird dieses auch in den Ergebnissen angezeigt.</li>
-            <li>In der <a href="https://www.opencaching.de/ownerlogs.php">Loghistorie für die eigenen Caches</a> erscheint eine Statistik nach Logtyp.</li>
-            <li>Alte Nachlogs können in der <a href="https://www.opencaching.de/newlogs.php">Liste der neuen Logs</a> ausgeblendet werden; Liste nun wahlweise sortierbar nach Logdatum oder Einstelldatum.</li>
-            <li>Anzeige von OConly-Markierungen (<img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png">) in der Liste der neuen und der eigenen Logs.</li>
-            <li>Es können nun auch erweiterte Unicode-Zeichen in Cachebeschreibungen, Logs, Profiltexten und Cachelistenbeschreibungen verwendet werden, zum Beispiel Smileys (&rarr; <a href="http://forum.opencaching.de/index.php?topic=4342.0">weitere Informationen</a>).</li>
+            <li oc="#865 d87ec10 cbad95c -s">Die Ergebnisse der <a href="https://www.opencaching.de/search.php">Cachesuche</a> sind per Klick auf die Spaltenüberschriften sortierbar.</li>
+            <li oc="#865 -s">Bei der Suchsortierung nach Versteckdatum wird dieses auch in den Ergebnissen angezeigt.</li>
+            <li oc="#354 2d559ac -f">In der <a href="https://www.opencaching.de/ownerlogs.php">Loghistorie für die eigenen Caches</a> erscheint eine Statistik nach Logtyp.</li>
+            <li oc="#891 dda7ef0 45ff858 -f">Alte Nachlogs können in der <a href="https://www.opencaching.de/newlogs.php">Liste der neuen Logs</a> ausgeblendet werden; Liste nun wahlweise sortierbar nach Logdatum oder Einstelldatum.</li>
+            <li oc="#814 f903de4 -f">Anzeige von OConly-Markierungen (<img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png">) in der Liste der neuen und der eigenen Logs.</li>
+            <li oc="#873 fcd7005 44e58cb -f">Es können nun auch erweiterte Unicode-Zeichen in Cachebeschreibungen, Logs, Profiltexten und Cachelistenbeschreibungen verwendet werden, zum Beispiel Smileys (&rarr; <a href="http://forum.opencaching.de/index.php?topic=4342.0">weitere Informationen</a>).</li>
             <li>OKAPI: Abfrage der eigenen Liste der ignorierten Caches</li>
         </ul>
 
         <p>Geändert / verbessert:</p>
         <ul>
-            <li>Die Liste der neuen Logs zeigt nun das Logdatum an statt des Datums, an dem das Log eingetragen wurde.</li>
-            <li>Die Links zu navicache.com wurden aus der Cachebeschreibung entfernt; es können keine Navicache-Wegpunkte mehr eingetragen werden.</li>
-            <li>Nach dem Bearbeiten von Bildern in einem Cachelisting geht es zurück zur Bearbeitungsseite statt zur Listinganzeige.</li>
-            <li>Bei der Wahl des Statistikbildes wird zwischen aktuellen und sonstigen OC-Logos unterschieden.</li>
-            <li>Deaktivierte Listings („momentan nicht verfügbar“) werden nun bereits nach 6 statt 12 Monaten automatisch archiviert, falls sie vom OC-Team deaktiviert wurden, oder falls der Cachebesitzer seit der Deaktivierung nicht mehr eingeloggt war. Ausgenommen davon sind Listings mit dem Attribut „Nur zu bestimmten Jahreszeiten suchbar“ und Listings mit Logs nach der Deaktivierung; hier bleibt es bei der 12-Monatsfrist. Eine Änderung des Listings durch den Besitzer setzt den „Countdown“ wieder zurück. Der Besitzer kann die Archivierung jederzeit rückgängig machen.</li>
-            <li>Das Einstellen von Bildduplikaten per Ocprop wird (weitgehend) verhindert.</li>
-            <li>OKAPI: Umkreissuche bei kleinem Radius (&lt;&lt; 100 km) stark beschleunigt</li>
-            <li>Portierung von MySQL 5.1 auf MariaDB 5.5</li>
+            <li oc="dda7ef0 -f">Die Liste der neuen Logs zeigt nun das Logdatum an statt des Datums, an dem das Log eingetragen wurde.</li>
+            <li oc="#880 f8e71dd -f">Nach dem Bearbeiten von Bildern in einem Cachelisting geht es zurück zur Bearbeitungsseite statt zur Listinganzeige.</li>
+            <li oc="#890 2287d1d -s">Die Listen der eigenen versteckten Caches werden nun einheitlich nach Veröffentlichungsdatum sortiert.</li>
+            <li oc="#753 036734d -s">Bei der Wahl des Statistikbildes wird zwischen aktuellen und sonstigen OC-Logos unterschieden.</li>
+            <li oc="#808 c408c02 dca7e77 c408c02 -f">Deaktivierte Listings („momentan nicht verfügbar“) werden nun bereits nach 6 statt 12 Monaten automatisch archiviert, falls sie vom OC-Team deaktiviert wurden, oder falls der Cachebesitzer seit der Deaktivierung nicht mehr eingeloggt war. Ausgenommen davon sind Listings mit dem Attribut „Nur zu bestimmten Jahreszeiten suchbar“ und Listings mit Logs nach der Deaktivierung; hier bleibt es bei der 12-Monatsfrist. Eine Änderung des Listings durch den Besitzer setzt den „Countdown“ wieder zurück. Der Besitzer kann die Archivierung jederzeit rückgängig machen.</li>
+            <li oc="#251 c801fec 8cf4f41 8ae37ab -f">Das Einstellen von Bildduplikaten per Ocprop wird (weitgehend) verhindert.</li>
+            <li oc="#875 76affa5 -f">Kontaktadresse des OC-Supports geändert von contact@... in kontakt@...</li>
+            <li oc="9e2ef89 f2e95e4 -f">Portierung von MySQL 5.1 auf MariaDB 5.5</li>
+            <li oc="k39c772f -f">OKAPI: Umkreissuche bei kleinem Radius (&lt;&lt; 100 km) stark beschleunigt</li>
         </ul>
 
         <p>Korrigiert (Bugfixes):</p>
         <ul>
-            <li>Anzeige des Lupensymbols, wenn man über die eigene Logbildgalerie fährt [Bug von Version 5]</li>
-            <li>Anzeige des korrekten Symbols für Cachelistings, die vom Opencaching-Team gesperrt/versteckt wurden (<img src="https://www.opencaching.de/resource2/ocstyle/images/cachestatus/16x16-locked-invisible.png">) [Bug von Version 6]</li>
-            <li>Behandlung von HTML-Code in Cache-Kurzbeschreibungen korrigiert</li>
-            <li>Bei der Umkreissuche nach „suchbaren“ Caches aus einem Cachelisting heraus werden deaktivierte Caches ausgeblendet. [Bug von Version 9]</li>
-            <li>englische Datumsdarstellung in der Liste der neuen Caches korrigiert</li>
-            <li>Zurücksetzen der Cachetypen <i>Drive-In</i> und <i>Mathe/Physik</i> sowie der Größen <i>nano</i> und <i>extrem groß</i> durch Ocprop auf GC-Werte wird verhindert. [Bug von Version 6]</li>
-            <li>Abschließende Korrekturen für den Start des HTTPS-Betriebs &rarr; <a href="https://www.opencaching.de">https://www.opencaching.de</a>; noch nicht stabil verfügbar für die OKAPI (&rarr; <a href="https://github.com/opencaching/okapi/issues/343">weitere Informationen</a>)</li>
-            <li>OKAPI: Fehlermeldung beim Abruf gesperrter Caches korrigiert; weitere kleine Korrekturen</li>
+            <li oc="#843 a672096 -f">Anzeige des Lupensymbols, wenn man über die eigene Logbildgalerie fährt [Bug von Version 5]</li>
+            <li oc="#884 25fd5b6 -k">Anzeige des korrekten Symbols für Cachelistings, die vom Opencaching-Team gesperrt/versteckt wurden <span style="white-space:nowrap">(<img src="https://www.opencaching.de/resource2/ocstyle/images/cachestatus/16x16-locked-invisible.png" />)</span> [Bug von Version 6]</li>
+            <li oc="#863 036734d -s">Behandlung von HTML-Code in Cache-Kurzbeschreibungen korrigiert</li>
+            <li oc="#870 16efca0 -k">Bei der Umkreissuche nach „suchbaren“ Caches aus einem Cachelisting heraus werden deaktivierte Caches ausgeblendet. [Bug von Version 9]</li>
+            <li oc="#876 e3dac3f -f">englische Datumsdarstellung in der Liste der neuen Caches korrigiert</li>
+            <li oc="48ea316 -f">Zurücksetzen der Cachetypen <i>Drive-In</i> und <i>Mathe/Physik</i> sowie der Größen <i>nano</i> und <i>extrem groß</i> durch Ocprop auf GC-Werte wird verhindert. [Bug von Version 6]</li>
+            <li oc="#879 a8bb637 6218719 60b3f15 f0c075b -f">Abschließende Korrekturen für den Start des HTTPS-Betriebs &rarr; <a href="https://www.opencaching.de">https://www.opencaching.de</a>; noch nicht stabil verfügbar für die OKAPI (&rarr; <a href="https://github.com/opencaching/okapi/issues/343">weitere Informationen</a>)</li>
+            <li oc="-f">OKAPI: Fehlermeldung beim Abruf gesperrter Caches korrigiert; weitere kleine Korrekturen</li>
+        </ul>
+
+        <p>Entfernt:</p>
+        <ul>
+            <li oc="#871 becf9e2 -f">Die Links zu navicache.com wurden aus der Cachebeschreibung entfernt; es können keine Navicache-Wegpunkte mehr eingetragen werden.</li>
         </ul>
         <br />
 
