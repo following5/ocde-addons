@@ -44,7 +44,7 @@ div.changelog .version  { color:grey; }
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    24. September 2017
+    26. September 2017
   &nbsp;&nbsp;</em></p></div>
   <p id="development"><strong>In Arbeit</strong> &ndash; noch nicht auf www.opencaching.de freigegeben</p>
 </div>
@@ -56,28 +56,33 @@ div.changelog .version  { color:grey; }
   <li oc="-f"> OKAPI: <a href="https://github.com/opencaching/okapi/pull/509">Caches melden</a></li>
 </ul>
 
+<p>Geändert / verbessert:</p>
+<ul>
+  <li oc="#1136 13d8fca -f"> Beim GPX-Download von Drive-In-Caches wird immer das Attribut „nahe beim Auto“ gesetzt.</li>
+</ul>
+
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li oc="#1043 0f4c547 -f"> <a href="https://www.opencaching.de/search.php">Textsuche</a> in Logs funktioniert erstmals, Textsuche in Beschreibungen und Bildtiteln funktioniert erstmals zuverlässig.</li>
   <li oc="-t"> automatischer Import der Übersetzungen von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a></li>
   <li oc="#1130 -t"> What3words-Suche auf der Karte funktioniert wieder</li>
-  <li oc="#1133 79a2de2 -tf"> Namen von 75 Natur- und Landschaftsschutzgebieten korrigiert</li>
   <li> keine Leerzeile unter dem Cachetitel anzeigen, falls die Kurzbeschreibung nur aus Leerzeichen besteht</li>
 </ul>
 <br />
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    24. September 2017
+    26. September 2017
   &nbsp;&nbsp;</em></p></div>
   <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
 </div>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
+  <li oc="#1043 0f4c547 -f"> <a href="https://www.opencaching.de/search.php">Textsuche</a> in Logs funktioniert erstmals, Textsuche in Beschreibungen und Bildtiteln funktioniert erstmals zuverlässig.</li>
   <li oc="#1125 059446d -f"> Anzeige der Regionalzuordnung von Caches in Großbritannien, Norwegen und Schweden</li>
   <li oc="#1122 e22baf1 -t"> Cachekartenanzeige für manche Webbrowser repariert</li>
   <li oc="fc85220 -f"> OSM-Karte wurde im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten).</li>
+  <li oc="#1133 79a2de2 -tf"> Namen von 75 Natur- und Landschaftsschutzgebieten korrigiert</li>
   <li oc="#1127 01e0005 -f"> Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
   <li oc="#1129 b9426f2 -f"> Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
 </ul>

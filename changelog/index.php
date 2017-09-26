@@ -174,8 +174,8 @@ foreach ($changelog as &$line)
       elseif (preg_match('/^-([a-z1-9]+)$/', $token, $matches))
         foreach (str_split($matches[1]) as $dev) {
           $da = $developers[$dev];
-          $devlink = ($da[1] ? 'https://github.com/OpencachingDeutschland/oc-server3/commits?author=' : 'https://www.opencaching.de/viewprofile.php?userid=') . $da[2];
-          $line .= ' <a class="devel" href="'.$devlink.'" style="display:none"><span style="background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white' : '') . '">&nbsp;'.$da[0].'&nbsp;</span></a>';
+          $devlink = ($da[1] ? 'https://github.com/OpencachingDeutschland/oc-server3/commits?author='.$da[1]: 'https://www.opencaching.de/viewprofile.php?userid='.$da[2]);
+          $line .= ' <a class="devel" href="'.$devlink.'" style="display:none"><span style="background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white' : '') . '; white-space:nowrap">&nbsp;'.$da[0].'&nbsp;</span></a>';
         }
     }
     $line .= '</li>';
