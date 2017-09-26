@@ -389,8 +389,8 @@ div.changelog .version  { color:grey; }
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li oc="#816 #818 7bf99c1 f995f49 6fea17b -f"> bessere Präsentation der Seiten <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> und <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a></li>
-  <li oc="#809 #839 #842 #852 9ddde26 1ab03ba cfb6cb6 f3ce378 745bd53 86bf88f 8e11347 -f"> Verbesserungen im Übersetzungssystem</li>
+  <li oc="#816 7bf99c1 f995f49 6fea17b -f"> bessere Präsentation der Seiten <a href="http://www.opencaching.it" target="_blank">www.opencaching.it</a> und <a href="http://www.opencachingspain.es" target="_blank">www.opencachingspain.es</a></li>
+  <li oc="#809 #818 #839 #842 #852 9ddde26 1ab03ba cfb6cb6 f3ce378 745bd53 86bf88f 8e11347 -f"> Verbesserungen im Übersetzungssystem</li>
   <li oc="#202 db30747 -f">Umschalten zwischen Editormodi springt nicht mehr zum Seitenanfang</li>
 </ul>
 
@@ -407,48 +407,57 @@ div.changelog .version  { color:grey; }
   <p id="v3.0.14"><strong>OC3 Version 14</strong> <span class="version">(3.0.14)</span> &ndash; 5. September 2015</p>
 </div>
 
-<p>Neu:</p>
+<p>Internationalisierung:</p>
 <ul>
-  <li> Weitergabe privater Cachelisten mit Kennwort</li>
-  <li> Lesezeichen- und Favoritenfunktion für Cachelisten</li>
-  <li> Anzahl der Empfehlungen in der Übersicht der eigenen Caches hinzugefügt, Anzeige der Empfehlungen in verschiedenen Listenanzeigen angepasst</li>
-  <li> Französische Übersetzung vorbereitet</li>
-  <li oc="#732"> Automatisches Drehen von Hochkant-Bilder beim Hochladen</li>
-  <li oc="#48"> Suchselektion nach Sprache in der Cachebeschreibung ermöglicht gezielte Suche nach Listings in einer bestimmten Sprache</li>
-  <li> Anzeige der neuen Logs für das gewählte Land (<a href="http://redmine.opencaching.de/issues/183">#183</a>)</li>
-  <li> Koordinatenänderungen in der Admin-Cache-Historie (intern)</li>
+  <li oc="e394aa2 -1f"> Französische Übersetzung vorbereitet</li>
+  <li oc="#48 2d83175 6e6a790 -f"> Suchselektion nach Sprache in der Cachebeschreibung ermöglicht gezielte Suche nach Listings in einer bestimmten Sprache</li>
+  <li oc="#183 #297 72b1892 00a96c7 -f"> Länderauswahl bei Listen der neuen Caches und Logs; Anzeige der neuen Logs für das gewählte Land</li>
+  <li oc="#801 4f84ebf -f"> Links auf Wiki und Geokrety.org berücksichtigen jetzt die gewählte Sprache</li>
+  <li oc="#141 #813 d715c14 cd1c06a -f"> Versand von Emails in der Sprache des Benutzers</li>
+  <li oc="#802 afc525c -f">Städteliste neben der kleinen Karte verbessert</li>
+  <li oc="#212 1fdeacb -f"> Neben deutschen Umlauten sind nun weitere europäische Buchstaben in Benutzernamen erlaubt.</li>
+  <li oc="#109 9d4f4dd -f"> Flaggen in den Cachebeschreibungen durch Bezeichnungen der Sprache ersetzt</li>
+  <li oc="#141 #163 #184 #817 cd1c06a 99ec29b 886d4cf 6197933 92f1ff6 61ea00c -f2"> Englische Übersetzung vervollständigt</li>
+</ul>
+
+<p>Weitere Neuigkeiten:</p>
+<ul>
+  <li oc="#748 619f7ac b1db165 -f"> Weitergabe privater Cachelisten mit Kennwort</li>
+  <li oc="#751 0f2b490 37485f7 -sf"> Lesezeichen- und Favoritenfunktion für Cachelisten</li>
+  <li oc="#794 78fa77f -s"> Anzahl der Empfehlungen in der Übersicht der eigenen Caches</li>
+  <li oc="#732 db139b8 -f"> Automatisches Drehen von Hochkant-Bilder beim Hochladen</li>
+  <li oc="#744 3692289 -f"> Koordinatenänderungen in der Admin-Cache-Historie (intern)</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Links auf Wiki und Geokrety.org rufen jetzt lokalisiertes Ziel auf</li>
-  <li oc="#813"> Versand von Benachrichtigungs-Emails in der Sprache des Benutzers</li>
-  <li oc="#785"> Automatisches Nachladen von Logeinträgen für nicht eingeloggte Benutzer</li>
-  <li> Smilies im HTML-Editormodus einfügen</li>
-  <li> Irrtümliches Anlegen dänischer Cachebeschreibungen vermeiden</li>
-  <li oc="#212"> Neben deutschen Umlauten sind nun weitere europäische Buchstaben in Benutzernamen erlaubt.</li>
-  <li oc="#11"> JavaScript-Verbesserung: Icons in der Karten-Popups erscheinen jetzt auch in defekten Browsern.</li>
-  <li oc="#163 #184 #817"> Englische Übersetzung vervollständigt</li>
+  <li oc="#796 5a8a081 a22a4a3 8cfe417 -s"> Anzeige der Empfehlungen in verschiedenen Listenanzeigen verbessert</li>
+  <li oc="#785 112659c -f"> Automatisches Nachladen von Logeinträgen für nicht eingeloggte Benutzer</li>
+  <li oc="#782 b7dddd7 -f"> Smilie-Grafiken im HTML-Editormodus einfügen</li>
+  <li oc="#804 d3417db -f"> Irrtümliches Anlegen dänischer Cachebeschreibungen vermeiden</li>
+  <li oc="0e0a4ea -f"> Das vom Owner angegebene Land hat immer Vorrang vor dem automatisch aus den Koordinaten ermittelten.</li>
+  <li oc="#11 ebcdfab -f"> JavaScript-Verbesserung: Icons in der Karten-Popups erscheinen jetzt auch in defekten Browsern.</li>
+  <li oc="#742 19a7539 -s"> Nach dem Editieren eines Logs wird wieder das Log angezeigt (statt des Listings)</li>
+  <li oc="#775 7895e81 -a"> richtlinienkonforme Wiedergabe des OC-Logos im Seitenkopf</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li oc="#175"> Falschschreibung von Ortsnamen korrigiert</li>
-  <li> Flaggen in den Cachebeschreibungen durch Bezeichnungen der Sprache ersetzt</li>
-  <li oc="#713"> Korrektur des in seltenen Fällen falsch angezeigten Datums einer Empfehlung[Bug von Version 9]</li>
-  <li oc="#79"> HTML-Filterfunktionen für Logs und Cachebeschreibungen verbessert, eine Liste der jetzt verwendbaren HTML-Elemente ist <a href="https://www.opencaching.de/articles.php?page=htmltags">hier</a> zu finden.</li>
-  <li oc="#300"> Popup-Fenster des HTML-Editors werden bei großer Browser-Schrift nicht mehr abgeschnitten.</li>
-  <li> Nach dem Entfernen eines Eintrags aus der Liste ignorierter Caches landet man wieder auf der richtigen Seite (<a href="http://forum.opencaching.de/index.php?topic=4214">siehe Forum</a>).</li>
-  <li oc="#746"> Fehler bei Hint-Eingabe in englischer und spanischer Sprache behoben</li>
-  <li> OKAPI aktualisiert jetzt Login-Datum (<a href="http://forum.opencaching.de/index.php?topic=4260.0">siehe Forum</a>)</li>
-  <li oc="#339"> OKAPI-Absturz bei '|' im Benutzernamen behoben</li>
-  <li oc="#810"> Benachrichtiungsfunktion für neu gesetzte OConly-Attribute korrigiert [Bug von Version 9]</li>
+  <li oc="#175 #773 67a60a1 0249289 612d355 -f"> Falschschreibung von Ortsnamen korrigiert</li>
+  <li oc="#713 e6c26c5 -f"> Korrektur des in seltenen Fällen falsch angezeigten Datums einer Empfehlung [Bug von Version 9]</li>
+  <li oc="#79 #89 b6bdbc4 1786f57 1639d24 -f"> HTML-Filterfunktionen für Logs und Cachebeschreibungen verbessert. Eine Liste der jetzt verwendbaren HTML-Elemente ist <a href="https://www.opencaching.de/articles.php?page=htmltags">hier</a> zu finden.</li>
+  <li oc="#300 5cdf51f -f"> Popup-Fenster des HTML-Editors werden bei großer Browser-Schrift nicht mehr abgeschnitten.</li>
+  <li oc="#738 6cd3af5 -f"> Nach dem Entfernen eines Eintrags aus der Liste ignorierter Caches landet man wieder auf der richtigen Seite (<a href="http://forum.opencaching.de/index.php?topic=4214">siehe Forum</a>).</li>
+  <li oc="#810 f2c4ec4 -f"> Benachrichtiungsfunktion für neu gesetzte OConly-Attribute korrigiert [Bug von Version 9]</li>
+  <li oc="#746 856c7de -f"> Fehler bei Hint-Eingabe in englischer und spanischer Sprache behoben</li>
+  <li oc="#89 1639d24 -f"> Links in Logs auf Umlaut-Domains bleiben erhalten.</li>
+  <li oc="#769 k0dcf338 -f"> OKAPI aktualisiert jetzt Login-Datum (<a href="http://forum.opencaching.de/index.php?topic=4260.0">siehe Forum</a>)</li>
   <li> Außerdem wurde viele weitere, kleinere Fehler behoben - vollständige Liste <a href="http://redmine.opencaching.de/versions/10">hier</a>.</li>
 </ul>
 
 <p>Entfernt:</p>
 <ul>
-  <li oc="#31"> Direktanzeige von Suchergebnissen in Google Maps entfällt</li>
+  <li oc="#31 0c44a36 -f"> Direktanzeige von Suchergebnissen in Google Maps entfällt</li>
 </ul>
 <br />
 

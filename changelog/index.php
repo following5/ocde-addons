@@ -147,7 +147,8 @@ $developers = [
   's' => ['Slini11',     'Slini11',      159941, '#62c561', true ],
   't' => ['teiling88',   'teiling88',    325701, '#d5e7f9',      ],
   'w' => ['wrygiel',     'wrygiel',      256465, '#c09576', true ],
-  '1' => ['Team Brummi', '',             203222, '#e7e7e7'       ],
+  '1' => ['Team Brummi', '',             203222, '#a7a80c', true ],
+  '2' => ['Siggiiiiii',  ''          ,   176654, '#ea9298', true ],
 ];
 
 $changelog = explode("\n", $changelog);

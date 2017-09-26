@@ -1,2 +1,2 @@
-This file is used for locally viewing the changelog. It prevents loading
-from Github and overwriting the local file.
+This file prevents loading from Github and overwriting the local
+changelog tpl files. It is used for locally testing the changelog.
