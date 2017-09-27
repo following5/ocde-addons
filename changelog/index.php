@@ -9,6 +9,11 @@ $lang = isset($_REQUEST['lang']) ? strtolower($_REQUEST['lang']) : false;
 if ($lang != 'de' && $lang != 'en')
   $lang = 'de';
 
+switch ($lang) {
+  case 'de': $button_titles = ['Redmine-Tickets anzeigen', 'Github-Commits anzeigen', 'Entwickler anzeigen']; break;
+  case 'en': $button_titles = ['Show Redmine issues', 'Show Github commits', 'Show developers']; break;
+}
+
 ?>
 <head>
   <title>Opencaching.de &ndash; Versionsgeschichte</title>
@@ -82,7 +87,7 @@ function initclb()
 <div style="width:100%">                                         <!-- green background        -->
 <div style="margin:0 auto;width:922px; background-color:white">  <!-- white center background -->
 <div style="margin:0 auto; width:790px; position:relative; padding-left:18px"> <!-- text area -->
-<div style="height:0.8em"></div>                                 <!-- top spacer              -->
+<div style="height:1em"></div>                                 <!-- top spacer              -->
 
 <!-- title bar -->
 <div style="text-align:right; width:758px; padding:0.6em 1.5em 0 0; background-color:#f7f7f7" class="clshadow">
@@ -98,13 +103,13 @@ function initclb()
 <?php if ($lang == 'de') { ?>
 <div style="position:fixed; top:1.5em">
   <div style="position: relative; left:-64px">
-    <a href="javascript:toggleclb('redmine')" class="clbutton" title='Show Redmine issues'><img id='redmine_button' src="res/redmine-off.png"/></a>
+    <a href="javascript:toggleclb('redmine')" class="clbutton" title='<?= $button_titles[0] ?>'><img id='redmine_button' src="res/redmine-off.png"/></a>
   </div>
   <div style="position: relative; left:-64px; margin-top:8px">
-    <a href="javascript:toggleclb('github')" class="clbutton" title='Show Github commits'><img id='github_button' src="res/github-off.png"/></a>
+    <a href="javascript:toggleclb('github')" class="clbutton" title='<?= $button_titles[1] ?>'><img id='github_button' src="res/github-off.png"/></a>
   </div>
   <div style="position: relative; left:-64px; margin-top:14px">
-    <a href="javascript:toggleclb('devel')" class="clbutton" title='Show developers'><img id='devel_button' src="res/devel-off.png"/></a>
+    <a href="javascript:toggleclb('devel')" class="clbutton" title='<?= $button_titles[2] ?>'><img id='devel_button' src="res/devel-off.png"/></a>
   </div>
 </div>
 <?php } ?>
@@ -137,18 +142,22 @@ if (!$changelog)
 $developers = [
 #  ID      display name   Github name    OCuser   bgcolor   white fg
   'a' => ['ClanFamiliy', 'MacGyver-NRW', 244244, '#fad8a2',      ],
-  'b' => ['bohrsty',     'bohrsty',      137473, '#6d96d5', true ],
+  'b' => ['bohrsty',     'bohrsty',      137473, '#86a8dc', true ],
   'f' => ['following',   'following5',   150360 ,'#f6eeba',      ],
   'i' => ['mbirth',      'mbirth',       228246, '#f6caf6',      ],
   'k' => ['kirstenko',   'kirstenko',    208441, '#e7e7e7',      ],
+  'l' => ['Flopp',       'Flopp',        126329, '#c5e1a3',      ],
   'm' => ['mirsch',      'mirsch',       194653, '#ccf0cd',      ],
   'n' => ['nlubisch',    'nlubish',      339864, '#f6d7d6',      ],
+  'o' => ['clickos',     'clickos',      148529, '#f5decf',      ],
   'r' => ['Rotzbua',     'Rotzbua',           0, '#ea9298', true ],
   's' => ['Slini11',     'Slini11',      159941, '#62c561', true ],
   't' => ['teiling88',   'teiling88',    325701, '#d5e7f9',      ],
+  'v' => ['4_Vs',        '4Vs',          162754, '#b48ed0', true ],
   'w' => ['wrygiel',     'wrygiel',      256465, '#c09576', true ],
   '1' => ['Team Brummi', '',             203222, '#a7a80c', true ],
-  '2' => ['Siggiiiiii',  ''          ,   176654, '#ea9298', true ],
+  '2' => ['Siggiiiiii',  '',             176654, '#ea9298', true ],
+  '3' => ['Schrottie',   'Schrottie',    140946, '#e7e7e7',      ],
 ];
 
 $changelog = explode("\n", $changelog);
@@ -172,6 +181,8 @@ foreach ($changelog as &$line)
         $line .= ' <a class="github okapi" href="https://github.com/opencaching/okapi/commit/'.$matches[1].'" style="display:none">'.$matches[1].'</a>';
 
       # Developers
+      elseif (preg_match('/^-:(.+)$/', $token, $matches))
+        $line .= ' <span class="devel" style="background-color:#e7e7e7; white-space:nowrap; display:none">&nbsp;'.$matches[1].'&nbsp;</span>';
       elseif (preg_match('/^-([a-z1-9]+)$/', $token, $matches))
         foreach (str_split($matches[1]) as $dev) {
           $da = $developers[$dev];

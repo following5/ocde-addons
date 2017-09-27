@@ -467,28 +467,28 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> <a href="https://www.opencaching.de/cachelists.php">Cachelisten</a></li>
-  <li> Filtermöglichkeit für Caches mit Geokrets bei der Suche und auf der Karte</i></li>
-  <li> Link zur Safari-Cache-Liste auf der Karte</li>
+  <li oc="#168 5afc1f8 k1280822 b40935c 3110708 -f"> <a href="https://www.opencaching.de/cachelists.php">Cachelisten</a></li>
+  <li oc="#41 #730 44e2e1f -f"> Filtermöglichkeit für Caches mit Geokrets bei der Suche und auf der Karte</i></li>
+  <li oc="#714 70494b8 fc8b056 -f"> Link zur Safari-Cache-Liste auf der Karte</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Bilder bis zu 250 KB Größe bleiben unverändert, erst bei &gt; 250 KB wird verkleinert.</li>
-  <li> Um einen noch nicht veröffentlichten Cache zu veröffentlichen genügt es, unten im Listing „sofort veröffentlichen“ zu wählen.
-  <li> Beobachtungs- und Ignorierlisten deaktivierter Benutzer werden gelöscht.</li>
-  <li> kleine Design-Verbesserungen</li>
-  <li> Liste der OC-Länderseiten aktualisiert: Rumänien ist neu, Schweden/Norwegen wurde eingestellt</li>
-  <li> interne Verbesserungen für das Datenpflegeteam</li>
+  <li oc="#720 52feb5e -o"> Bilder bis zu 250 KB Größe bleiben unverändert, erst bei &gt; 250 KB wird verkleinert.</li>
+  <li oc="#715 17bde30 -f"> Um einen noch nicht veröffentlichten Cache zu veröffentlichen genügt es, unten im Listing „sofort veröffentlichen“ zu wählen.</li>
+  <li oc="#724 f323b09 -f"> Beobachtungs- und Ignorierlisten deaktivierter Benutzer werden gelöscht.</li>
+  <li oc="0e9c1b7 -f"> Liste der OC-Länderseiten aktualisiert: Rumänien ist neu, Schweden/Norwegen wurde eingestellt</li>
+  <li oc="-f"> diverse Detailverbesserungen am Seitendesign</li>
+  <li oc="-f"> interne Verbesserungen für das Datenpflegeteam</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> zuverlässigeres Ausblenden von GC-Doppellistings bei der Cachesuche und auf der Karte [Bug von Version 9]</li>
-  <li> Kennzeichnung neuer Caches in der Suchergebnisliste korrigiert [Bug von Version 9]</li>
-  <li> Attributanzeige im Internet Explorer korrigiert [Bug von Version 11]</li>
-  <li> Event-Icons in der Logstatistik korrigiert</li>
-  <li> GC- und NC-Wegpunkteingabe korrigiert [Bug von Version 12]</li>
+  <li oc="#341 95805da -f"> zuverlässigeres Ausblenden von GC-Doppellistings bei der Cachesuche und auf der Karte [Bug von Version 9]</li>
+  <li oc="#722 2017fd2 -f"> Kennzeichnung neuer Caches in der Suchergebnisliste korrigiert [Bug von Version 9]</li>
+  <li oc="#725 a89dbd3 -o"> Attributanzeige im Internet Explorer korrigiert [Bug von Version 11]</li>
+  <li oc="#718 f2e838f -f"> Event-Icons in der Logstatistik korrigiert</li>
+  <li oc="3791177 -f"> GC- und NC-Wegpunkteingabe korrigiert [Bug von Version 12]</li>
 </ul>
 <br />
 
@@ -498,30 +498,29 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> Link „mehr...“ in der Eventliste auf der Startseite, falls mehr als zehn Events oder Events in anderen Ländern vorhanden sind</li>
-  <li> Der Link „andere Koordinatensysteme“ im Listing zeigt auch <i>what3words</i>-Koordinaten an.</i></li>
-  <li> Suche nach <i>what3words</i>-Koordinaten auf der Karte</li>
-  <li> In den <a href="https://www.opencaching.de/myprofile.php">Profildaten</a> kann man festlegen, dass beim Anschreiben anderer Benutzer standardmäßig die eigene Mailadresse mitgeschickt wird.</li>
-  <li> <a href="https://www.opencaching.de/okapi">OKAPI</a>: experimentelle Unterstützung des neuen Garmin-GGZ-Datenformats</li>
+  <li oc="#208 e32f482 10da6c8 -bf"> Link „mehr...“ in der Eventliste auf der Startseite, falls mehr als zehn Events oder Events in anderen Ländern vorhanden sind</li>
+  <li oc="ad039dd 5c81dd4 -i"> Der Link „andere Koordinatensysteme“ im Listing zeigt auch <i>what3words</i>-Koordinaten an.</i></li>
+  <li oc="#710 40511db 0a02baa -f"> Suche nach <i>what3words</i>-Koordinaten auf der Karte</li>
+  <li oc="#333 8fe2d4e 6e4cbc6 -f"> In den <a href="https://www.opencaching.de/myprofile.php">Profildaten</a> kann man festlegen, dass beim Anschreiben anderer Benutzer standardmäßig die eigene Mailadresse mitgeschickt wird.</li>
+  <li oc="k48785cb -:boguslaw.szczepanowski"> <a href="https://www.opencaching.de/okapi">OKAPI</a>: experimentelle Unterstützung des neuen Garmin-GGZ-Datenformats</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> versehentliche Doppellistings des gleichen Caches werden verhindert</li>
-  <li> Plausibiltitätsprüfung für GC-Wegpunkteingabe im Listing</li>
-  <li> Benachrichtigungsmails über gelöschte Logs enthalten nun auch Logdatum und -typ</li>
-  <li> zuletzt eingegebenes Logdatum wird nur noch 12 Stunden lang für neue Logs vorgeschlagen, danach wieder das aktuelle Datum</li>
-  <li> Persönliche Notiz wird auch bei Eingabe einer ungültigen Koordinate gespeichert</li>
-  <li> Informationen zum Opencaching Deutschland e.V. aktualisiert</li>
+  <li oc="#76 5604b2b -f"> versehentliche Doppellistings des gleichen Caches werden verhindert</li>
+  <li oc="#334 e3af6ec -f"> Plausibiltitätsprüfung für GC-Wegpunkteingabe im Listing</li>
+  <li oc="#240 6fd3c3d -f"> Benachrichtigungsmails über gelöschte Logs enthalten nun auch Logdatum und -typ</li>
+  <li oc="#704 96fd24d -f"> zuletzt eingegebenes Logdatum wird nur noch 12 Stunden lang für neue Logs vorgeschlagen, danach wieder das aktuelle Datum</li>
+  <li oc="#169 1321fe6 -f"> Persönliche Notiz wird auch bei Eingabe einer ungültigen Koordinate gespeichert</li>
+  <li oc="2f4b5d3 783c3a2 b406e26 -v"> Informationen zum Opencaching Deutschland e.V. aktualisiert</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Der An-GPS-Gerät-Senden-Knopf im Listing funktioniert wieder.</li>
-  <li> Deaktivierte Events werden wie deaktivierte Caches nach einem Jahr automatisch archiviert. [Bug von Version 9]</li>
-  <li> fehlende eigene Mailadresse beim Anschrieb anderer Benutzer ergänzt</li>
-  <li> Fehler bei der Sprachumschaltung auf www.opencaching.it und www.opencachingspain.es behoben [Problem seit Version 10]</li>
-  <li> kleinere Korrekturen an der OKAPI (&rarr; <a href="https://code.google.com/p/opencaching-api/source/list">Changelog</a>)</li>
+  <li oc="#364 cfd22c1 -i"> Der An-GPS-Gerät-Senden-Knopf im Listing funktioniert wieder.</li>
+  <li oc="#368 df2ccd2 -f"> Deaktivierte Events werden wie deaktivierte Caches nach einem Jahr automatisch archiviert. [Bug von Version 9]</li>
+  <li oc="#365 3c19e91 -f"> fehlende eigene Mailadresse beim Anschrieb anderer Benutzer ergänzt</li>
+  <li oc="#703 94a3603 -f"> Fehler bei der Sprachumschaltung auf www.opencaching.it und www.opencachingspain.es behoben [Problem seit Version 10]</li>
 </ul>
 <br />
 
@@ -531,24 +530,24 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> direkter Link auf ein bestimmtes Log per Rechtsklick auf das zugeh&ouml;rige Symbol und „Link kopieren“</li>
-  <li> Bilder beim Upload automatisch verkleinern</li>
-  <li> R&uuml;ckfrage bevor ein Bild gel&ouml;scht wird</li>
-  <li> Link „Umkreissuche auf geocaching.com“ im Adminbereich f&uuml;r gemeldete Caches</li>
-  <li> Benutzeroption um den OC Newsletter zu erhalten (oder nicht)</li>
+  <li oc="#313 -3"> direkter Link auf ein bestimmtes Log per Rechtsklick auf das zugeh&ouml;rige Symbol und „Link kopieren“</li>
+  <li oc="#49 da4e0f2 -o"> Bilder beim Upload automatisch verkleinern</li>
+  <li oc="#135 50e7225 -3"> R&uuml;ckfrage bevor ein Bild gel&ouml;scht wird</li>
+  <li oc="#328 67ddf1a 015e857 -3b"> Benutzeroption um den OC Newsletter zu erhalten (oder nicht)</li>
+  <li oc="#325 31fa206 -3"> Link „Umkreissuche auf geocaching.com“ im Adminbereich f&uuml;r gemeldete Caches</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Buttondesign im IE verbessert</li>
-  <li> Link zum Listing auf der Listingseite mit http:// versehen, um es als Link auf Webseiten nutzbar zu machen</li>
+  <li oc="#292 5259aac 39c2eca -o"> Buttondesign im IE verbessert</li>
+  <li oc="#353 -b"> Link zum Listing auf der Listingseite mit http:// versehen, um es als Link auf Webseiten nutzbar zu machen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Positionierung des Hilfe-Buttons im IE verbessert</li>
-  <li> Erstellung des direkten Links zu einem Logeintrag nach dem Laden aller Logs korrigiert [Bug von Version 10]</li>
-  <li> einige Tippfehler in der deutschen &Uuml;bersetzung und der Teamliste korrigiert</li>
+  <li oc="#239 0988147 de5e200 -o" > Positionierung des Hilfe-Buttons im IE verbessert</li>
+  <li oc="#337 77c32c0 -b"> Erstellung des direkten Links zu einem Logeintrag nach dem Laden aller Logs korrigiert [Bug von Version 10]</li>
+  <li oc="#355 91d1ded -b"> einige Tippfehler in der deutschen &Uuml;bersetzung und der Teamliste korrigiert</li>
 </ul>
 <br />
 
@@ -558,33 +557,32 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> Wenn mehr als 5 Logeinträge vorhanden sind und man zum Ende des Listings blättert, werden die übrigen Logs automatisch nachgeladen.</li>
-  <li> regionale Fundstatistik im Benutzerprofil</li>
-  <li> OConly-Statistik im Benutzerprofil</li>
-  <li> <a href="https://www.opencaching.de/oconly81.php">OConly-81</a></li>
-  <li> &bdquo;alle&ldquo;-Funktion in der Liste der eigenen Logs</li>
-  <li> zwischen den Bildern eines Logeintrags kann geblättert werden</li>
-  <li> Verlinkung von Social-Media-Angeboten im &bdquo;Sidebar&ldquo; (links unten)</li>
-  <li> Erläuterung der Cachegrößen auf der <a href="https://www.opencaching.de/articles.php?page=cacheinfo">Beschreibungsseite</a></li>
+  <li oc="41f7248 af7450e -f"> Wenn mehr als 5 Logeinträge vorhanden sind und man zum Ende des Listings blättert, werden die übrigen Logs automatisch nachgeladen.</li>
+  <li oc="1705496 -f"> regionale Fundstatistik im Benutzerprofil</li>
+  <li oc="21f9939 -f"> OConly-Statistik im Benutzerprofil</li>
+  <li oc="#280 96b2f1c 2b9b834 bd5cf65 -f"> <a href="https://www.opencaching.de/oconly81.php">OConly-81</a></li>
+  <li oc="9c1d4a7 -f"> &bdquo;alle&ldquo;-Funktion in der Liste der eigenen Logs</li>
+  <li oc="#283 f202b96 -f"> zwischen den Bildern eines Logeintrags kann geblättert werden</li>
+  <li oc="#282 1c5b56d 71d2bc3 162470d -lf"> Verlinkung von Social-Media-Angeboten im &bdquo;Sidebar&ldquo; (links unten)</li>
+  <li oc="#66 1466f3f -f"> Erläuterung der Cachegrößen auf der <a href="https://www.opencaching.de/articles.php?page=cacheinfo">Beschreibungsseite</a></li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Hyperlink-Design überarbeitet</li>
-  <li> übersichtlichere Darstellung in der Listing-Druckansicht</li>
-  <li> zahlreiche kleine Verbesserungen von Seitendarstellung und -layout</li>
-  <li> interne Komplettüberarbeitung der CSS-Style-Sheets</li>
-  <li> Startseite für www.opencaching.it und www.opencachingspain.es überarbeitet</li>
+  <li oc="-f"> zahlreiche kleine Verbesserungen von Seitendarstellung und -layout</li>
+  <li oc="#186 #95 41955c1 27bf660 3857b9c dbb59fb b639736 -f"> diverse Verbesserungen in der Listing-Druckansicht</li>
+  <li oc="#191 e1ac91e -f"> Komplettüberarbeitung der CSS-Style-Sheets</li>
+  <li oc="7aca981 -f"> Startseite für www.opencaching.it und www.opencachingspain.es überarbeitet</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> diverse Darstellungsfehler im Microsoft Internet Explorer korrigiert</li>
-  <li> Zeilenabstände bei großer Schrift in Cachebeschreibungen korrigiert</li>
-  <li> Bildtitel bei Logbildern wird immer angezeigt [Bug von Version 5]</li>
-  <li> diverse Syntaxfehler im HTML-Code korrigiert</li>
+  <li oc="#285 #287 #288 30ba8ae cca2e04 fa7133b 30595ca -f"> diverse Darstellungsfehler im Microsoft Internet Explorer korrigiert</li>
+  <li oc="-f"> Zeilenabstände bei großer Schrift in Cachebeschreibungen korrigiert</li>
+  <li oc="7f86571 -f"> Bildtitel bei Logbildern wird immer angezeigt [Bug von Version 5]</li>
+  <li oc="#261 d9c0d1a 149b59b a5691c2 -l"> diverse Syntaxfehler im HTML-Code korrigiert</li>
   <li> Anzeige von Empfehlungssternen in Loglisten korrigiert [Bug von Version 9]</li>
-  <li> mehrere Fehler beim Herunterladen von Suchergebnissen korrigiert [Bugs von Version 9]</li>
+  <li oc="4e0bef0 9991642 -f"> mehrere Fehler beim Herunterladen von Suchergebnissen korrigiert [Bugs von Version 9]</li>
   <li> Rechtschreibkorrekturen in den OKAPI-Attributbeschreibungen [eingeführt mit Version 9]</li>
 </ul>
 <br />
