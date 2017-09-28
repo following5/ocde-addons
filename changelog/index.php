@@ -143,6 +143,7 @@ $developers = [
 #  ID      display name   Github name    OCuser   bgcolor   white fg
   'a' => ['ClanFamiliy', 'MacGyver-NRW', 244244, '#fad8a2',      ],
   'b' => ['bohrsty',     'bohrsty',      137473, '#86a8dc', true ],
+  'c' => ['cmanie',      'christian-m',  222664, '#b9ebeb',      ],
   'f' => ['following',   'following5',   150360 ,'#f6eeba',      ],
   'i' => ['mbirth',      'mbirth',       228246, '#f6caf6',      ],
   'k' => ['kirstenko',   'kirstenko',    208441, '#e7e7e7',      ],
@@ -158,6 +159,7 @@ $developers = [
   '1' => ['Team Brummi', '',             203222, '#a7a80c', true ],
   '2' => ['Siggiiiiii',  '',             176654, '#ea9298', true ],
   '3' => ['Schrottie',   'Schrottie',    140946, '#e7e7e7',      ],
+  '4' => ['faina09',     '',             178376, '#a7a80c', true ],
 ];
 
 $changelog = explode("\n", $changelog);

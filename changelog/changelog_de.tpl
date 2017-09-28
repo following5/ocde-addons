@@ -573,6 +573,7 @@ div.changelog .version  { color:grey; }
   <li oc="#186 #95 41955c1 27bf660 3857b9c dbb59fb b639736 -f"> diverse Verbesserungen in der Listing-Druckansicht</li>
   <li oc="#191 e1ac91e -f"> Komplettüberarbeitung der CSS-Style-Sheets</li>
   <li oc="7aca981 -f"> Startseite für www.opencaching.it und www.opencachingspain.es überarbeitet</li>
+  <li oc="0c57799 -c"> stärkere Passwortverschlüsselung</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
@@ -593,62 +594,67 @@ div.changelog .version  { color:grey; }
 
 <p><a href="https://www.opencaching.de/search.php">Suchfunktion</a> überarbeitet:</p>
 <ul>
-  <li> neues, übersichtlicheres Design</li>
-  <li> Suchergebnisse auf Karte anzeigen</li>
-  <li> deaktivierte und archivierte Caches sind separat ausblendbar (auch auf der Karte)</li>
-  <li> Ausblendoption für Mehrfachlistings geändert in GC-Listings; dabei werden neben den Angaben des Owners zusätzliche, vom OC-Team eingepflegte GC-Wegpunkte berücksichtigt (auch auf der Karte).</li>
-  <li> Cachearten oder -größen schneller auswählbar durch neue Schalter &bdquo;alle&ldquo; / &bdquo;keine&ldquo;</li>
-  <li> Suche nach allen von einem Benutzer geloggten Caches (bisher nur einzeln nach Logtyp)</li>
+  <li oc="#35 b7f8d0f -f"> neues, übersichtlicheres Design</li>
+  <li oc="#30 eb4a4ae -f"> Suchergebnisse auf Karte anzeigen</li>
+  <li oc="#149 8607628 -f"> deaktivierte und archivierte Caches sind separat ausblendbar (auch auf der Karte)</li>
+  <li oc="ac62e0d -f"> Ausblendoption für Mehrfachlistings geändert in GC-Listings; dabei werden neben den Angaben des Owners zusätzliche, vom OC-Team eingepflegte GC-Wegpunkte berücksichtigt (auch auf der Karte).</li>
+  <li oc="b7f8d0f -f"> Cachearten oder -größen schneller auswählbar durch neue Schalter &bdquo;alle&ldquo; / &bdquo;keine&ldquo;</li>
+  <li oc="4a5373d -f"> Himmelsrichtungsanzeige für Suchergebnisse</li>
+  <li oc="#37 1c47522 -f"> Suche nach allen von einem Benutzer geloggten Caches (bisher nur einzeln nach Logtyp)</li>
+  <li oc="a572d7b -f"> deutlichere Kennzeichnung neuer Caches in Suchergebnislisten; Neu-Zeitraum von 7 auf 14 Tage erweitert</li>
 </ul>
 
 <p>Neues in der <a href="https://www.opencaching.de/myhome.php#mycaches">Liste eigener Caches</a>:</p>
 <ul>
-  <li> Anzeige von Cachetyp, Fundzahl und Typ/Datum des letzten Logs</li>
-  <li> archivierte und gesperrte Caches sind ausblendbar</li>
-  <li> Anzeige aller Caches statt nur der neuesten 20</li>
-  <li> <a href="https://www.opencaching.de/ownerlogs.php">Logübersicht</a> für alle eigenen Caches</li>
+  <li oc="#88 7fa0c5c -f"> Anzeige von Cachetyp, Fundzahl und Typ/Datum des letzten Logs</li>
+  <li oc="9a43ed2 -f"> archivierte und gesperrte Caches sind ausblendbar</li>
+  <li oc="3c59103 -f"> Anzeige aller Caches statt nur der neuesten 20</li>
+  <li oc="#269 e729d5b -f"> <a href="https://www.opencaching.de/ownerlogs.php">Logübersicht</a> für alle eigenen Caches</li>
 </ul>
 
 <p>Weitere neue Features:</p>
 <ul>
-  <li> Empfehlungen werden in allen Loglisten mit <img src="https://www.opencaching.de/images/rating-star.gif" /> markiert.</li>
-  <li> OConly-Caches werden in allen Cachelisten mit <img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png" /> markiert.</li>
-  <li> OConly-Hinweis in Benachrichtigungen über neue Caches; Benachrichtigung über neu markierte OConlys im Profil aktivierbar</li>
-  <li> Informationen über <a href="http://wiki.opencaching.de/index.php/Schutzgebiete">Schutzgebiete</a> in GPX-, OKAPI- und <a href="http://wiki.opencaching.de/index.php/XML-Schnittstelle">XML-Interface</a>-Downloads</li>
-  <li> neuer Menüpunkt &bdquo;neue Features&ldquo; auf der Startseite</li>
-  <li> neuer Menüpunkt &bdquo;neue Wiki-Artikel&ldquo; auf der Startseite</li>
-  <li> Deaktivierte Caches werden nach einem Jahr automatisch archiviert, Events nach fünf Wochen.</li>
-  <li> laufende Auswertung und Vermeidung unzustellbarer Emails; siehe auch Version 5 / unzustellbare Emails</li>
-  <li> OKAPI: Abfrage von Cacheattributen über OKAPI-eigene, für alle OC-Seiten einheitliche Attribut-IDs</li>
-  <li> OKAPI: GC- und OC.de-kompatible Cacheattribute in GPX-Dateien</li>
+  <li oc="1680a52 -f"> Empfehlungen werden in allen Loglisten mit <img src="https://www.opencaching.de/images/rating-star.gif" /> markiert.</li>
+  <li oc="c7e6cf5 92d3764 -f"> OConly-Caches werden in allen Cachelisten mit <img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png" /> markiert.</li>
+  <li oc="#267 88a70c4 -f"> OConly-Hinweis in Benachrichtigungen über neue Caches; Benachrichtigung über neu markierte OConlys im Profil aktivierbar</li>
+  <li oc="#258 2dfd9af -f"> Informationen über <a href="http://wiki.opencaching.de/index.php/Schutzgebiete">Schutzgebiete</a> in GPX-, OKAPI- und <a href="http://wiki.opencaching.de/index.php/XML-Schnittstelle">XML-Interface</a>-Downloads</li>
+  <li oc="8ba6c83 -f"> neuer Menüpunkt &bdquo;neue Features&ldquo; auf der Startseite</li>
+  <li oc="2169282 -f"> neuer Menüpunkt &bdquo;neue Wiki-Artikel&ldquo; auf der Startseite</li>
+  <li oc="#67 #90 331c15e -f"> Deaktivierte Caches werden nach einem Jahr automatisch archiviert, Events nach fünf Wochen.</li>
+  <li oc="#44 a0172b1 d658c90 75cad8f -bf"> laufende Auswertung und Vermeidung unzustellbarer Emails; siehe auch Version 5 / unzustellbare Emails</li>
+  <li oc="#146 k00aec0e -w"> OKAPI: Abfrage von Cacheattributen über OKAPI-eigene, für alle OC-Seiten einheitliche Attribut-IDs</li>
+  <li oc="kf7023f8 kde6ebb2 -wf"> OKAPI: GC- und OC.de-kompatible Cacheattribute in GPX-Dateien</li>
+  <li oc="#155 kc47a421 -f">OKAPI: Schutzgebiete zu Caches abfragen</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Bei Eingabe mehrerer Logs wird jeweils das Datum des letzten Logs vorgeschlagen.</li>
-  <li> übersichtlicheres Startseiten-Menü, aufgeteilt in &bdquo;Aktuelles&ldquo; und &bdquo;Opencaching&ldquo;</li>
-  <li> Anzeige eigener unveröffentlichter Caches auf der Karte (kann eine Stunde dauern, bis sie erscheinen)</li>
-  <li> deutlichere Kennzeichnung neuer Caches in Suchergebnislisten; Neu-Zeitraum von 7 auf 14 Tage erweitert</li>
-  <li> Probleme mit der Darstellung von Umlauten auf einigen Garmin-Geräten behoben</li>
-  <li> Garmin-Download-Fenster kann mit nur einem Klick auf OK geschlossen werden</li>
-  <li> einfachere Bestätigung der Benutzerregistrierung mit nur einem Klick</li>
-  <li> Ausblenden ungültiger Dutch-Grid-Koordinaten bei &bdquo;andere Koordinatensysteme&ldquo; im Cachelisting</li>
-  <li> <a href="https://www.opencaching.de/mytop5.php">eigene Empfehlungsliste</a> wird nach Datum sortiert</li>
-  <li> neues OC.de-Logo an weiteren Stellen eingebaut</li>
-  <li> Status-Logs (siehe Version 8) werden auch durch <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a> und beim Deaktivieren von Benutzerkonten erzeugt</li>
-  <li> diverse Verbesserungen auf der Adoptionsseite</li>
-  <li> umfangreiche interne Umstrukturierungen / Aufräumarbeiten</li>
+  <li oc="#205 b63387e -f"> Bei Eingabe mehrerer Logs wird jeweils das Datum des letzten Logs vorgeschlagen.</li>
+  <li oc="#73 2169282 -f"> übersichtlicheres Startseiten-Menü, aufgeteilt in &bdquo;Aktuelles&ldquo; und &bdquo;Opencaching&ldquo;</li>
+  <li oc="f5dd9fc -f"> Anzeige eigener unveröffentlichter Caches auf der Karte (kann eine Stunde dauern, bis sie erscheinen)</li>
+  <li oc="#121 99e638e c1a9efd 55a9a7a -c"> Probleme mit der Darstellung von Umlauten auf einigen Garmin-Geräten behoben</li>
+  <li oc="042cc12 -f"> Garmin-Download-Fenster kann mit nur einem Klick auf OK geschlossen werden</li>
+  <li oc="#62 376401d -f"> einfachere Bestätigung der Benutzerregistrierung mit nur einem Klick</li>
+  <li oc="#200 5b332af -c"> Ausblenden ungültiger Dutch-Grid-Koordinaten bei &bdquo;andere Koordinatensysteme&ldquo; im Cachelisting</li>
+  <li oc="1680a52 -f"> <a href="https://www.opencaching.de/mytop5.php">eigene Empfehlungsliste</a> wird nach Datum sortiert</li>
+  <li oc="#217 bd33e67 6505894 0780546 988dad2 -bf"> Beim Eintragen vieler identischer Logs zu verschiedenen Caches wird ein Hinweis zum korrekten Übertragen alter GC-Logs angezeigt.</li>
+  <li oc="#234 #245 4976dfb -v"> neues OC.de-Logo an weiteren Stellen eingebaut</li>
+  <li oc="a1772cd 8429b6d -v"> Einbindung von Flattr auf der Spendenseite</li>
+  <li oc="#207 0eeb9c1 -f"> Status-Logs (siehe Version 8) werden auch durch <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a> und beim Deaktivieren von Benutzerkonten erzeugt</li>
+  <li oc="#216 07a1ae0 9c8a385 -f"> diverse Verbesserungen auf der Adoptionsseite</li>
+  <li oc="-f"> umfangreiche interne Umstrukturierungen / Aufräumarbeiten</li>
+  <li oc="fa07745 028922d -4"> italienische Übersetzungen aktualisiert</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Inkonsistenzen in Geokret-Daten behoben (Problem mit als verloren gemeldeten Geokrets besteht noch)</li>
-  <li> Seitenlayout bei Anzeige von Bildern in der Liste der neuen Logs korrigiert [Bug von Version 5]</li>
-  <li> Noch ein Problem bei der Darstellung von Bildern mit ' im Titel behoben [Bug von Version 5]</li>
-  <li> Übernahme von OC-Benutzernamen in den Chat korrigiert</li>
-  <li> Versionsinkonsistenz in GPX-Dateien behoben durch vollständige Umstellung auf Groundspeak-Version 1.0.1</li>
+  <li oc="8ea1c08 3c98533 449eb0b 8ebcfc7 d3b188d -bf"> Inkonsistenzen in Geokret-Daten behoben (Problem mit als verloren gemeldeten Geokrets besteht noch)</li>
+  <li oc="#215 91d98f7 -f"> Seitenlayout bei Anzeige von Bildern in der Liste der neuen Logs korrigiert [Bug von Version 5]</li>
+  <li oc="519be7c -f"> Noch ein Problem bei der Darstellung von Bildern mit ' im Titel behoben [Bug von Version 5]</li>
+  <li oc="#209 4412fd2 f1be4fd -bf"> Übernahme von OC-Benutzernamen in den Chat korrigiert</li>
+  <li oc="#78 #222 #257 b00d121 7c157ff -fc"> Diverse Fehler in GPX-Dateien behoben</li>
   <li> Datumsangabe in Email-Adress-Erinnerungsmails korrigiert</li>
-  <li> Ausgabe von Empfehlungen in der XML-Schnittstelle korrigiert</li>
+  <li oc="#244 371894d -f"> Ausgabe von Empfehlungen in der XML-Schnittstelle korrigiert</li>
   <li> diverse OKAPI-Bugs korrigiert</li>
 </ul>
 <br />
