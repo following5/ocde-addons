@@ -645,7 +645,7 @@ div.changelog .version  { color:grey; }
   <li oc="#207 0eeb9c1 -f"> Status-Logs (siehe Version 8) werden auch durch <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a> und beim Deaktivieren von Benutzerkonten erzeugt</li>
   <li oc="#216 07a1ae0 9c8a385 -f"> diverse Verbesserungen auf der Adoptionsseite</li>
   <li oc="-f"> umfangreiche interne Umstrukturierungen / Aufräumarbeiten</li>
-  <li oc="fa07745 028922d -4"> italienische Übersetzungen aktualisiert</li>
+  <li oc="fa07745 028922d -4"> italienische Übersetzungen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
@@ -705,9 +705,9 @@ div.changelog .version  { color:grey; }
   <li oc="09b18ed -f"> Unterscheidung zwischen &bdquo;möchte teilnehmen&ldquo; und &bdquo;teilgenommen&ldquo; in Event-Teilnehmerlisten</li>
   <li oc="-v"> Update der <a href="https://www.opencaching.de/articles.php?page=verein">Vereinsseite</a> und des Mitgliedsantrags</li>
   <li oc="#81 #125 -f"> Owner und OC-Supportmitarbeiter sehen gesperrt/versteckte Caches in Suchlisten.</li>
-  <li oc="#122 ff3f787 239003b a481dd5 7ba3fec -f"> Verbesserungen für das Supportteam, insbesondere beim Abarbeiten von Cachemeldungen</li>
+  <li oc="#122 036e6fa ff3f787 239003b a481dd5 7ba3fec -f"> Verbesserungen für das Supportteam, insbesondere beim Abarbeiten von Cachemeldungen</li>
   <li oc="#190 7d68737 -f"> Suchmaschinenoptimierung (HTML Meta keywords &amp; description)</li>
-  <li oc="bc34545 -4"> italienische Übersetzungen aktualisiert</li>
+  <li oc="bc34545 -4"> italienische Übersetzungen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
@@ -739,7 +739,7 @@ div.changelog .version  { color:grey; }
   <li oc="-wf"> Neu: <a href="https://www.opencaching.de/okapi">OKAPI</a></li>
   <li oc="6df0850 86b6b89 -f"> &bdquo;Apple-Touch-Icons&ldquo; für Smartphones</li>
   <li oc="036e6fa -f"> Beim Loggen eigener Caches wird &bdquo;Hinweis&ldquo; als Logtyp vorgeschlagen statt wie bisher &bdquo;gefunden&ldquo;.</li>
-  <li oc="0799fe1 -4"> italienische Übersetzungen aktualisiert</li>
+  <li oc="0799fe1 -4"> italienische Übersetzungen</li>
 </ul>
 <br />
 
@@ -749,41 +749,48 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> Loggen mit Uhrzeit</li>
-  <li> neuer Menüpunkt &bdquo;Über Opencaching&ldquo; auf der Startseite</li>
-  <li> neuer Menüpunkt &bdquo;Neue Logs / ohne Deutschland&ldquo; auf der Startseite</li>
-  <li> neuer Menüpunkt &bdquo;Öffentliches Profil&ldquo; auf der Profilseite</li>
-  <li> Logout-Knopf in der Vollbildkarte</li>
-  <li> Datenlizenz-Anzeige links auf jeder Seite; Datenlizenz-Disclaimer wird in GPX-Dateien, TXT-Dateien und via <a href="http://wiki.opencaching.de/index.php/XML-Schnittstelle">XML-Schnittstelle</a> mitgeliefert.</li>
-  <li> Symbole für gesperrte und unveröffentlichte Caches auf Benutzerprofil-Seiten</li>
-  <li> RSS-Newsfeed-Link auf der Startseite</li>
-  <li> <a href="http://wiki.opencaching.de/index.php/Listingvandalismus">Listingvandalismus</a> kann vom Opencaching-Supportteam rückgängig gemacht werden</li>
+  <li oc="c30ed39 -f"> Loggen mit Uhrzeit</li>
+  <li oc="1a95921 -f"> neuer Menüpunkt &bdquo;Über Opencaching&ldquo; auf der Startseite</li>
+  <li oc="6d5f830 -f"> neuer Menüpunkt &bdquo;Neue Logs / ohne Deutschland&ldquo; auf der Startseite</li>
+  <li oc="37b5268 -f"> neuer Menüpunkt &bdquo;Öffentliches Profil&ldquo; auf der Profilseite</li>
+  <li oc="d5ee4ba -f"> Logout-Knopf in der Vollbildkarte</li>
+  <li oc="25d5a01 37b5268 -f"> Datenlizenz-Anzeige links auf jeder Seite; Datenlizenz-Disclaimer wird in GPX-Dateien, TXT-Dateien und via <a href="http://wiki.opencaching.de/index.php/XML-Schnittstelle">XML-Schnittstelle</a> mitgeliefert.</li>
+  <li oc="ea2d734 -f"> Symbole für gesperrte und unveröffentlichte Caches auf Benutzerprofil-Seiten</li>
+  <li oc="81ac563 -f"> RSS-Newsfeed-Link auf der Startseite</li>
+  <li oc="5fe55ee -f"> <a href="http://wiki.opencaching.de/index.php/Listingvandalismus">Listingvandalismus</a> kann vom Opencaching-Supportteam rückgängig gemacht werden</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Designverbesserungen bei den Listen neuer Caches und Logs</li>
-  <li> In Benachrichtigungsmails werden die neuen Opencaching-Kurzlinks verwendet (siehe Version 1).</li>
-  <li> doppeltes Einstellen identischer Logs wird verhindert</li>
-  <li> genauere Zuordnung der Attribute zu GC-Attributen in GPX-Dateien</li>
-  <li> Gezeiten-Attribut umdefiniert in &bdquo;nicht bei hohem Wasserstand&ldquo;</li>
-  <li> neues Opencaching.de-Logo auf Listing-Ausdrucken</li>
-  <li> News- und Forentexte auf der Startseite ausgeblendet, dafür doppelt so viele Einträge</li>
-  <li> Teamliste aktualisiert</li>
-  <li> Der Zähler für versandte Emails im Benutzerprofil entfällt aus technischen Gründen.</li>
+  <li oc="5fcc1f1 bf12904 -f"> Designverbesserungen bei den Listen neuer Caches und Logs</li>
+  <li oc="9172e50 -l"> In Benachrichtigungsmails werden die neuen Opencaching-Kurzlinks verwendet (siehe Version 1).</li>
+  <li oc="88b393f -f"> mehrfaches Einstellen identischer Logs wird verhindert</li>
+  <li oc="467aae4 -f"> genauere Zuordnung der Attribute zu GC-Attributen in GPX-Dateien</li>
+  <li oc="035b2c5 -f"> Gezeiten-Attribut umdefiniert in &bdquo;nicht bei hohem Wasserstand&ldquo;</li>
+  <li oc="40f324b -f"> neues Opencaching.de-Logo auf Listing-Ausdrucken</li>
+  <li oc="d45409b -f"> News- und Forentexte auf der Startseite ausgeblendet, dafür doppelt so viele Einträge</li>
+  <li oc="7eccc1d -f"> Überschreiben spezieller  OC-Cachetypen und -größen durch Ocprop wird verhindert</li>
+  <li oc="dce6a8a -f"> zusätzliche Erläuterungen zur Datenlizenz</li>
+  <li oc="b07075c a49e909 -f"> Teamliste aktualisiert</li>
+  <li oc="d212ea9 -4"> italienische Übersetzungen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Einblenden ignorierter Caches auf der Karte funktioniert jetzt (erstmals)</li>
-  <li> Logpasswörter funktionieren jetzt auch bei Event-Caches</li>
-  <li> Änderungen von zusätzlichen Wegpunkten und Bildern werden beim Änderungsdatum des Listings berücksichtigt.</li>
-  <li> Cachesuche funktionierte manchmal unmittelbar nach dem Ausloggen nicht</li>
-  <li> korrekte Typbezeichung zusätzlicher Wegpunkte (z.B. &bdquo;Parkplatz&ldquo;) in GPX-Dateien [Bug von Version 4]</li>
-  <li> Beim Löschen von Logs werden auch die Bilder mitgelöscht; bisher blieben sie irgendwo im System stehen.</li>
-  <li> Problem mit <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a>-Logduplikate behoben [entstanden durch Version 5]</li>
-  <li> Logeditor auf der englischen, italienischen und spanischen Seite in korrekter Sprache</li>
-  <li> Übersetzung von Ländernamen (in denen die Caches liegen) auf der englischen, italienischen und spanischen Seite</li>
+  <li oc="f5a9c82 -f"> Einblenden ignorierter Caches auf der Karte funktioniert jetzt (erstmals)</li>
+  <li oc="5912928 -f"> Logpasswörter funktionieren jetzt auch bei Event-Caches</li>
+  <li oc="085c139 -f"> Änderungen von zusätzlichen Wegpunkten und Bildern werden beim Änderungsdatum des Listings berücksichtigt.</li>
+  <li oc="047032a -f"> Cachesuche funktionierte manchmal unmittelbar nach dem Ausloggen nicht</li>
+  <li oc="217b66f -f"> korrekte Typbezeichung zusätzlicher Wegpunkte (z.B. &bdquo;Parkplatz&ldquo;) in GPX-Dateien [Bug von Version 4]</li>
+  <li oc="5fe55ee -f"> Beim Löschen von Logs werden auch die Bilder mitgelöscht; bisher blieben sie irgendwo im System stehen.</li>
+  <li oc="4387863 b5d2435 -f"> Problem mit <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a>-Logduplikate behoben [entstanden durch Version 5]</li>
+  <li oc="79cab50 -f"> Logeditor auf der englischen, italienischen und spanischen Seite in korrekter Sprache</li>
+  <li oc="a6a95e2 -f"> Übersetzung von Ländernamen (in denen die Caches liegen) auf der englischen, italienischen und spanischen Seite</li>
+</ul>
+
+<p>Entfernt:</p>
+<ul>
+  <li oc="7274763 -f"> Der Zähler für versandte Emails im Benutzerprofil entfällt aus technischen Gründen.</li>
 </ul>
 <br />
 
@@ -793,51 +800,58 @@ div.changelog .version  { color:grey; }
 
 <p>Karte komplett überarbeitet:</p>
 <ul>
-  <li> Markierung von eigenen, gefundenen, nicht gefundenen und <a href="http://wiki.opencaching.de/index.php/OConly" target="_blank">OConly</a>-Caches</li>
-  <li> <a href="https://www.opencaching.de/map2.php?mode=fullscreen">Vollbildkarte</a> mit ausklappbaren Filtereinstellungen</li>
-  <li> <a href="http://wiki.opencaching.de/index.php/Zusätzliche_Wegpunkte" target="_blank">zusätzliche Wegpunkte</a> des gewählten Caches werden angezeigt</li>
+  <li oc="e9d2e08 -f"> Markierung von eigenen, gefundenen, nicht gefundenen und <a href="http://wiki.opencaching.de/index.php/OConly" target="_blank">OConly</a>-Caches</li>
+  <li oc="8980dae -l"> <a href="https://www.opencaching.de/map2.php?mode=fullscreen">Vollbildkarte</a> mit ausklappbaren Filtereinstellungen</li>
+  <li oc="e5f07b3 -f"> <a href="http://wiki.opencaching.de/index.php/Zusätzliche_Wegpunkte" target="_blank">zusätzliche Wegpunkte</a> des gewählten Caches werden angezeigt</li>
   <li> bis zu 4000 Caches auf einer Karte</li>
-  <li> Home-Button springt zu den im <a href="https://www.opencaching.de/myprofile.php">Profil</a> eingetragenen Heimkoordinaten</li>
-  <li> alternative Cachesymbole wählbar (Opencaching.pl-Stil)</li>
-  <li> pro Cache ist ein <a href="http://wiki.opencaching.de/index.php?title=Vorschaubilder" target="_blank">Vorschaubild</a> einstellbar, das bei Auswahl des Caches auf der Karte erscheint</li>
-  <li> Verbesserungen bei der Cacheauswahl / Filter:
+  <li oc="c5057c8 -f"> Home-Button springt zu den im <a href="https://www.opencaching.de/myprofile.php">Profil</a> eingetragenen Heimkoordinaten</li>
+  <li oc="c5057c8 -f"> alternative Cachesymbole wählbar (Opencaching.pl-Stil)</li>
+  <li oc="f873893 -f"> pro Cache ist ein <a href="http://wiki.opencaching.de/index.php?title=Vorschaubilder" target="_blank">Vorschaubild</a> einstellbar, das bei Auswahl des Caches auf der Karte erscheint</li>
+  <li oc="5572947 c5057c8 -lf"> Verbesserungen bei der Cacheauswahl / Filter:
     <ul>
-      <li> komfortablere Auswahl von einzelnen Cachetypen oder -größen</li>
-      <li> Vorauswahl der wichtigsten Attribute wie auf der <a href="https://www.opencaching.de/search.php">Suchseite</a></li>
+      <li oc="5572947 -l"> komfortablere Auswahl von einzelnen Cachetypen oder -größen</li>
+      <li oc="5572947 -l"> Vorauswahl der wichtigsten Attribute wie auf der <a href="https://www.opencaching.de/search.php">Suchseite</a></li>
       <li> Änderungen werden automatisch übernommen, ohne nochmal &bdquo;Ok&ldquo; klicken zu müssen</li>
-      <li> Einstellungen bleiben bis zum Beenden des Browsers erhalten</li>
+      <li oc="c5057c8 -f"> Einstellungen bleiben bis zum Beenden des Browsers erhalten</li>
     </ul>
   </li>
-  <li> schönere Popup-Fenster mit OConly-Icons, Schwierigkeits- und Geländesymbolen und größeren Cachesymbolen</li>
-  <li> OConly-Caches werden oben angezeigt; inaktive und (nicht) gefundene im Hintergrund</li>
-  <li> besser lesbare Koordinatenanzeige</li>
-  <li> Bedienung der Suchfunktion verbessert</li>
+  <li oc="84a0880 -f"> schönere Popup-Fenster mit OConly-Icons, Schwierigkeits- und Geländesymbolen und größeren Cachesymbolen</li>
+  <li oc="-f"> OConly-Caches werden oben angezeigt; inaktive und (nicht) gefundene im Hintergrund</li>
+  <li oc="84a0880 -f"> besser lesbare Koordinatenanzeige</li>
+  <li oc="7803e02 -f"> Bedienung der Suchfunktion verbessert</li>
   <li> schnellerer Abruf der Cachedaten</li>
-  <li> zusätzliches Katenmaterial von <a href="http://www.thunderforest.com/opencyclemap/" target="_blank">OpenCycleMap</a> und <a href="http://www.mapquest.de/" target="_blank">MapQuest</a></li>
-  <li> interne Umstellung von Google Maps Version 2 auf Version 3; <span class="redtext">im Microsoft Internet Explorer recht träge, Verwendung eines anderen Browsers wird empfohlen</span></li>
+  <li oc="8baa548 -f"> zusätzliches Katenmaterial von <a href="http://www.thunderforest.com/opencyclemap/" target="_blank">OpenCycleMap</a> und <a href="http://www.mapquest.de/" target="_blank">MapQuest</a></li>
+  <li oc="5572947 -l"> interne Umstellung von Google Maps Version 2 auf Version 3; <span class="redtext">im Microsoft Internet Explorer recht träge, Verwendung eines anderen Browsers wird empfohlen</span></li>
 </ul>
 
 <p>Sonstige Neuerungen und Änderungen:</p>
 <ul>
-  <li> Auf den meisten Seiten gibt es nun rechts oben einen Hilfe-Knopf, der auf eine passende Seite im <a href="http://wiki.opencaching.de/" target="_blank">Opencaching-Wiki</a> verweist.</li>
-  <li> Logbild-Galerien auf der Startseite, der neuen <a href="https://www.opencaching.de/newlogpics.php">Galerieseite</a>, in den Cachelistings (erreichbar per Link &bdquo;Logbilder&ldquo;) und in den Benutzerprofilen. Die Profil-Bildgalerien sind per <a href="https://www.opencaching.de/mydetails.php">Profileinstellungen</a> abschaltbar.</li>
+  <li oc="915eb65 df31340 -f"> Auf den meisten Seiten gibt es nun rechts oben einen Hilfe-Knopf, der auf eine passende Seite im <a href="http://wiki.opencaching.de/" target="_blank">Opencaching-Wiki</a> verweist.</li>
+  <li oc="10ce948 -f"> Logbild-Galerien auf der Startseite, der neuen <a href="https://www.opencaching.de/newlogpics.php">Galerieseite</a>, in den Cachelistings (erreichbar per Link &bdquo;Logbilder&ldquo;) und in den Benutzerprofilen. Die Profil-Bildgalerien sind per <a href="https://www.opencaching.de/mydetails.php">Profileinstellungen</a> abschaltbar.</li>
   <li> Spoileroption für Logbilder reaktiviert (vgl. Version 2)</li>
   <li> Titel und Spoilereinstellung von Logbildern ist nachträglich änderbar</li>
   <li> Bilder werden in einem schicken Popup-Fenster dargestellt statt auf einer separaten Seite.</li>
-  <li> neue Wegpunkttypen <em>Pfad</em>, <em>Ziel</em> und <em>interessanter Ort</em></li>
-  <li> Bei unzustellbaren Emails erhalten Benutzer ggf. eine Aufforderung, ihre Mailadresse zu ändern oder zu bestätigen.</li>
-  <li> Inaktive Caches werden in der Beobachtungsliste <s>durchgestrichen</s>, wie bereits in der Ignorierliste.</li>
-  <li> verbesserte Bildeinbettung in GPX-Dateien, nun alles wie im Originallisting</li>
-  <li> viele Detailverbesserungen bei Formuarlayouts</li>
-  <li> alte HTML-Vorschaufunktion entsorgt</li>
+  <li oc="9bb0c30 -f"> neue Wegpunkttypen <em>Pfad</em>, <em>Ziel</em> und <em>interessanter Ort</em></li>
+  <li oc="7383b3f -f"> Button-Design verbessert</li>
+  <li oc="b7b51ea -f"> Bei unzustellbaren Emails erhalten Benutzer ggf. eine Aufforderung, ihre Mailadresse zu ändern oder zu bestätigen.</li>
+  <li oc="0af8101 -3"> Inaktive Caches werden in der Beobachtungsliste <s>durchgestrichen</s>, wie bereits in der Ignorierliste.</li>
+  <li oc="469d2bb -f"> verbesserte Bildeinbettung in GPX-Dateien, nun alles wie im Originallisting</li>
+  <li oc="-f"> viele Detailverbesserungen bei Formuarlayouts</li>
+  <li oc="6eceff2 b8ff60f -4"> italienische Übersetzungen</li>
+  <li oc="34d6861 -6"> spanische Übersetzungen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Handhabung von Nano-Caches bei gespeicherten Suchen korrigiert [Bug von Version 4]</li>
-  <li> Auswahl der Nano-Größe im Suchforumlar korrigiert [Bug von Version 4]</li>
-  <li> Javascript-Warnung beim Loggen auf der italenischen Seite beseitigt</li>
+  <li oc="8b6aea4 -f"> Handhabung von Nano-Caches bei gespeicherten Suchen korrigiert [Bug von Version 4]</li>
+  <li oc="8b6aea4 -f"> Auswahl der Nano-Größe im Suchforumlar korrigiert [Bug von Version 4]</li>
+  <li oc="c7838e0 -f"> Javascript-Warnung beim Loggen auf der italenischen Seite beseitigt</li>
   <li> dänische Flagge bei dänischen Cachebeschreibungen</li>
+</ul>
+
+<p>Entfernt:</p>
+<ul>
+  <li oc="55c9d3e -f"> alte HTML-Vorschaufunktion entfällt</li>
 </ul>
 <br />
 
@@ -847,11 +861,11 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> neue Cachegröße &bdquo;nano&ldquo;</li>
-  <li> <a href="http://wiki.opencaching.de/index.php/Wegpunkte#Interne.2C_zus.C3.A4tzliche_Wegpunkte" target="_blank">Zusätzliche Wegpunkte</a> sind in <a href="http://wiki.opencaching.de/index.php/Wie_erhalte_ich_eine_GPX-Datei%3F" target="_blank">GPX-Dateien</a> enthalten und werden ans GPS-Gerät gesendet</li>
-  <li> Bilder (inkl. Spoilerbildern) aus Cachelistings werden in GPX-Dateien eingebettet. Um sie unterwegs sehen zu können, ist eine Internetverbindung nötig.</li>
-  <li> <a href="https://www.opencaching.de/articles.php?page=impressum#datalicense">Datenlizenz CC-BY-NC-ND</a></li>
-  <li> Statistikbilder mit neuem Logo</a></li>
+  <li oc="b300630 -f"> neue Cachegröße &bdquo;nano&ldquo;</li>
+  <li oc="29ace6a 1dc8526 0b6d3cb -f"> <a href="http://wiki.opencaching.de/index.php/Wegpunkte#Interne.2C_zus.C3.A4tzliche_Wegpunkte" target="_blank">Zusätzliche Wegpunkte</a> sind in <a href="http://wiki.opencaching.de/index.php/Wie_erhalte_ich_eine_GPX-Datei%3F" target="_blank">GPX-Dateien</a> enthalten und werden ans GPS-Gerät gesendet</li>
+  <li oc="469d2bb -f"> Bilder (inkl. Spoilerbildern) aus Cachelistings werden in GPX-Dateien eingebettet. Um sie unterwegs sehen zu können, ist eine Internetverbindung nötig.</li>
+  <li oc="-3bf"> <a href="https://www.opencaching.de/articles.php?page=impressum#datalicense">Datenlizenz CC-BY-NC-ND</a></li>
+  <li oc="50379b8 -f"> Statistikbilder mit neuem Logo</a></li>
 </ul>
 
 <p>Geändert / verbessert:</p>
@@ -860,12 +874,14 @@ div.changelog .version  { color:grey; }
   <li> Die <a href="https://www.opencaching.de/map2.php">Karte</a> zeigt jetzt bis zu 600 statt 180 Cachesymbole an (MS Internet Explorer: bis zu 200).</a></li>
   <li> Auch Hamburg ist jetzt im Menü der <a href="https://www.opencaching.de/map2.php">Kartenseite</a> direkt anwählbar</a>.</li>
   <li> einheitliche Darstellung in der <a href="https://www.opencaching.de/newlogs.php">Liste neuer Logs</a></li>
-  <li> verbesserte Benutzerführung beim Ändern von Profildetails, Emailadresse oder Passwort</li>
+  <li oc="028b50e -f"> verbesserte Benutzerführung beim Ändern von Profildetails, Emailadresse oder Passwort</li>
   <li> verbesserte Verwaltung von Cachemeldungen (intern)</a></li>
   <li> Suchmaschinenoptimierung</a></li>
   <li> <a href="https://www.opencaching.de/articles.php?page=team">Team-</a> und <a href="https://www.opencaching.de/articles.php?page=donations">Spendenseite</a> aktualisiert</a></li>
   <li> <a href="https://www.opencaching.de/articles.php?page=dsb">Datenschutzbelehrung</a> aktualisiert; Verbesserungen beim Datenschutz</a></li>
   <li> diverse interne Änderungen zur Umstellung von PHP 5.2 auf 5.3</li>
+  <li oc="6eceff2 -4"> spanische Übersetzungen</li>
+  <li oc="c8ce2e5 -6"> spanische Übersetzungen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>

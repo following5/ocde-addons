@@ -161,6 +161,7 @@ $developers = [
   '3' => ['Schrottie',   'Schrottie',    140946, '#e7e7e7',      ],
   '4' => ['faina09',     '',             178376, '#a7a80c', true ],
   '5' => ['Steingesicht','',             165774, '#e7e7e7',      ],
+  '6' => ['alamostrail', '',             192906, '#a7a80c', true ],
 ];
 
 $changelog = explode("\n", $changelog);
