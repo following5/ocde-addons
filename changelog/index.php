@@ -160,6 +160,7 @@ $developers = [
   '2' => ['Siggiiiiii',  '',             176654, '#ea9298', true ],
   '3' => ['Schrottie',   'Schrottie',    140946, '#e7e7e7',      ],
   '4' => ['faina09',     '',             178376, '#a7a80c', true ],
+  '5' => ['Steingesicht','',             165774, '#e7e7e7',      ],
 ];
 
 $changelog = explode("\n", $changelog);
@@ -189,7 +190,7 @@ foreach ($changelog as &$line)
         foreach (str_split($matches[1]) as $dev) {
           $da = $developers[$dev];
           $devlink = ($da[1] ? 'https://github.com/OpencachingDeutschland/oc-server3/commits?author='.$da[1]: 'https://www.opencaching.de/viewprofile.php?userid='.$da[2]);
-          $line .= ' <a class="devel" href="'.$devlink.'" style="display:none"><span style="background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white' : '') . '; white-space:nowrap">&nbsp;'.$da[0].'&nbsp;</span></a>';
+          $line .= ' <a class="devel" href="'.$devlink.'" style="display:none"><span style="white-space:nowrap; background-color:'.$da[3].(isset($da[4]) && $da[4] ? '; color:white" onMouseOver="this.style.backgroundColor=\'red\'" onMouseOut="this.style.backgroundColor=\''.$da[3].'\'"' : '"') . '>&nbsp;'.$da[0].'&nbsp;</span></a>';
         }
     }
     $line .= '</li>';

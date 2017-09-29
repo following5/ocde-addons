@@ -44,7 +44,7 @@ div.changelog .version  { color:grey; }
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    26. September 2017
+    29. September 2017
   &nbsp;&nbsp;</em></p></div>
   <p id="development"><strong>In Arbeit</strong> &ndash; noch nicht auf www.opencaching.de freigegeben</p>
 </div>
@@ -54,6 +54,7 @@ div.changelog .version  { color:grey; }
   <li oc="-fw"> <a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a></li>
   <li oc="k5905f61 -f"> OKAPI: Ändern des Logpassworts von Caches</li>
   <li oc="-f"> OKAPI: <a href="https://github.com/opencaching/okapi/pull/509">Caches melden</a></li>
+  <li oc="-atn"> vollständige <a href="http://rwd.opencaching.de/">Neugestaltung</a> der OC-Website mit Schwerpunkt auf mobiler Nutzung</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
@@ -71,7 +72,7 @@ div.changelog .version  { color:grey; }
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    26. September 2017
+    29. September 2017
   &nbsp;&nbsp;</em></p></div>
   <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
 </div>
@@ -85,6 +86,7 @@ div.changelog .version  { color:grey; }
   <li oc="#1133 79a2de2 -tf"> Namen von 75 Natur- und Landschaftsschutzgebieten korrigiert</li>
   <li oc="#1127 01e0005 -f"> Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
   <li oc="#1129 b9426f2 -f"> Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
+  <li oc="#1137 96f7c36 -f"> irrtümliche Sperre der des Logeditors durch Google Chrome verhindert</li>
 </ul>
 <br />
 
@@ -653,7 +655,6 @@ div.changelog .version  { color:grey; }
   <li oc="519be7c -f"> Noch ein Problem bei der Darstellung von Bildern mit ' im Titel behoben [Bug von Version 5]</li>
   <li oc="#209 4412fd2 f1be4fd -bf"> Übernahme von OC-Benutzernamen in den Chat korrigiert</li>
   <li oc="#78 #222 #257 b00d121 7c157ff -fc"> Diverse Fehler in GPX-Dateien behoben</li>
-  <li> Datumsangabe in Email-Adress-Erinnerungsmails korrigiert</li>
   <li oc="#244 371894d -f"> Ausgabe von Empfehlungen in der XML-Schnittstelle korrigiert</li>
   <li> diverse OKAPI-Bugs korrigiert</li>
 </ul>
@@ -665,74 +666,80 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> Der Cachestatus kann (nur noch) per Log geändert werden. Dazu gibt es die neuen Logtypen <em>momentan nicht verfügbar</em>, <em>archiviert</em>, <em>gesperrt</em> und <em>kann gesucht werden</em>. Der gleiche Status kann auch mehrmals geloggt werden, z.B. um zu signalieren dass mit dem Cache alles ok ist. Der Typ alter Logs kann nachträglich geändert werden.</li>
-  <li> Benachrichtungen über Statusänderungen durch die neuen Statuslogs</li>
-  <li> HTML-Beschreibung im Benutzerprofil, mit komfortablem Editor</li>
-  <li> <a href="http://wiki.opencaching.de/index.php/Reverse_%28%E2%80%9ELocationless%E2%80%9C%29_Caches">Safari-Caches</a></li>
-  <li> Karte der neuesten Caches unten auf der Startseite</li>
-  <li> zusätzliche Wegpunkte und persönliche Notiz in Listing-Ausdrucken</li>
-  <li> Link &bdquo;geloggte Caches&ldquo; im Benutzerprofil; Auflistung der eigenen Logs sortiert nach Logdatum</li>
-  <li> Zahl der aktiven Caches im Benutzerprofil, + Link &bdquo;anzeigen&ldquo;</li>
-  <li> Suchergebnisse sind nach Datum des letzten eigenen Logs sortierbar; in der Suchergebnisliste erscheinen dann rechts nur die eigenen Logs</li>
-  <li> Kartenfilter-Einstellungen sind nun permanent speicherbar</li>
-  <li> OC-Supportmitarbeiter können ihr Logs als &bdquo;OC-Team-Log&ldquo; (<img src="https://www.opencaching.de/resource2/ocstyle/images/oclogo/oc-team-comment.png" />) markieren.</li>
-  <li> neuer Menüpunkt <a href="https://www.opencaching.de/okapi/apps/">API-Anwendungen</a> im Benutzerprofil, zur Kontrolle von <a href="https://www.opencaching.de/okapi">OKAPI</a>-Anwendungsrechten</li>
-  <li> <a href="http://wiki.opencaching.de/index.php/XML-Schnittstelle">XML-Interface</a>: zusätzliche Wegpunkte, Loguhrzeit, OC-Team-Log-Flag und Vorschaubild-Flag werden mitgeliefert</li>
-  <li> OKAPI: GC-Codes von Caches und OC-Team-Log-Flag sind abfragbar</li>
+  <li oc="#17 31d72d9 -f"> Der Cachestatus kann (nur noch) per Log geändert werden. Dazu gibt es die neuen Logtypen <em>momentan nicht verfügbar</em>, <em>archiviert</em>, <em>gesperrt</em> und <em>kann gesucht werden</em>. Der gleiche Status kann auch mehrmals geloggt werden, z.B. um zu signalieren dass mit dem Cache alles ok ist. Der Typ alter Logs kann nachträglich geändert werden.</li>
+  <li oc="31d72d9 -f"> Benachrichtungen über Statusänderungen durch die neuen Statuslogs</li>
+  <li oc="#38 4c75910 -f"> HTML-Beschreibung im Benutzerprofil, mit komfortablem Editor</li>
+  <li oc="#22 f4bcbe6 -5f"> <a href="http://wiki.opencaching.de/index.php/Reverse_%28%E2%80%9ELocationless%E2%80%9C%29_Caches">Safari-Caches</a></li>
+  <li oc="#172 2e95c62 d8803d0 -l"> Karte der neuesten Caches unten auf der Startseite</li>
+  <li oc="d0defcf -f"> zusätzliche Wegpunkte und persönliche Notiz in Listing-Ausdrucken</li>
+  <li oc="0dd62df d27d9c3 -f"> Link &bdquo;geloggte Caches&ldquo; im Benutzerprofil; Auflistung der eigenen Logs sortiert nach Logdatum</li>
+  <li oc="db9aabf -f"> Zahl der aktiven Caches im Benutzerprofil, + Link &bdquo;anzeigen&ldquo;</li>
+  <li oc="d27d9c3 -f"> Suchergebnisse sind nach Datum des letzten eigenen Logs sortierbar; in der Suchergebnisliste erscheinen dann rechts nur die eigenen Logs</li>
+  <li oc="#179 c541e5a -f"> Kartenfilter-Einstellungen sind nun permanent speicherbar</li>
+  <li oc="#71 31d72d9 -f"> OC-Supportmitarbeiter können ihr Logs als &bdquo;OC-Team-Log&ldquo; (<img src="https://www.opencaching.de/resource2/ocstyle/images/oclogo/oc-team-comment.png" />) markieren.</li>
+  <li oc="ed1a383 -b"> neue <a href="https://www.opencaching.de/404.php">Fehlerseite</a> für ungültige Seitenabrufe</li>
+  <li oc="#96 a93c994 933b7ca 6372cbc -f"> <a href="http://wiki.opencaching.de/index.php/XML-Schnittstelle">XML-Interface</a>: zusätzliche Wegpunkte, Loguhrzeit, OC-Team-Log-Flag und Vorschaubild-Flag werden mitgeliefert</li>
+  <li oc="8e7a127 -f"> neuer Menüpunkt <a href="https://www.opencaching.de/okapi/apps/">API-Anwendungen</a> im Benutzerprofil, zur Kontrolle von <a href="https://www.opencaching.de/okapi">OKAPI</a>-Anwendungsrechten</li>
+  <li oc="#153 -f"> OKAPI: GC-Codes von Caches und OC-Team-Log-Flag sind abfragbar</li>
   <li> OKAPI: Bilder in GPX-Dateien sind als &bdquo;Thumbnail&ldquo; einbettbar</li>
-  <li> neue <a href="https://www.opencaching.de/404.php">Fehlerseite</a> für ungültige Seitenabrufe</li>
+  <li oc="a654761 -f"> Für Entwickler: Datenbankversionierung eingeführt</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Benutzerprofileinstellungen überarbeitet/vereinfacht</li>
-  <li> Layout von Cachelisten im Benutzerprofil und von  Suchergebnislisten überarbeitet</li>
-  <li> Beim Anlegen zusätzlicher Wegpunkte werden die Cachekoordinaten vorgeschlagen.</li>
-  <li> Bei Loglöschungen wird auch der gelöschte Text und die Cache-URL mitgeschickt.</li>
-  <li> Inaktive Caches werden in Suchlisten durchgestrichen.</li>
-  <li> Layout/Design des Cachelisting-Kopfes überarbeitet, u.a. mit Anzeige der Kurz-URL, übersichtlicheren Druckbuttons und schönerer Wegstreckenanzeige</li>
-  <li> Abgelaufene Events werden auf der Karte grau dargestellt, wie inaktive Caches.</li>
-  <li> Zurücksetzen-Buttons aus allen Dialogen rausgeworfen; Ändern-Buttons in &bdquo;Speichern&ldquo; umbenannt</li>
-  <li> Unveröffentlichte und gesperrt/versteckte Caches zählen nicht mehr in der Versteckstatistik mit.</li>
-  <li> Log-, Beobachten- und Melde-Buttons sind auch für nicht angemeldete User sichtbar.</li>
-  <li> Chat direkt in die Opencaching.de-Seite integriert</li>
-  <li> maximale Größe für hochgeladene Bilder von 150 auf 250 KB erhöht</li>
-  <li> (Nicht-)Ignorieren von Caches wirkt sich sofort auf die Kartendarstellung aus, statt wie bisher zeitverzögert.</li>
-  <li> breiteres Editorfeld für Cachebeschreibungen</li>
-  <li> Anzeige des Empfehlungsdatums in der <a href="https://www.opencaching.de/mytop5.php">Empfehlungsliste</a></li>
-  <li> Unterscheidung zwischen &bdquo;möchte teilnehmen&ldquo; und &bdquo;teilgenommen&ldquo; in Event-Teilnehmerlisten</li>
-  <li> Update der <a href="https://www.opencaching.de/articles.php?page=verein">Vereinsseite</a> und des Mitgliedsantrags</li>
-  <li> Owner und OC-Supportmitarbeiter sehen gesperrt/versteckte Caches in Suchlisten.</li>
-  <li> Verbesserungen für das Supportteam, insbesondere beim Abarbeiten von Cachemeldungen</li>
-  <li> Suchmaschinenoptimierung (HTML Meta keywords &amp; description)</li>
+  <li oc="#144 687e7af -f"> Benutzerprofileinstellungen überarbeitet/vereinfacht</li>
+  <li oc="#171 d314650 687e7af -f"> Layout von Cachelisten im Benutzerprofil und von  Suchergebnislisten überarbeitet</li>
+  <li oc="#192 73efcb8 -l"> Beim Anlegen zusätzlicher Wegpunkte werden die Cachekoordinaten vorgeschlagen.</li>
+  <li oc="#124 80952ea -f"> Bei Loglöschungen wird auch der gelöschte Text und die Cache-URL mitgeschickt.</li>
+  <li oc="76cd966 -f"> Inaktive Caches werden in Suchlisten durchgestrichen.</li>
+  <li oc="#154 #174 3bf236e 5c9c64f c20d7e5 -fl"> Layout/Design des Cachelisting-Kopfes überarbeitet, u.a. mit Anzeige der Kurz-URL, übersichtlicheren Druckbuttons und schönerer Wegstreckenanzeige</li>
+  <li oc="a187a62 -f"> Abgelaufene Events werden auf der Karte grau dargestellt, wie inaktive Caches.</li>
+  <li oc="3aa3eb6 -f"> Zurücksetzen-Buttons aus allen Dialogen rausgeworfen; Ändern-Buttons in &bdquo;Speichern&ldquo; umbenannt</li>
+  <li oc="a3ea988 -f"> Unveröffentlichte und gesperrt/versteckte Caches zählen nicht mehr in der Versteckstatistik mit.</li>
+  <li oc="07e5436 -f"> Log-, Beobachten- und Melde-Buttons sind auch für nicht angemeldete User sichtbar.</li>
+  <li oc="#196 2d10aa8 cbc8e96 -bf"> Chat direkt in die Opencaching.de-Seite integriert</li>
+  <li oc="12e0c8a -f"> maximale Größe für hochgeladene Bilder von 150 auf 250 KB erhöht</li>
+  <li oc="3940996 -f"> (Nicht-)Ignorieren von Caches wirkt sich sofort auf die Kartendarstellung aus, statt wie bisher zeitverzögert.</li>
+  <li oc="#29 5047ee1 -f"> breiteres Editorfeld für Cachebeschreibungen</li>
+  <li oc="#182 ec21220 -f"> Anzeige des Empfehlungsdatums in der <a href="https://www.opencaching.de/mytop5.php">Empfehlungsliste</a></li>
+  <li oc="09b18ed -f"> Unterscheidung zwischen &bdquo;möchte teilnehmen&ldquo; und &bdquo;teilgenommen&ldquo; in Event-Teilnehmerlisten</li>
+  <li oc="-v"> Update der <a href="https://www.opencaching.de/articles.php?page=verein">Vereinsseite</a> und des Mitgliedsantrags</li>
+  <li oc="#81 #125 -f"> Owner und OC-Supportmitarbeiter sehen gesperrt/versteckte Caches in Suchlisten.</li>
+  <li oc="#122 ff3f787 239003b a481dd5 7ba3fec -f"> Verbesserungen für das Supportteam, insbesondere beim Abarbeiten von Cachemeldungen</li>
+  <li oc="#190 7d68737 -f"> Suchmaschinenoptimierung (HTML Meta keywords &amp; description)</li>
+  <li oc="bc34545 -4"> italienische Übersetzungen aktualisiert</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Event-Log-Icons (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-will_attend.png" /> <img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-attended.png" />) in Suchlisten</li>
-  <li> Bei Suchsortierung nach letzten Log fehlten alle ungeloggten Caches außer einem.</li>
-  <li> Bildanzeigeproblem bei ' im Bildtitel behoben [Bug von Version 5]</li>
-  <li> nicht funktionierenden in-GM-Link (Anzeige in Google Maps) beim Abruf gespeicherter Suchen entfernt</li>
-  <li> seltene Fehlermeldungen nach dem Zurückziehen von Bewertungen beseitigt</li>
-  <li> Datumsangabe in Email-Adress-Erinnerungsmails korrigiert</li>
-  <li> Layoutkorrektur bei der Hint-Decodiertabelle</li>
-  <li> Layout der Startseiten-Cachelisten im Internet Explorer korrigiert</li>
-  <li> Persönliche Notizen verändern nicht mehr das Listing-Änderungsdatum; Datum der betroffenen Caches korrigiert. [Bug von Version 6]</li>
-  <li> &bdquo;Cache verstecken&ldquo; führt nicht angemeldete User wieder auf die Loginseite. [Bug von Version 5]</li>
-  <li> XML-Interface-DTDs korrigiert</li>
+  <li oc="76cd966 -f"> Event-Log-Icons (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-will_attend.png" /> <img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-attended.png" />) in Suchlisten</li>
+  <li oc="d27d9c3 -f"> Bei Suchsortierung nach letzten Log fehlten alle ungeloggten Caches außer einem.</li>
+  <li oc="#7 5933340 519be7c -f"> Bildanzeigeproblem bei ' im Bildtitel behoben [Bug von Version 5]</li>
+  <li oc="#5 7b05652 -f"> nicht funktionierenden in-GM-Link (Anzeige in Google Maps) beim Abruf gespeicherter Suchen entfernt</li>
+  <li oc="#60 19d1c3b -f"> seltene Fehlermeldungen nach dem Zurückziehen von Bewertungen beseitigt</li>
+  <li oc="#188 618a956 -f"> Datumsangabe in Email-Adress-Erinnerungsmails korrigiert</li>
+  <li oc="de572aa -f"> Layout der Startseiten-Cachelisten im Internet Explorer korrigiert</li>
+  <li oc="7d190bd -f"> Persönliche Notizen verändern nicht mehr das Listing-Änderungsdatum; Datum der betroffenen Caches korrigiert. [Bug von Version 6]</li>
+  <li oc="#6 c989c00 -f"> Logstatistik-Fehler beim Ändern des Logdatums behoben</li>
+  <li oc="#28 -f"> &bdquo;Cache verstecken&ldquo; führt nicht angemeldete User wieder auf die Loginseite. [Bug von Version 5]</li>
+  <li oc="a93c994 -f"> XML-Interface-DTDs korrigiert</li>
+  <li oc="8103cea -f"> <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a>-Problem beim Abgleich von Logs behoben [entstanden kurz nach Freigabe von Version 7]</li>
   <li> diverse OKAPI-Korrekturen</li>
-  <li> <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a>-Problem beim Abgleich von Logs behoben [entstanden kurz nach Freigabe von Version 7]</li>
 </ul>
+<span class="redmine" style="display:none">
+<p style="line-height:1.3"><em>Mit der OC-Version 8 wurde das öffentliche <a href="https://redmine.opencaching.de/projects/oc-dev/">Redmine-Aufgabenverwaltungssystem</a> eingeführt. Zuvor waren die Aufgaben in einem internen <a href="https://de.wikipedia.org/wiki/Request_Tracker">RT-Ticketsystem</a> verwaltet worden. Für die Versionen 1 bis 7 können daher keine Ticket-Verlinkungen angezeigt werden.</em></p>
+</span>
 <br />
 
 <div class="changelog-header">
     <p id="v3.0.7"><strong>OC3 Version 7</strong> <span class="version">(3.0.7)</span> &ndash; 19. April 2013</p>
 </div>
 
-<ul>
-  <li> Neu: <a href="https://www.opencaching.de/okapi">OKAPI</a></li>
-  <li> &bdquo;Apple-Touch-Icons&ldquo; für Smartphones</li>
-  <li> Beim Loggen eigener Caches wird &bdquo;Hinweis&ldquo; als Logtyp vorgeschlagen statt wie bisher &bdquo;gefunden&ldquo;.</li>
+<ul style="padding-top:0.5em">
+  <li oc="-wf"> Neu: <a href="https://www.opencaching.de/okapi">OKAPI</a></li>
+  <li oc="6df0850 86b6b89 -f"> &bdquo;Apple-Touch-Icons&ldquo; für Smartphones</li>
+  <li oc="036e6fa -f"> Beim Loggen eigener Caches wird &bdquo;Hinweis&ldquo; als Logtyp vorgeschlagen statt wie bisher &bdquo;gefunden&ldquo;.</li>
+  <li oc="0799fe1 -4"> italienische Übersetzungen aktualisiert</li>
 </ul>
 <br />
 
@@ -832,6 +839,7 @@ div.changelog .version  { color:grey; }
   <li> Javascript-Warnung beim Loggen auf der italenischen Seite beseitigt</li>
   <li> dänische Flagge bei dänischen Cachebeschreibungen</li>
 </ul>
+<br />
 
 <div class="changelog-header">
   <p id="v3.0.4"><strong>OC3 Version 4</strong> <span class="version">(3.0.4)</span> &ndash; 17. Februar 2013</p>
