@@ -33,7 +33,7 @@ switch ($lang) {
   a.redmine { color:#4495b4; }
   a.github { color:grey; font-size:13px; }
   a.okapi { font-style: oblique; }
-  a.devel { font-size:13px; color:#222; }
+  .devel { font-size:13px; color:#222; }
   a.clbutton { outline:0; } 
   a:hover { color:red; }
   div.clshadow  { box-shadow: 1px 2px 2px #888; -moz-box-shadow: 1px 1px 2px #888; -webkit-box-shadow: 1px 1px 2px #888; }
@@ -145,6 +145,7 @@ $developers = [
   'b' => ['bohrsty',     'bohrsty',      137473, '#86a8dc', true ],
   'c' => ['cmanie',      'christian-m',  222664, '#b9ebeb',      ],
   'f' => ['following',   'following5',   150360 ,'#f6eeba',      ],
+  'h' => ['HellstormDe', 'hellstormde',  246033, '#ea9298', true ],
   'i' => ['mbirth',      'mbirth',       228246, '#f6caf6',      ],
   'k' => ['kirstenko',   'kirstenko',    208441, '#e7e7e7',      ],
   'l' => ['Flopp',       'Flopp',        126329, '#c5e1a3',      ],
@@ -156,6 +157,7 @@ $developers = [
   't' => ['teiling88',   'teiling88',    325701, '#d5e7f9',      ],
   'v' => ['4_Vs',        '4Vs',          162754, '#b48ed0', true ],
   'w' => ['wrygiel',     'wrygiel',      256465, '#c09576', true ],
+  '0' => ['Oliver',      '',             118951, '#e7e7e7',      ],
   '1' => ['Team Brummi', '',             203222, '#a7a80c', true ],
   '2' => ['Siggiiiiii',  '',             176654, '#ea9298', true ],
   '3' => ['Schrottie',   'Schrottie',    140946, '#e7e7e7',      ],
@@ -187,7 +189,7 @@ foreach ($changelog as &$line)
       # Developers
       elseif (preg_match('/^-:(.+)$/', $token, $matches))
         $line .= ' <span class="devel" style="background-color:#e7e7e7; white-space:nowrap; display:none">&nbsp;'.$matches[1].'&nbsp;</span>';
-      elseif (preg_match('/^-([a-z1-9]+)$/', $token, $matches))
+      elseif (preg_match('/^-([a-z0-9]+)$/', $token, $matches))
         foreach (str_split($matches[1]) as $dev) {
           $da = $developers[$dev];
           $devlink = ($da[1] ? 'https://github.com/OpencachingDeutschland/oc-server3/commits?author='.$da[1]: 'https://www.opencaching.de/viewprofile.php?userid='.$da[2]);

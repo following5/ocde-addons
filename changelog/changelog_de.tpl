@@ -804,7 +804,7 @@ div.changelog .version  { color:grey; }
   <li oc="8980dae -l"> <a href="https://www.opencaching.de/map2.php?mode=fullscreen">Vollbildkarte</a> mit ausklappbaren Filtereinstellungen</li>
   <li oc="e5f07b3 -f"> <a href="http://wiki.opencaching.de/index.php/Zusätzliche_Wegpunkte" target="_blank">zusätzliche Wegpunkte</a> des gewählten Caches werden angezeigt</li>
   <li> bis zu 4000 Caches auf einer Karte</li>
-  <li oc="c5057c8 -f"> Home-Button springt zu den im <a href="https://www.opencaching.de/myprofile.php">Profil</a> eingetragenen Heimkoordinaten</li>
+  <li oc="9b1f1be -l"> Home-Button springt zu den im <a href="https://www.opencaching.de/myprofile.php">Profil</a> eingetragenen Heimkoordinaten</li>
   <li oc="c5057c8 -f"> alternative Cachesymbole wählbar (Opencaching.pl-Stil)</li>
   <li oc="f873893 -f"> pro Cache ist ein <a href="http://wiki.opencaching.de/index.php?title=Vorschaubilder" target="_blank">Vorschaubild</a> einstellbar, das bei Auswahl des Caches auf der Karte erscheint</li>
   <li oc="5572947 c5057c8 -lf"> Verbesserungen bei der Cacheauswahl / Filter:
@@ -828,9 +828,9 @@ div.changelog .version  { color:grey; }
 <ul>
   <li oc="915eb65 df31340 -f"> Auf den meisten Seiten gibt es nun rechts oben einen Hilfe-Knopf, der auf eine passende Seite im <a href="http://wiki.opencaching.de/" target="_blank">Opencaching-Wiki</a> verweist.</li>
   <li oc="10ce948 -f"> Logbild-Galerien auf der Startseite, der neuen <a href="https://www.opencaching.de/newlogpics.php">Galerieseite</a>, in den Cachelistings (erreichbar per Link &bdquo;Logbilder&ldquo;) und in den Benutzerprofilen. Die Profil-Bildgalerien sind per <a href="https://www.opencaching.de/mydetails.php">Profileinstellungen</a> abschaltbar.</li>
-  <li> Spoileroption für Logbilder reaktiviert (vgl. Version 2)</li>
-  <li> Titel und Spoilereinstellung von Logbildern ist nachträglich änderbar</li>
-  <li> Bilder werden in einem schicken Popup-Fenster dargestellt statt auf einer separaten Seite.</li>
+  <li oc="10ce948 -f"> Spoileroption für Logbilder reaktiviert (vgl. Version 2)</li>
+  <li oc="10ce948 -f"> Titel und Spoilereinstellung von Logbildern ist nachträglich änderbar</li>
+  <li oc="10ce948 b759926 -3f"> Bilder werden in einem schicken Popup-Fenster dargestellt statt auf einer separaten Seite.</li>
   <li oc="9bb0c30 -f"> neue Wegpunkttypen <em>Pfad</em>, <em>Ziel</em> und <em>interessanter Ort</em></li>
   <li oc="7383b3f -f"> Button-Design verbessert</li>
   <li oc="b7b51ea -f"> Bei unzustellbaren Emails erhalten Benutzer ggf. eine Aufforderung, ihre Mailadresse zu ändern oder zu bestätigen.</li>
@@ -846,7 +846,7 @@ div.changelog .version  { color:grey; }
   <li oc="8b6aea4 -f"> Handhabung von Nano-Caches bei gespeicherten Suchen korrigiert [Bug von Version 4]</li>
   <li oc="8b6aea4 -f"> Auswahl der Nano-Größe im Suchforumlar korrigiert [Bug von Version 4]</li>
   <li oc="c7838e0 -f"> Javascript-Warnung beim Loggen auf der italenischen Seite beseitigt</li>
-  <li> dänische Flagge bei dänischen Cachebeschreibungen</li>
+  <li oc="79b4ee0 -f"> dänische Flagge bei dänischen Cachebeschreibungen</li>
 </ul>
 
 <p>Entfernt:</p>
@@ -870,24 +870,23 @@ div.changelog .version  { color:grey; }
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> neues Design des Seitenkopfes mit neuem Logo</a></li>
-  <li> Die <a href="https://www.opencaching.de/map2.php">Karte</a> zeigt jetzt bis zu 600 statt 180 Cachesymbole an (MS Internet Explorer: bis zu 200).</a></li>
+  <li oc="f9a055a -f"> neues Design des Seitenkopfes mit neuem Logo</a></li>
+  <li oc="-f"> Die <a href="https://www.opencaching.de/map2.php">Karte</a> zeigt jetzt bis zu 600 statt 180 Cachesymbole an (MS Internet Explorer: bis zu 200).</a></li>
   <li> Auch Hamburg ist jetzt im Menü der <a href="https://www.opencaching.de/map2.php">Kartenseite</a> direkt anwählbar</a>.</li>
-  <li> einheitliche Darstellung in der <a href="https://www.opencaching.de/newlogs.php">Liste neuer Logs</a></li>
   <li oc="028b50e -f"> verbesserte Benutzerführung beim Ändern von Profildetails, Emailadresse oder Passwort</li>
-  <li> verbesserte Verwaltung von Cachemeldungen (intern)</a></li>
-  <li> Suchmaschinenoptimierung</a></li>
-  <li> <a href="https://www.opencaching.de/articles.php?page=team">Team-</a> und <a href="https://www.opencaching.de/articles.php?page=donations">Spendenseite</a> aktualisiert</a></li>
-  <li> <a href="https://www.opencaching.de/articles.php?page=dsb">Datenschutzbelehrung</a> aktualisiert; Verbesserungen beim Datenschutz</a></li>
-  <li> diverse interne Änderungen zur Umstellung von PHP 5.2 auf 5.3</li>
-  <li oc="6eceff2 -4"> spanische Übersetzungen</li>
+  <li oc="9ddfbd6 aedd718 d0de099 -f"> verbesserte Verwaltung von Cachemeldungen (intern)</a></li>
+  <li oc="319e5a2 b4312fe -0"> Suchmaschinenoptimierung</a></li>
+  <li oc="6e212d8 -f"> <a href="https://www.opencaching.de/articles.php?page=team">Team-</a> und <a href="https://www.opencaching.de/articles.php?page=donations">Spendenseite</a> aktualisiert</a></li>
+  <li oc="bc7291f -f"> <a href="https://www.opencaching.de/articles.php?page=dsb">Datenschutzbelehrung</a> aktualisiert; Verbesserungen beim Datenschutz</a></li>
+  <li oc="57d6655 eef2b96 -f"> diverse interne Änderungen zur Umstellung von PHP 5.2 auf 5.3</li>
+  <li oc="6eceff2 -4"> italienische Übersetzungen</li>
   <li oc="c8ce2e5 -6"> spanische Übersetzungen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> explizite Länderangabe für Cachelistings hat Vorrang vor automatischer Erkennung via Koordinaten</li>
-  <li> Icons für Event-Logs in der <a href="https://www.opencaching.de/newlogs.php">Liste neuer Logs</a></li>
+  <li oc="e22e1b2 -f"> explizite Länderangabe für Cachelistings hat Vorrang vor automatischer Erkennung via Koordinaten</li>
+  <li oc="daa748f -f"> Icons für Event-Logs in der <a href="https://www.opencaching.de/newlogs.php">Liste neuer Logs</a></li>
 </ul>
 <br />
 
@@ -897,25 +896,25 @@ div.changelog .version  { color:grey; }
 
 <p>Neu:</p>
 <ul>
-  <li> Attribut &bdquo;nur zu bestimmten Jahreszeiten&ldquo;</li>
-  <li> Anzeige der neuesten Forenbeiträge auf der Startseite</li>
+  <li oc="8ff3e2a 7fa38f6 -hf"> Attribut &bdquo;nur zu bestimmten Jahreszeiten&ldquo;</li>
+  <li oc="f6d0f92 2755826 -b"> Anzeige der neuesten Forenbeiträge auf der Startseite</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
-  <li> Hilfsseiten ins <a href="http://wiki.opencaching.de/">Wiki</a> ausgelagert</li>
-  <li> <a href="https://www.opencaching.de/articles.php?page=team">Teamliste</a> aktualisiert</li>
-  <li> Suchmaschinenoptimierung</li>
-  <li> interne Softwarekonfiguration vereinfacht</li>
+  <li oc="f64c34d -f"> Hilfsseiten ins <a href="http://wiki.opencaching.de/">Wiki</a> ausgelagert</li>
+  <li oc="-f"> <a href="https://www.opencaching.de/articles.php?page=team">Teamliste</a> aktualisiert</li>
+  <li oc="004fc4f -0"> Suchmaschinenoptimierung</li>
+  <li oc="-0"> interne Softwarekonfiguration vereinfacht</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li> Fehler bei Wegpunktgenerierung behoben</li>
-  <li> Fehler beim Speichern eines unveränderten Benutzerprofils behoben</li>
-  <li> Menüdarstellung im ausgeloggten Zustand korrigiert</li>
-  <li> GC-Wegpunktesuche funktioniert auch bei Duplikaten</li>
-  <li> Layoutkorrekturen im Benutzerprofil und Suchformular</li>
+  <li oc="d6ae786 9ce354a 797fa10 39a25f9 -0"> Fehler bei Wegpunktgenerierung behoben</li>
+  <li oc="42c1f54 -f"> Fehler beim Speichern eines unveränderten Benutzerprofils behoben</li>
+  <li oc="d51b908 -f"> Menüdarstellung im ausgeloggten Zustand korrigiert</li>
+  <li oc="d7d3998 -f"> GC-Wegpunktesuche funktioniert auch bei Duplikaten</li>
+  <li oc="0166d34 -f"> Layoutkorrekturen im Benutzerprofil und Suchformular</li>
 </ul>
 <br />
 
