@@ -35,7 +35,7 @@ switch ($lang) {
   .content2-pagetitle { font-size:18px; padding-bottom:0 }
   p { font-family:'Roboto',sans-serif; font-size:15px; line-height: 1.4em; padding-bottom:0.5em; }
   li { font-family:'Roboto',sans-serif; font-size:15px; padding-bottom:0.05em !important; }
-  select.versions { font-family:'Roboto',sans-serif; font-size:15px; border:none; }
+  select.versions { font-family:'Roboto',sans-serif; font-size:15px; border:1px dotted #ccc; background-color:transparent; }
   a { color:#b26c0a; text-decoration:none; }
   a.redmine { color:#4495b4; }
   a.github { color:grey; font-size:13px; }
@@ -103,7 +103,7 @@ function initclb()
 
 <!-- title bar -->
 <div style="text-align:right; width:758px; padding:0.6em 1.5em 0 0; background-color:#f7f7f7" class="clshadow">
-  <div id="versionselector" style="float:left; margin-left:180px"></div>
+  <div id="versionselector" style="float:left; margin-left:1em"></div>
   <p style="padding-bottom:0.5em;">
     <big>Opencaching.de Changelog</big><br />
     <a href="?lang=<?= $lang=='en' ? 'de">deutsch' : 'en">english' ?></a> &bull;
@@ -113,6 +113,7 @@ function initclb()
 </div>
 
 <!-- toogle buttons -->
+
 <div style="position:fixed; top:1.5em">
   <div style="position: relative; left:-64px; <?php if ($lang != 'de') echo 'display:none;'; ?>">
     <a href="javascript:toggleclb('redmine')" class="clbutton" title='<?= $button_titles[0] ?>'><img id='redmine_button' src="res/redmine-off.png"/></a>
