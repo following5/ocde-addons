@@ -188,7 +188,7 @@ div.changelog .version { color:grey; }
     <br />
 
     <div class="changelog-header">
-        <p id="v3.0.13"><strong>OC3 Release 13</strong> <span class="version">(3.0.13)</span> &ndash; 4 July 2015</p>  
+        <p id="v3.0.13"><strong>OC3 Release 13</strong> <span class="version">(3.0.13)</span> &ndash; 4 July 2015</p>
     </div>
 
     <p>New:</p>

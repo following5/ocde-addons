@@ -21,7 +21,7 @@ switch ($lang) {
   <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
   <meta http-equiv="Content-Language" content="DE" />
   <link rel="stylesheet" type="text/css" href="https://www.opencaching.de/resource2/ocstyle/css/style_screen.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" /> 
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto" />
 </head>
 <body style="font-family:'Roboto',sans-serif; color:#222">
 
@@ -34,7 +34,7 @@ switch ($lang) {
   a.github { color:grey; font-size:13px; }
   a.okapi { font-style: oblique; }
   .devel { font-size:13px; color:#222; }
-  a.clbutton { outline:0; } 
+  a.clbutton { outline:0; }
   a:hover { color:red; }
   div.clshadow  { box-shadow: 1px 2px 2px #888; -moz-box-shadow: 1px 1px 2px #888; -webkit-box-shadow: 1px 1px 2px #888; }
 </style>
@@ -157,6 +157,7 @@ $developers = [
   't' => ['teiling88',   'teiling88',    325701, '#d5e7f9',      ],
   'v' => ['4_Vs',        '4Vs',          162754, '#b48ed0', true ],
   'w' => ['wrygiel',     'wrygiel',      256465, '#c09576', true ],
+  'x' => ['Metrax',      'Metrax',       212145, '#e7e7e7',      ],
   '0' => ['Oliver',      '',             118951, '#e7e7e7',      ],
   '1' => ['Team Brummi', '',             203222, '#a7a80c', true ],
   '2' => ['Siggiiiiii',  '',             176654, '#ea9298', true ],
