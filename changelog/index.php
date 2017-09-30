@@ -32,9 +32,10 @@ switch ($lang) {
 <body style="font-family:'Roboto',sans-serif; color:#222">
 
 <style>
-  .content2-pagetitle { font-size:18px; }
+  .content2-pagetitle { font-size:18px; padding-bottom:0 }
   p { font-family:'Roboto',sans-serif; font-size:15px; line-height: 1.4em; padding-bottom:0.5em; }
   li { font-family:'Roboto',sans-serif; font-size:15px; padding-bottom:0.05em !important; }
+  select.versions { font-family:'Roboto',sans-serif; font-size:15px; border:none; }
   a { color:#b26c0a; text-decoration:none; }
   a.redmine { color:#4495b4; }
   a.github { color:grey; font-size:13px; }
@@ -102,6 +103,7 @@ function initclb()
 
 <!-- title bar -->
 <div style="text-align:right; width:758px; padding:0.6em 1.5em 0 0; background-color:#f7f7f7" class="clshadow">
+  <div id="versionselector" style="float:left; margin-left:180px"></div>
   <p style="padding-bottom:0.5em;">
     <big>Opencaching.de Changelog</big><br />
     <a href="?lang=<?= $lang=='en' ? 'de">deutsch' : 'en">english' ?></a> &bull;
@@ -145,6 +147,8 @@ if (!file_exists($changelog_file) ||
 
 if (!$changelog)
   die('<p>No data</p>');
+else
+  $changelog = explode("\n", $changelog);
 
 # add links from OC tags
 
@@ -176,7 +180,6 @@ $developers = [
   '6' => ['alamostrail', '',             192906, '#a7a80c', true ],
 ];
 
-$changelog = explode("\n", $changelog);
 foreach ($changelog as &$line)
   if (preg_match('/\s+<li +oc="(.+?)" *> *(.+?)<\/li>/', $line, $matches)) {
     $line = '<li>' . $matches[2];
@@ -208,20 +211,33 @@ foreach ($changelog as &$line)
     }
     $line .= '</li>';
   }
-$changelog = implode("\n", $changelog);
+
+# insert version selection dropdown list
+
+$options = "  <option value='' selected='selected'>...</option>";
+if ($lang == 'de')
+  $options .= "  <option value='development'>In Arbeit</option>";
+foreach ($changelog as &$line)
+  if (preg_match('/id="(v\d\.\d\.\d+)".+OC3 (.+\d+)<.+&ndash; (.+)<\/p>/', $line, $matches))
+  {
+    $options .= '    <option value="'.$matches[1].'">'.$matches[2].' &nbsp;-&nbsp; '.$matches[3].'</option>';
+    ++$n;
+  }
+$version_selector = "<select id='versions' class='versions' onchange='document.location.href = \"#\" + this.value; this.selectedIndex=0'>$options</select>";
 
 # output
 
+$changelog = implode("\n", $changelog);
 $changelog = str_replace('href=', 'target="_blank" href=', $changelog);
 echo $changelog;
 
 ?>
-
 </div>
 </div>
 </div>
 
 <script type="text/javascript">
+  document.getElementById('versionselector').innerHTML = "<?= str_replace('"', '\"', $version_selector) ?>";
   initclb();
   save_cookie();
 </script>

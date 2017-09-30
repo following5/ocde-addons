@@ -96,7 +96,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <br />
 
 <div class="changelog-header">
-  <p id="v3.1.3"><strong>OC3 Version 23</strong> <span class="version">(3.1.3)</span> &ndash; 17. Mai 2017</p>
+  <p id="v3.1.3"><strong>OC3 Release 23</strong> <span class="version">(3.1.3)</span> &ndash; 17. Mai 2017</p>
 </div>
 
 <p>New:</p>
@@ -129,7 +129,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <br />
 
 <div class="changelog-header">
-  <p id="v3.1.2"><strong>OC3 Version 22</strong> <span class="version">(3.1.2)</span> &ndash; 6. Februar 2017</p>
+  <p id="v3.1.2"><strong>OC3 Release 22</strong> <span class="version">(3.1.2)</span> &ndash; 6. Februar 2017</p>
 </div>
 
 <p>Changed / improved:</p>
@@ -154,7 +154,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <br />
 
 <div class="changelog-header">
-  <p id="v3.1.1"><strong>OC3 Version 21</strong> <span class="version">(3.1.1)</span> &ndash; 24. Oktober 2016</p>
+  <p id="v3.1.1"><strong>OC3 Release 21</strong> <span class="version">(3.1.1)</span> &ndash; 24. Oktober 2016</p>
 </div>
 
 <p>Changed / improved:</p>
@@ -164,7 +164,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <br />
 
 <div class="changelog-header">
-  <p id="v3.1.0"><strong>OC3 Version 20</strong> <span class="version">(3.1.0)</span> &ndash; 10. Oktober 2016</p>
+  <p id="v3.1.0"><strong>OC3 Release 20</strong> <span class="version">(3.1.0)</span> &ndash; 10. Oktober 2016</p>
 </div>
 
 <p>New:</p>
@@ -190,7 +190,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <br />
 
 <div class="changelog-header">
-  <p id="v3.0.19"><strong>OC3 Version 19</strong> <span class="version">(3.0.19)</span> &ndash; 28. Juni 2016</p>
+  <p id="v3.0.19"><strong>OC3 Release 19</strong> <span class="version">(3.0.19)</span> &ndash; 28. Juni 2016</p>
 </div>
 
 <p>New:</p>
