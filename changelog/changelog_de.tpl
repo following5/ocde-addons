@@ -83,7 +83,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <ul>
   <li oc="#1043 0f4c547 -f"> <a href="https://www.opencaching.de/search.php">Textsuche</a> in Logs funktioniert erstmals, Textsuche in Beschreibungen und Bildtiteln funktioniert erstmals zuverlässig.</li>
   <li oc="#1125 059446d -f"> Anzeige der Regionalzuordnung von Caches in Großbritannien, Norwegen und Schweden</li>
-  <li oc="#1122 e22baf1 -t"> Cachekartenanzeige für manche Webbrowser repariert</li>
+  <li oc="#1122 e22baf1 -t"> Cachekartenanzeige für manche Webbrowser repariert [evtl. Bug von Version 5]</li>
   <li oc="fc85220 -f"> OSM-Karte wurde im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten).</li>
   <li oc="#1133 79a2de2 -tf"> Namen von 75 Natur- und Landschaftsschutzgebieten korrigiert</li>
   <li oc="#1127 01e0005 -f"> Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
@@ -134,7 +134,7 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="#1081 5042fcc -f"> OConly-Markierung (<img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png">) bei unveröffentlichten Caches in der <a href="https://www.opencaching.de/myhome.php#mycaches">Liste der eigenen Caches</a> korrigiert. [Bug von Version 9]</li>
   <li oc="#1092 63539d0 -f"> Anordnung von Bildern mit verschiedenem Seitenverhältnis in der Listing-Bildgalerie korrigiert.</li>
   <li oc="#1099 ab79655 -f"> Beim Umschalten zwischen verschiedenen Editor-Modi bleibt der gewählte Logtyp erhalten.</li>
-  <li oc="#1086 ed4f18b -t"> Missbrauch der Login-Seitenweiterleitung wird verhindert</li>
+  <li oc="#1086 ed4f18b -t"> Missbrauch der Login-Seitenweiterleitung wird verhindert.</li>
   <li oc="#1107 65038b0 8fea6cb -f"> Einige Seiten wurdem im Browser als „nicht sicher“ angezeigt (http-Bildeinbettung in https-Seiten)</li>
   <li oc="-tf"> diverse kleine Fehlerkorrekturen</li>
 </ul>
@@ -152,7 +152,7 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <p>Neu:</p>
 <ul>
-  <li oc="#1031 0b7f641 -t"> Cacheattribut &bdquo;Handicap: Blind&ldquo; hinzugefügt. Das Attribut sollte noch nicht verwendet werden, weil die Richtlinien dafür noch in Arbeit sind. (&rarr; <a href="https://forum.opencaching.de/index.php?topic=4760.0">Diskussion</a>)</li>
+  <li oc="#1031 0b7f641 -t"> Cacheattribut &bdquo;Handicap: Blind&ldquo; hinzugefügt. Das Attribut sollte nur in Ausnahmefällen verwendet werden, weil die Richtlinien dafür noch in Arbeit sind. (&rarr; <a href="https://forum.opencaching.de/index.php?topic=4760.0">Diskussion</a>)</li>
   <li oc="#768 2a2f9af -n"> Cookie-Hinweis per EU-Richtline</li>
   <li oc="#1038 306c76f -t"> Analyse der Nutzeraktivität mit Google Analytics; siehe Erläuterung im <a href="https://blog.opencaching.de/2017/09/oc-version-3-1-3-neues-attribut-und-neue-bildgroessen/">OC-Blog</a></li>
   <li oc="#841 3964376 dfed2c1 -t"> Während Arbeiten an der OC-Website erscheint ein Hinweis, dass sie gerade gewartet wird.</li>
@@ -162,7 +162,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <ul>
   <li oc="#1040 -t"> Die Vorgabe für neu angelegte Listings ist nun „noch nicht veröffentlichen“ statt „sofort veröffentlichen“.</li>
   <li oc="#221 9c1c25a -n"> Leerzeichen am Beginn und Ende von Cachenamen, GC-Wegpunkten, Logpwasswörtern usw. werden bei der Eingabe entfernt.</li>
-  <li oc="#1027 bebc784 -t"> Zeitraum für die Markierung „neuer Cache“ von 14 auf 31 Tage erhöht</li>
+  <li oc="#1027 bebc784 -t"> Zeitraum für die Markierung „neuer Cache“ (in Suchergebnislisten) von 14 auf 31 Tage erhöht</li>
   <li oc="41a118d -t"> Größenlimit für hochgeladene Bilder von 6 auf 15 MB erhöht</li>
   <li oc="#1021 3f6a457 -t"> Das Passwortfeld beim Loggen wird nur noch für Fundlogs eingeblendet.</li>
   <li oc="0bdeab6 -t"> Prüfung eingegebener Emailadressen verbessert</li>
@@ -186,7 +186,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <p>Geändert / verbessert:</p>
 <ul>
   <li oc="#1015 955ffac -s"> Suche nach Benutzern: Die <a href="https://www.opencaching.de/search.php">Suche</a> nach Caches oder Logs eines Benutzers findet auch Benutzer ohne Caches oder Logs.</li>
-  <li oc="#1001 f0084b4 -s"> Die Liste der Cache eines Benutzers wird nach Versteckdatum sortiert.</li>
+  <li oc="#1001 f0084b4 -s"> Die Liste der Cache eines Benutzers wird nach Versteckdatum statt Cachename sortiert.</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
@@ -230,8 +230,8 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="#1000 248668a -s"> Warnung, wenn bei der Suche kein Cachetyp oder keine Cachegröße gewählt wurde</li>
   <li oc="09ea90e -t"> Prüfung eingegebener Emailadressen verbessert</li>
   <li oc="#1004 0de9460 -r"> Verbesserung der Datensicherheit: Sitzungsdaten werden nur noch per HTTPS übertragen</li>
-  <li oc="220a941 -t"> Aktualisierung der Spendenseite</li>
-  <li oc="c67b844 -i"> interne Umstellung auf neue What3Words-Schnittstelle</li>
+  <li oc="220a941 -t"> Aktualisierung der <a href="https://www.opencaching.de/articles.php?page=donations">Spendenseite</a></li>
+  <li oc="c67b844 -i"> interne Umstellung auf neue what3words-Schnittstelle</li>
 </ul>
 
 <p>Entfernt:</p>
@@ -244,7 +244,6 @@ div.changelog .topspace { padding-top:0.5em; }
   <p id="v3.0.19"><strong>OC3 Version 19</strong> <span class="version">(3.0.19)</span> &ndash; 28. Juni 2016</p>
 </div>
 
-<p>Geändert / verbessert:</p>
 <p>Neu:</p>
 <ul>
   <li oc="#45 b6f0e86 -f"> Entschlüsselte Hinweise können wieder verschlüsselt weden.</li>
@@ -643,7 +642,7 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="1680a52 -f"> <a href="https://www.opencaching.de/mytop5.php">eigene Empfehlungsliste</a> wird nach Datum sortiert</li>
   <li oc="#217 bd33e67 6505894 0780546 988dad2 -bf"> Beim Eintragen vieler identischer Logs zu verschiedenen Caches wird ein Hinweis zum korrekten Übertragen alter GC-Logs angezeigt.</li>
   <li oc="#234 #245 4976dfb -v"> neues OC.de-Logo an weiteren Stellen eingebaut</li>
-  <li oc="a1772cd 8429b6d -v"> Einbindung von Flattr auf der Spendenseite</li>
+  <li oc="a1772cd 8429b6d -v"> Einbindung von Flattr auf der <a href="https://www.opencaching.de/articles.php?page=donations">Spendenseite</a></li>
   <li oc="#207 0eeb9c1 -f"> Status-Logs (siehe Version 8) werden auch durch <a href="http://wiki.opencaching.de/index.php/Ocprop">Ocprop</a> und beim Deaktivieren von Benutzerkonten erzeugt</li>
   <li oc="#216 07a1ae0 9c8a385 -f"> diverse Verbesserungen auf der Adoptionsseite</li>
   <li oc="-f"> umfangreiche interne Umstrukturierungen / Aufräumarbeiten</li>

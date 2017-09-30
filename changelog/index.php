@@ -100,11 +100,12 @@ function initclb()
 </div>
 
 <!-- toogle buttons -->
-<?php if ($lang == 'de') { ?>
 <div style="position:fixed; top:1.5em">
+  <?php if ($lang == 'de') { ?>
   <div style="position: relative; left:-64px">
     <a href="javascript:toggleclb('redmine')" class="clbutton" title='<?= $button_titles[0] ?>'><img id='redmine_button' src="res/redmine-off.png"/></a>
   </div>
+  <?php } ?>
   <div style="position: relative; left:-64px; margin-top:8px">
     <a href="javascript:toggleclb('github')" class="clbutton" title='<?= $button_titles[1] ?>'><img id='github_button' src="res/github-off.png"/></a>
   </div>
@@ -112,7 +113,6 @@ function initclb()
     <a href="javascript:toggleclb('devel')" class="clbutton" title='<?= $button_titles[2] ?>'><img id='devel_button' src="res/devel-off.png"/></a>
   </div>
 </div>
-<?php } ?>
 <br />
 
 <?php

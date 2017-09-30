@@ -18,13 +18,216 @@ div.changelog .topspace { padding-top:0.5em; }
 <p><a href="https://www.opencaching.de/">Opencaching.de</a> Version 1.0 went online in August 2005 und was steadily enhanced in the following years, switching to Version 2. In the beginning of 2011, development was halted, until the new Opencaching Deutschland association restarted it in July 2012 at Version&nbsp;3.0.</p>
 
 <p>This page lists all changes since version 3.0. Some minor changes have been omitted here. New Features may be relased before the final relase date.</p>
+
+<p>For a more detailed overview of <a href="https://www.opencaching.de/okapi">OKAPI</a> changes (since 2015), see the <a href="https://www.opencaching.de/okapi/changelog.html">OKAPI changelog</a>.</p>
 <br />
 
 <div class="changelog-changes">
 
 <div class="changelog-header">
-  <p id="v3.1.5"><strong>OC3 Release 19–25</strong> &ndash; TODO</p>
-</div><br />
+  <p id="v3.1.5"><strong>OC3 Release 25</strong> <span class="version">(3.1.5)</span> &ndash; in progress</p>
+</div>
+
+<p>Fixed:</p>
+<ul>
+  <li oc="#1043 0f4c547 -f"> Log <a href="https://www.opencaching.de/search.php">text search</a> finally works. Cache description and picture title now works reliably.</li>
+  <li oc="#1125 059446d -f"> Show the regional location of caches in the UK, in Norway and Sweden</li>
+  <li oc="#1122 e22baf1 -t"> Repaired cache map display in some web browsers. [Bug of release 5 ?]</li>
+  <li oc="fc85220 -f"> OSM map view was marked as "unsafe". (http image embedding in https pages)</li>
+  <li oc="#1133 79a2de2 -tf"> Fixed spelling of 75 nature reserve names.</li>
+  <li oc="#1127 01e0005 -f"> "Safari" button on map now works also for logged-off users. [Bug of release 13]</li>
+  <li oc="#1129 b9426f2 -f"> Fixed multiple GPX download of the same cache. [Bug of release 20]</li>
+  <li oc="#1137 96f7c36 -f"> Worked around a Google Chrome bug which blocked log editor mode changes.</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.1.4"><strong>OC3 Release 24</strong> <span class="version">(3.1.4)</span> &ndash; 7 September 2017</p>
+</div>
+
+<p>New:</p>
+<ul>
+  <li oc="#39 33637ef -f"> <a href="https://www.opencaching.de/myhome.php?allpics=owncaches">Log picture gallery</a> for own caches</li>
+  <li oc="#987 0a85567 -f"> Position of uploaded cache "image attachments" can be chosen.</li>
+  <li oc="#932 #1050 #1059 7751e9b -f"> Log tags "cache needs mantenance" (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-needs-maintenance.png" />) and "listing is outdated" (<img src="https://www.opencaching.de/resource2/ocstyle/images/log/16x16-listing-outdated.png" />) can be set or changed later.</li>
+  <li oc="#1063 acabd45 49a9043 -f"> Show scheduled publish date in cache listings; publish by two clicks.</li>
+  <li oc="#1071 1625ae9 -f"> Show other-language hints, if none is avaialble in the selected language.</li>
+  <li oc="#1090 d113c5f -f"> Log notification mails inform about recommendations.</li>
+  <li oc="k35ac1c2 -f"> OKAPI: Sorting of caches by publish or hide date / of events by event date</li>
+</ul>
+
+<p>Changed / improved:</p>
+<ul>
+  <li oc="#986 9492b7e -f"> <a href="https://www.opencaching.de/search.php">Searching</a> by description text now also finds short descriptions.</li>
+  <li oc="#898 7238afe -f"> Prevent a later hide date or earlier event date than publish date.</li>
+  <li oc="#944 eae60c7 ff90092 -f"> For events, the map popup window shows the event date instead of publish date.</li>
+  <li oc="#1028 b069df0 -f"> Ask for confirmation when deleting cache description pictures.</li>
+  <li oc="#1108 03cdf53 -f"> Show regional location also for caches in Bulgaria, Kroatia, Romania and Turkey.</li>
+  <li oc="#1058 d096be5 -f"> Updated the main country selection lists when creating caches, as well as in the user profile and in the topright page header.</li>
+  <li oc="11f2739 -a"> Enabled Dutch language (about 40% of the website are translated).</li>
+  <li oc="#1091 1b10900 -f"> Increased line and paragraph spacing in cache descriptions and logs.</li>
+  <li oc="ba7e660 -f"> The OC support team can reset cache descriptions to an old version with permission of the owner.</li>
+  <li oc="#1003 76e62f6 -f"> OC support team members now can reopen acidentially closed cache reports.</li>
+  <li oc="#1097 a56f871 -tf"> Better overview of open cache reports for OC support and data maintenance team members</li>
+  <li oc="#1104 -t"> Since 28 August, <a href="https://www.opencaching.de/">http://www.opencaching.de</a> completely redirects to <a href="https://www.opencaching.de/">https://www.opencaching.de</a>. So the website now is only running in safe HTTPS mode. The same applies to <a href="https://www.opencaching.it">www.opencaching.it</a>, <a href="https://www.opencachingspain.es">www.opencachingspeain.es</a> and <a href="https://www.opencaching.fe">www.opencaching.fr</a>.</li>
+  <li oc="a780681 4ab06fe a03a33f -t"> Updated <a href="https://www.opencaching.de/articles.php?page=team">Team list</a></li>
+</ul>
+
+<p>Fixed:</p>
+<ul>
+  <li oc="#1078 dc7ed47 -f"> Editing additional waypoints does no longer change W to E.</li>
+  <li oc="#998 #1020 #1103 9621fb7 3b42d41 22a35fa -f"> Fixes in "Text" editor mode: Somtimes &lt;br /&gt; was inserted when swichting modes; consecutive spaces got lost; smiley conversion was incomplete when switching to "Editor" or "html".</li>
+  <li oc="#1034 776e57f -f"> Log picture galleries are ordered strictly chronological, also for multiple pictures of the same log. [Bug of release 5]</li>
+  <li oc="#1009 721dbd7 -f"> Image upload always detects and rejects invalid image files. [Bug of release 11]</li>
+  <li oc="#1073 3d36448 -f"> The tags "cache needs mantenance" and "listing is outdated" are removed when changing the log type to "ready for search". [Bug of release 17]</li>
+  <li oc="#1081 5042fcc -f"> Repaired OConly marks (<img src="https://www.opencaching.de/resource2/ocstyle/images/misc/15x15-oc.png">) of unpublished caches in the <a href="https://www.opencaching.de/myhome.php#mycaches">list of own caches</a>. [Bug of release 9]</li>
+  <li oc="#1092 63539d0 -f"> Fixed positioning of pictures with different aspect ratios in listing gallery.</li>
+  <li oc="#1099 ab79655 -f"> Switching editor modes does not reset a changed log type.</li>
+  <li oc="#1086 ed4f18b -t"> Prevented misuse of redirection from login page.</li>
+  <li oc="#1107 65038b0 8fea6cb -f"> Some pages were shown as "unsafe" in the browser (http image embedding in https pages).</li>
+  <li oc="-tf"> some minor bugfixes</li>
+</ul>
+
+<p>Removed:</p>
+<ul>
+  <li oc="#1068 d665b5a -t"> Removed OpenCycleMap, because it is no longer free for Opencaching.</li>
+  <li oc="#958 1add3fd -f"> Removed needless coordinate history of mystery and "Safari" caches.</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.1.3"><strong>OC3 Version 23</strong> <span class="version">(3.1.3)</span> &ndash; 17. Mai 2017</p>
+</div>
+
+<p>New:</p>
+<ul>
+  <li oc="#1031 0b7f641 -t"> Added cache attribute &bdquo;Handicap: Blind&ldquo;. Apply with care &ndash; rules for using this attribute are missing!</li>
+  <li oc="#768 2a2f9af -n"> Added cookie notice as required by EU regulation.</li>
+  <li oc="#1038 306c76f -t"> Analyze user activity with Google Analytics; see notes on the <a href="https://www.opencaching.de/articles.php?page=dsb">data privacy page</a>.</li>
+  <li oc="#841 3964376 dfed2c1 -t"> When the site is down for maintenance, a note is displayed.</li>
+</ul>
+
+<p>Changed / improved:</p>
+<ul>
+  <li oc="#1040 -t"> Changed the default publish option for new listings from "publish now" to "publish later".</li>
+  <li oc="#221 9c1c25a -n"> Remove leading and trailing spaces of entered cache names, GC waypoints, log passwords etc.</li>
+  <li oc="#1027 bebc784 -t"> Increased the timespan for marking caches as "new" (in search result lists) from 14 to 31 days.</li>
+  <li oc="41a118d -t"> Increased image upload size from 6 to 15 MB.</li>
+  <li oc="#1021 3f6a457 -t"> Initially show log password prompt only for "found" logs.</li>
+  <li oc="0bdeab6 -t"> Improved validation of entered email addresses.</li>
+  <li oc="a854304 -a"> Fixed and improved search engine optimization (sitemap).</li>
+  <li oc="-t"> program code cleanup</li>
+</ul>
+
+<p>Fixed:</p>
+<ul>
+  <li oc="#1042 ab16685 1de801f -t"> Field nodes may contain line breaks. [Bug of release 21]</li>
+  <li oc="#1033 -t"> Reenabled smiliey display in old logs and cache descriptions. [Bug of release 22]</li>
+  <li oc="#1049 5a2ee02 -t"> Fixed sorting of owners' cache lists when viewed by a logged-off user.</li>
+  <li oc="#1069 144123b 6fe44ca -bt"> Fixed detection of email delivery problems (was broken since fall 2016).</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.1.2"><strong>OC3 Version 22</strong> <span class="version">(3.1.2)</span> &ndash; 6. Februar 2017</p>
+</div>
+
+<p>Changed / improved:</p>
+<ul>
+  <li oc="#1015 955ffac -s"> Searching for users: <a href="https://www.opencaching.de/search.php">Searching</a> for caches or logs of a user also finds users without caches or logs.</li>
+  <li oc="#1001 f0084b4 -s"> The list of an owner's caches is sorted by publish date instead of cache name.</li>
+</ul>
+
+<p>Fixed:</p>
+<ul>
+  <li oc="#36 eabc2ab -f"> Prevent loss of unsaved changes of cache descriptions when editing description texts, pictures or waypoints.</li>
+  <li oc="#1013 f0084b4 -s"> Recommendation checkmark is retained when changing log edior mode.</li>
+  <li oc="#995 d2c4e6b -t"> Repaired language switch while editing caches and cache descriptions. [Bug of release 20]</li>
+  <li oc="#1022 4ece297 -t"> Repaired country selection in the list of new caches and logs. [Bug of release 20]</li>
+</ul>
+
+<p>Removed:</p>
+<ul>
+  <li oc="2308dba -t"> Reoved the "Send to GPS device" button, because it is not compatible to a new security setting of the OC webserver and no longer supported by most web browsers.</li>
+  <li oc="-t"> Program code cleanup</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.1.1"><strong>OC3 Version 21</strong> <span class="version">(3.1.1)</span> &ndash; 24. Oktober 2016</p>
+</div>
+
+<p>Changed / improved:</p>
+<ul>
+  <li oc="#1016 62bbc3e -st"> Changed link to Geokrety site from http to https</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.1.0"><strong>OC3 Version 20</strong> <span class="version">(3.1.0)</span> &ndash; 10. Oktober 2016</p>
+</div>
+
+<p>New:</p>
+<ul>
+  <li oc="#143 50a776f 9c25806 852f696 e97e00f 1dd8b99 -m"> Uploading and processing of <a href="https://www.opencaching.de/field-notes/">field notes</a></li>
+  <li oc="-t"> OC software development: Set up <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a> for translations, Travis for verifying code contributions, Symfony as code framework</li>
+</ul>
+
+<p>Changed / improved:</p>
+<ul>
+  <li oc="#977 248668a -s"> Clearer editing of search options (show only the last executed option by default).</li>
+  <li oc="#1000 248668a -s"> Warn if no cache type or size was selected for searching.</li>
+  <li oc="09ea90e -t"> Improved validation of entered email addresses.</li>
+  <li oc="#1004 0de9460 -r"> Security improvement: Transfer session data only via HTTPS.</li>
+  <li oc="220a941 -t"> updated the <a href="https://www.opencaching.de/articles.php?page=donations">donations page</a></li>
+  <li oc="c67b844 -i"> internal migration to new what3words API</li>
+</ul>
+
+<p>Removed:</p>
+<ul>
+  <li oc="03157df -m">Removed MapQuest map, because it is no longer free for Opencaching.</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.0.19"><strong>OC3 Version 19</strong> <span class="version">(3.0.19)</span> &ndash; 28. Juni 2016</p>
+</div>
+
+<p>New:</p>
+<ul>
+  <li oc="#45 b6f0e86 -f"> Decrypted hints can be recrypted.</li>
+  <li oc="#239 #952 a39ed28 dcaea34 4e566c9 -s"> Radius can be chosen when searching for caches around cities or caches.</li>
+  <li oc="#951 bb0d743 -f"> Enabled direct paging between attached images of a cache listing.</li>
+</ul>
+
+<p>Changed / improved:</p>
+<ul>
+  <li oc="#45 b6f0e86 -f"> Hint parts in [ ] are ignored when decrypting.</li>
+  <li oc="#947 9fb2bf5 -f"> Do not close enlarged images when right-clicking.</li>
+  <li oc="#959 96f7ddb -f"> Safari caches are ignored in the regional found statistics.</li>
+  <li oc="#899 7cce71c -m"> Cache lists can no longer be created with the default name &bdquo;New cache list&ldquo;.</li>
+  <li oc="#962 84857b5 -f"> Improved and harmonized line spacings for large fonts in cache descriptions and print view.</li>
+  <li oc="-t"> Complete formal refactoring of program code (PSR-2, composer ...)</li>
+  <li oc="-t"> Prepared reorganization of program code (PSR-4, Symfony, frontend tests).</li>
+</ul>
+
+<p>Fixed:</p>
+<ul>
+  <li oc="#980 cd63769 -f"> Repaired linking of additional waypoints to cache listings in GPX files. [Bug of release 9]</li>
+  <li oc="#961 bb64172 17305e0 -f"> Repaired print view and TXT download of multi-language cache descriptions. [Bug of release 14/15]</li>
+  <li oc="#953 dbf421e -m"> Repaird search listing layout for long short-descriptions.</li>
+  <li oc="#965 0ba4e0c -f"> Do not send OConly notifications for ignored caches. [Bug of release 9]</li>
+  <li oc="98c71d1 -t"> Adjusted cache map to Google rules.</li>
+  <li> minor bugfixes</li>
+</ul>
+
+<p>Removed:</p>
+<ul>
+  <li oc="#981 2479d33 aed24d7 -fs"> Removed the option to show the small overview map, which is no longer provided by the Google Maps API.</li>
+  <li oc="5148738 -f"> Removed the Opencaching chat.</li>
+  <li oc="-ft"> program code cleanup</li>
+</ul>
+<br />
 
 <div class="changelog-header">
   <p id="v3.0.18"><strong>OC3 Release 18</strong> <span class="version">(3.0.18)</span> &ndash; 31 March 2016</p>
@@ -690,6 +893,15 @@ div.changelog .topspace { padding-top:0.5em; }
   <li>complete, clickable opencaching.de links in log notification emails</li>
   <li>added missing links to <a href="http://www.opencaching.nl/">opencaching.nl</a></li>
   <li>correct error message when entering a wrong email-address-change confirmation code</li>
+</ul>
+<br />
+
+<div class="changelog-header">
+  <p id="v3.0.0"><strong>OC3 Release 0</strong> <span class="version">(3.0.0)</span> &ndash; May / June 2012</p>
+</div>
+
+<ul class="topspace">
+  <li oc="e05b7bb cd377c2 -x0"> Initialization of the <a href="https://github.com/OpencachingDeutschland/oc-server3">Git repository</a> for restarting OC development</li>
 </ul>
 <br />
 
