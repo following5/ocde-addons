@@ -5,7 +5,13 @@
 header('Content-Type: text/html; charset=UTF-8');
 header("Cache-Control: no-cache, must-revalidate");
 
-$lang = isset($_REQUEST['lang']) ? strtolower($_REQUEST['lang']) : false;
+if (isset($_REQUEST['lang']))
+  $lang = strtolower($_REQUEST['lang']);
+else if (isset($_COOKIE['changelog_switches']) && strlen($_COOKIE['changelog_switches']) >= 8)
+  $lang = strtolower(substr($_COOKIE['changelog_switches'],6,2));
+else
+  $lang = false;
+
 if ($lang != 'de' && $lang != 'en')
   $lang = 'de';
 
@@ -55,8 +61,13 @@ function toggleclb(name)
   var items = document.getElementsByClassName(name);
   for (var i=0; i<items.length; ++i)
     items[i].style.display = display;
+  save_cookie();
+}
+
+function save_cookie()
+{
   document.cookie = 'changelog_switches=' + getclb('redmine') + getclb('github') + getclb('devel')
-                    + '; expires=31 Dec 2037';
+                    + '000<?= $lang ?>; expires=31 Dec 2037';
 }
 
 function getclb(name)
@@ -76,7 +87,7 @@ function setclb(name, onoff)
 
 function initclb()
 {
-  var rex = /changelog_switches=([01]{3,})/;
+  var rex = /changelog_switches=([01]{3,6})/;   // changed from 3 to 6 flags   -- 30 Sep 2017
   var matches = rex.exec(document.cookie);
   setclb('redmine', matches[1].substr(0,1));
   setclb('github', matches[1].substr(1,1));
@@ -101,11 +112,9 @@ function initclb()
 
 <!-- toogle buttons -->
 <div style="position:fixed; top:1.5em">
-  <?php if ($lang == 'de') { ?>
-  <div style="position: relative; left:-64px">
+  <div style="position: relative; left:-64px; <?php if ($lang != 'de') echo 'display:none;'; ?>">
     <a href="javascript:toggleclb('redmine')" class="clbutton" title='<?= $button_titles[0] ?>'><img id='redmine_button' src="res/redmine-off.png"/></a>
   </div>
-  <?php } ?>
   <div style="position: relative; left:-64px; margin-top:8px">
     <a href="javascript:toggleclb('github')" class="clbutton" title='<?= $button_titles[1] ?>'><img id='github_button' src="res/github-off.png"/></a>
   </div>
@@ -174,7 +183,7 @@ foreach ($changelog as &$line)
     foreach (explode(' ', $matches[1]) as $token) {
 
       # Redmine issue
-      if (preg_match('/^#([0-9]+)$/', $token, $matches))
+      if ($lang == 'de' && preg_match('/^#([0-9]+)$/', $token, $matches))
         $line .= ' <a class="redmine" href="https://redmine.opencaching.de/issues/'.$matches[1].'" style="display:none">'.$token.'</a>';
 
       # OC.de Github commit
@@ -214,6 +223,7 @@ echo $changelog;
 
 <script type="text/javascript">
   initclb();
+  save_cookie();
 </script>
 
 </body>
