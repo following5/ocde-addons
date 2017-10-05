@@ -216,8 +216,6 @@ foreach ($changelog as &$line)
 # insert version selection dropdown list
 
 $options = "  <option value='' selected='selected'>...</option>";
-if ($lang == 'de')
-  $options .= "  <option value='development'>In Arbeit</option>";
 foreach ($changelog as &$line)
   if (preg_match('/id="(v\d\.\d\.\d+)".+OC3 (.+\d+)<.+&ndash; (.+)<\/p>/', $line, $matches))
   {

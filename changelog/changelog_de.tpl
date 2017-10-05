@@ -21,6 +21,7 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <p>Eine redaktionell aufbereitete Erläuterung neuer OC-Versionen gibt es auch im Opencaching- bzw. im <em>Altmetall</em>-Blog:</p>
 <ul>
+  <li><a href="https://blog.opencaching.de/2017/10/oc-version-3-1-4-neue-bildergalerie-hinweis-auf-nicht-veroeffentliche-caches/">Version 24</a> <span class="version">(3.1.4)</span>: Neue Bildergalerie &amp; Hinweis auf nicht veröffentliche Caches</a>
   <li><a href="https://blog.opencaching.de/2017/09/oc-version-3-1-3-neues-attribut-und-neue-bildgroessen/">Version 23</a> <span class="version">(3.1.3)</span>: Projekt für sehbehinderte Cacher, Limits für Bilduploads angehoben</li>
   <li><a href="https://blog.opencaching.de/2017/02/version-3-1-2-mit-kleinen-schritten-geht-es-voran/">Version 22</a> <span class="version">(3.1.2)</span>: Suche nach Benutzern</li>
   <li><a href="https://blog.opencaching.de/2016/10/oc-version-3-1-x-die-neue-generation/">Version 20/21</a> <span class="version">(3.1.x)</span>: Field Notes, Suchformular-Verbesserung, Übersetzung per Crowdin</li>
@@ -46,39 +47,16 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    1. Oktober 2017
+    5. Oktober 2017
   &nbsp;&nbsp;</em></p></div>
-  <p id="development"><strong>In Arbeit</strong> &ndash; noch nicht auf www.opencaching.de freigegeben</p>
+  <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
 </div>
-
-<p>Neu:</p>
-<ul>
-  <li oc="-fw"> <a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a></li>
-  <li oc="k5905f61 -f"> OKAPI: Ändern des Logpassworts von Caches</li>
-  <li oc="-f"> OKAPI: <a href="https://github.com/opencaching/okapi/pull/509">Caches melden</a></li>
-  <li oc="-atn"> vollständige <a href="http://rwd.opencaching.de/">Neugestaltung</a> der OC-Website mit Schwerpunkt auf mobiler Nutzung</li>
-</ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
   <li oc="#1136 13d8fca -f"> Beim GPX-Download von Drive-In-Caches wird immer das Attribut „nahe beim Auto“ gesetzt.</li>
-</ul>
-
-<p>Korrigiert (Bugfixes):</p>
-<ul>
   <li oc="#1140 38ab770 -f"> Wenn das neueste Log den Status eines Caches geändert hat, und der Owner bzw. OC-Supportmitarbeiter das Log editiert und den Logtyp so ändert, dass er keinen Einfluss mehr auf den Cachestatus hat (z.B. „momentan nicht verfügbar“ &rarr; „Hinweis“), dann wird der Cache auf den ursprünglichen Status (vor dem Log) zurückgesetzt.</li>
-  <li oc="-t"> automatischer Import der Übersetzungen von <a href="https://crowdin.com/project/opencaching" target="_blank">Crowdin</a></li>
-  <li oc="#1130 fe328ad -f"> What3words-Suche auf der Karte funktioniert wieder</li>
-  <li> keine Leerzeile unter dem Cachetitel anzeigen, falls die Kurzbeschreibung nur aus Leerzeichen besteht</li>
 </ul>
-<br />
-
-<div class="changelog-header">
-  <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    1. Oktober 2017
-  &nbsp;&nbsp;</em></p></div>
-  <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
-</div>
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
@@ -90,6 +68,7 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="#1127 01e0005 -f"> Safari-Button auf der Karte funktioniert jetzt auch bei ausgeloggten Benutzern. [Bug von Version 13]</li>
   <li oc="#1129 b9426f2 -f"> Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
   <li oc="#1137 96f7c36 -f"> irrtümliche Sperre der des Logeditors durch Google Chrome verhindert</li>
+  <li oc="#1130 fe328ad -f"> What3words-Suche auf der Karte funktioniert wieder [Bug von Version 22]</li>
 </ul>
 <br />
 
