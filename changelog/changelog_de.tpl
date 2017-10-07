@@ -47,10 +47,15 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    5. Oktober 2017
+    7. Oktober 2017
   &nbsp;&nbsp;</em></p></div>
   <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
 </div>
+
+<p>Neu:</p>
+<ul>
+  <li oc="fd5e4d0 -f"> <a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a>: Heruntergeladene GPX-Dateien enthalten nun zusätzliche Informationen wie OC-Cachetyp, OC-Cachegröße und GC-Wegpunkte.</li>
+</ul>
 
 <p>Geändert / verbessert:</p>
 <ul>
@@ -69,6 +74,7 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="#1129 b9426f2 -f"> Mehrfacher GPX-Download desselben Caches funktioniert wieder. [Bug von Version 20]</li>
   <li oc="#1137 96f7c36 -f"> irrtümliche Sperre der des Logeditors durch Google Chrome verhindert</li>
   <li oc="#1130 fe328ad -f"> What3words-Suche auf der Karte funktioniert wieder [Bug von Version 22]</li>
+  <li oc="#1143 aa1a1fa -f"> Seltenes Problem bei der Anzeige der benötigten Logs bis zur nächsten Empfehlung behoben.</li>
 </ul>
 <br />
 
@@ -147,6 +153,7 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="#1021 3f6a457 -t"> Das Passwortfeld beim Loggen wird nur noch für Fundlogs eingeblendet.</li>
   <li oc="0bdeab6 -t"> Prüfung eingegebener Emailadressen verbessert</li>
   <li oc="a854304 -a"> Korrekturen und Verbesserungen bei der Suchmaschinenoptimierung</li>
+  <li oc="#1036 59bce07 -t"> Seltenes Problem bei der Anzeige der benötigten Logs bis zur nächsten Empfehlung behoben.</li>
   <li oc="-t"> Aufräumarbeiten im Programmcode</li>
 </ul>
 
@@ -244,7 +251,7 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <p>Korrigiert (Bugfixes):</p>
 <ul>
-  <li oc="#980 cd63769 -f"> Zusätzliche Wegpunkte in GPX-Dateien werden wieder korrekt gekennzeichnet (erscheinen z.B. in GSAK nicht mehr als separate Caches). [Bug von Version 9]</li>
+  <li oc="#980 cd63769 -f"> Zusätzliche Wegpunkte in GPX-Dateien werden wieder korrekt gekennzeichnet (erscheinen z.B. in GSAK nicht mehr als separate Caches). [Bug von Version 4]</li>
   <li oc="#961 bb64172 17305e0 -f"> Druckansicht und TXT-Download mehrsprachiger Cachebeschreibungen korrigiert [Bug von Version 14/15]</li>
   <li oc="#953 dbf421e -m"> Suchergebnislistenlayout bei langen Kurzbeschreibungen repariert</li>
   <li oc="#965 0ba4e0c -f"> Keine OConly-Benachrichtigungen für ignorierte Caches. [Bug von Version 9]</li>
@@ -843,7 +850,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <p>Neu:</p>
 <ul>
   <li oc="b300630 -f"> neue Cachegröße &bdquo;nano&ldquo;</li>
-  <li oc="29ace6a 1dc8526 0b6d3cb -f"> <a href="http://wiki.opencaching.de/index.php/Wegpunkte#Interne.2C_zus.C3.A4tzliche_Wegpunkte" target="_blank">Zusätzliche Wegpunkte</a> sind in <a href="http://wiki.opencaching.de/index.php/Wie_erhalte_ich_eine_GPX-Datei%3F" target="_blank">GPX-Dateien</a> enthalten und werden ans GPS-Gerät gesendet</li>
+  <li oc="29ace6a 1dc8526 0b6d3cb -3f"> <a href="http://wiki.opencaching.de/index.php/Wegpunkte#Interne.2C_zus.C3.A4tzliche_Wegpunkte" target="_blank">Zusätzliche Wegpunkte</a> sind in <a href="http://wiki.opencaching.de/index.php/Wie_erhalte_ich_eine_GPX-Datei%3F" target="_blank">GPX-Dateien</a> enthalten und werden ans GPS-Gerät gesendet</li>
   <li oc="469d2bb -f"> Bilder (inkl. Spoilerbildern) aus Cachelistings werden in GPX-Dateien eingebettet. Um sie unterwegs sehen zu können, ist eine Internetverbindung nötig.</li>
   <li oc="-3bf"> <a href="https://www.opencaching.de/articles.php?page=impressum#datalicense">Datenlizenz CC-BY-NC-ND</a></li>
   <li oc="50379b8 -f"> Statistikbilder mit neuem Logo</a></li>
