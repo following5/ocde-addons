@@ -60,7 +60,7 @@ div.changelog .topspace { padding-top:0.5em; }
 <p>Geändert / verbessert:</p>
 <ul>
   <li oc="#1136 13d8fca -f"> Beim GPX-Download von Drive-In-Caches wird immer das Attribut „nahe beim Auto“ gesetzt.</li>
-  <li oc="#1140 38ab770 -f"> Wenn das neueste Log den Status eines Caches geändert hat, und der Owner bzw. OC-Supportmitarbeiter das Log editiert und den Logtyp so ändert, dass er keinen Einfluss mehr auf den Cachestatus hat (z.B. „momentan nicht verfügbar“ &rarr; „Hinweis“), dann wird der Cache auf den ursprünglichen Status (vor dem Log) zurückgesetzt.</li>
+  <li oc="#1140 38ab770 -f"> Wenn das neueste Log den Status eines Caches geändert hat, und man das Log editiert und den Logtyp so ändert, dass er keinen Einfluss mehr auf den Cachestatus hat (z.B. „momentan nicht verfügbar“ &rarr; „Hinweis“), dann wird der Cache auf den ursprünglichen Status (vor dem Log) zurückgesetzt.</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
