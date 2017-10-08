@@ -54,7 +54,7 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <p>Neu:</p>
 <ul>
-  <li oc="fd5e4d0 -f"> <a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a>: Heruntergeladene GPX-Dateien enthalten nun zusätzliche Informationen wie OC-Cachetyp, OC-Cachegröße und GC-Wegpunkte.</li>
+  <li oc="fd5e4d0 k1d66caa -f"> <a href="https://github.com/opencaching/gpx-extension-v1">Opencaching-GPX-Erweiterung</a>: Heruntergeladene GPX-Dateien enthalten nun zusätzliche Informationen wie OC-Cachetyp, OC-Cachegröße und GC-Wegpunkte.</li>
 </ul>
 
 <p>Geändert / verbessert:</p>
