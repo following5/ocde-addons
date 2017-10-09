@@ -95,8 +95,8 @@ class StyleCleanup
 
                 # Remove trailing whitespaces, strip CRs, expand tabs, make
                 # sure that all - including the last - line end on "\n",
-                # and detect short open tags. Only-whitespace lines are
-                # allowed by PSR-2 and will not be trimmed.
+                # detect short open tags and bad character encodings.
+                # Only-whitespace lines are allowed by PSR-2 and will not be trimmed.
 
                 $n = 1;
                 foreach ($lines as &$line) {
@@ -111,6 +111,13 @@ class StyleCleanup
                         if ($line != $old_line) {
                             $file_modified = true;
                             ++ $this->lines_modified;
+                        }
+
+                        # This will detect all non-ASCII-non-UTF-8 except for C0..FF + A0..BF
+                        # (Latin special letter + special char), which is extremely rare:
+
+                        if (preg_match('/[\x{00}-\x{7F}][\x{80}-\x{BF}]|[\x{C0}-\x{FF}][^\x{80}-\x{BF}]/', $line)) {
+                            self::warn("non-UTF8 encoding in $display_filepath: $line");
                         }
                     }
                     if (preg_match('/\<\?\s/', $line)) {   # relies on \n at EOL
