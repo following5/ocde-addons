@@ -10,6 +10,8 @@ CREATE TABLE `countries` (
   `sort_de` varchar(128) NOT NULL COMMENT 'obsolete',
   `list_default_en` int(1) NOT NULL DEFAULT '0' COMMENT 'obsolete',
   `sort_en` varchar(128) NOT NULL COMMENT 'obsolete',
+  `adm_display2` tinyint(1) NOT NULL,
+  `adm_display3` tinyint(1) NOT NULL,
   PRIMARY KEY (`short`),
   UNIQUE KEY `name` (`name`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8mb4 COMMENT='static content' ;

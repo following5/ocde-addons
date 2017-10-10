@@ -2,9 +2,9 @@
 # Original author: following
 # License: MIT
 
-# This script writes the contents of static data tables to the corresponding files.
-# It is useful to test for consistency and for typos in the files. It replaces the
-# broken "SQL Export" function in OC translate.php.
+# This script writes the contents of static data tables to the corresponding files
+# in sql/staticdata. It is useful to test for consistency and for typos in the files.
+# It replaces the broken "SQL Export" function in OC translate.php.
 
 # Either all static tables are exported, or only one table which is given as argument.
 
@@ -39,7 +39,7 @@ if ($sys_trans_text) {
 
     $stt = file("$sdpath/sys_trans_text_00.sql");
     file_put_contents("$sdpath/sys_trans_text_00.sql", $stt[0].$stt[1].$stt[2]);
-    
+
     $langtrans = [];
 
     for ($line = 3; $line < count($stt); ++$line)
