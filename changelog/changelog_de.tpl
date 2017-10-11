@@ -47,7 +47,7 @@ div.changelog .topspace { padding-top:0.5em; }
 
 <div class="changelog-header">
   <div style="float:right"><p><em style="font-size:90%">Stand:&nbsp;
-    7. Oktober 2017
+    11. Oktober 2017
   &nbsp;&nbsp;</em></p></div>
   <p id="v3.1.5"><strong>OC3 Version 25</strong> <span class="version">(3.1.5)</span> &ndash; offen</p>
 </div>
@@ -61,6 +61,8 @@ div.changelog .topspace { padding-top:0.5em; }
 <ul>
   <li oc="#1136 13d8fca -f"> Beim GPX-Download von Drive-In-Caches wird immer das Attribut „nahe beim Auto“ gesetzt.</li>
   <li oc="#1140 38ab770 -f"> Wenn das neueste Log den Status eines Caches geändert hat, und man das Log editiert und den Logtyp so ändert, dass er keinen Einfluss mehr auf den Cachestatus hat (z.B. „momentan nicht verfügbar“ &rarr; „Hinweis“), dann wird der Cache auf den ursprünglichen Status (vor dem Log) zurückgesetzt.</li>
+  <li oc="#1126 0f6aad1 -f"> sinnvollere Regionalzuordnung der Caches bei vielen Ländern</li>
+  <li oc="#1147 2587a39 -f"> Man kann keine sich widersprechenden Cacheattribute mehr eintragen</li>
 </ul>
 
 <p>Korrigiert (Bugfixes):</p>
@@ -75,6 +77,7 @@ div.changelog .topspace { padding-top:0.5em; }
   <li oc="#1137 96f7c36 -f"> irrtümliche Sperre der des Logeditors durch Google Chrome verhindert</li>
   <li oc="#1130 fe328ad -f"> What3words-Suche auf der Karte funktioniert wieder [Bug von Version 22]</li>
   <li oc="#1143 aa1a1fa -f"> Seltenes Problem bei der Anzeige der benötigten Logs bis zur nächsten Empfehlung behoben.</li>
+  <li oc="#1151 c0907f3 2839429 -f"> Beschreibung der erlaubten HTML-Elemente und tatsächlich erlaubte Elemente angeglichen</li> 
 </ul>
 <br />
 
