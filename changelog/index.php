@@ -20,6 +20,10 @@ switch ($lang) {
   case 'en': $button_titles = ['Show Redmine issues', 'Show Github commits', 'Show developers']; break;
 }
 
+$redmine = isset($_REQUEST['redmine']) + 0;
+$github = isset($_REQUEST['github']) + 0;
+$devel = isset($_REQUEST['devel']) + 0;
+
 ?>
 <head>
   <title>Opencaching.de &ndash; Versionsgeschichte</title>
@@ -35,7 +39,7 @@ switch ($lang) {
   .content2-pagetitle { font-size:18px; padding-bottom:0 }
   p { font-family:'Roboto',sans-serif; font-size:15px; line-height: 1.4em; padding-bottom:0.5em; }
   li { font-family:'Roboto',sans-serif; font-size:15px; padding-bottom:0.05em !important; }
-  select.versions { font-family:'Roboto',sans-serif; font-size:15px; border:1px dotted #ccc; background-color:transparent; }
+  select.versions { font-family:'Roboto',sans-serif; font-size:14px; border:1px dotted #ccc; background-color:transparent; }
   a { color:#b26c0a; text-decoration:none; }
   a.redmine { color:#4495b4; }
   a.github { color:grey; font-size:13px; }
@@ -81,8 +85,7 @@ function getclb(name)
 
 function setclb(name, onoff)
 {
-  // Buttons are off by default.
-  if (onoff == '1')
+  if (getclb(name) != onoff)
     toggleclb(name);
 }
 
@@ -90,9 +93,9 @@ function initclb()
 {
   var rex = /changelog_switches=([01]{3,6})/;   // changed from 3 to 6 flags   -- 30 Sep 2017
   var matches = rex.exec(document.cookie);
-  setclb('redmine', matches[1].substr(0,1));
-  setclb('github', matches[1].substr(1,1));
-  setclb('devel', matches[1].substr(2,1));
+  setclb('redmine', <?= $redmine ?> ? '1' : matches ? matches[1].substr(0,1) : '0');
+  setclb('github', <?= $github ?> ? '1' : matches ? matches[1].substr(1,1) : '0');
+  setclb('devel', <?= $devel ?> ? '1' : matches ? matches[1].substr(2,1) : '0');
 }
 </script>
 
